@@ -1,0 +1,133 @@
+header {
+    color: #000000;
+    background: url("../img/index-bg.jpg") center center no-repeat;
+    background-size: cover;
+}
+.bg {
+    background: #0E1A2A;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+body {
+    font-size: 14px;
+}
+.navbar-default {
+    background-color: #ffffff;
+}
+.navbar-default .navbar-brand {
+    color: #000000;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #000000;
+}
+.navbar-fixed-top {
+    padding: 5px 0;
+}
+.navbar-fixed-top.navbar-shrink {
+    padding: 1px 0;
+}
+.intro-text {
+    color: #FFFFFF;
+}
+header .intro-text .name {
+    font-size: 48px;
+    color: #8FAE46;
+}
+.zh-desc {
+    font-family: "Noto Sans S Blank";
+    font-size: 48px;
+}
+.en-desc {
+    font-family: "Noto Sans S Regular";
+    font-size: 36px;
+}
+.navbar-default .navbar-toggle {
+    background-color: #1a242f;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    border-color: #8FAE46;
+    background-color: #8FAE46;
+}
+
+.concat-map {
+    background: url("../img/map.png") center right no-repeat;
+}
+
+.btn-blue {
+    margin-top: 15px;
+    border: solid 2px #47B1DF;
+    font-size: 20px;
+    color: #47B1DF;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active {
+    border: solid 2px #47B1DF;
+    color: #FFF;
+    background: #47B1DF;
+}
+
+section.success {
+    background: url("../img/green-bg.png") center center no-repeat;
+    background-size: cover;
+}
+
+section.warn {
+    color: #fff;
+    background: #FCB42D;
+}
+
+footer .footer-above {
+    background: #152635 !important;
+}
+
+.info {
+    text-align: left;
+    float: right;
+    line-height: 35px;
+    margin-bottom: 80px;
+}
+
+.info img {
+    padding-bottom: 40px;
+}
+
+.link {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.link .col-sm-3 {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.link .col-sm-3 ul {
+    list-style-type: none;
+}
+
+.link ul li:first-child {
+    font-size: 16px;
+    padding-bottom: 28px;
+}
+
+.link ul li {
+    padding-bottom: 10px;
+}
+
+.footer-below {
+    background-color: #FFF !important;
+}
+
+.footer-below p {
+    color: #000;
+    font-size: 14px;
+}
+
+

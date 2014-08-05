@@ -1,6 +1,6 @@
 header {
     color: #000000;
-    background: url("../img/index-bg.jpg") center center no-repeat;
+    background: url("../img/index-bg.jpg?__sprite") center center no-repeat;
     background-size: cover;
 
 }
@@ -72,16 +72,16 @@ header .intro-text .name {
 }
 
 .concat-map {
-    background: url("../img/map.png") center right no-repeat;
+    background: url("../img/map.png?__sprite") center right no-repeat;
 }
 section.success {
-    background: url("../img/green-bg.png") center center no-repeat;
+    background: url("../img/green-bg.png?__sprite") center center no-repeat;
     background-size: cover;
 }
 section.warn {
     color: #fff;
     /*background: #FFB608;*/
-    background: url(../img/gossip.png) center center no-repeat, url(../img/orange-bg.svg) center bottom no-repeat, url(../img/orange1px.png);
+    background: url(../img/gossip.png?__sprite) center center no-repeat, url(../img/orange-bg.svg) center bottom no-repeat, url(../img/orange1px.png?__sprite);
 }
 footer .footer-above {
     background: #152635 !important;

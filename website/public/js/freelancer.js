@@ -31,9 +31,9 @@ $(function() {
     });
     $(window).scroll(function() {
         if($(document).scrollTop() >= $(window).height() - 5) {
-            $('#nav').show();
+            $("#nav").fadeIn(1000);
         }else {
-            $('#nav').hide();
+            $('#nav').fadeOut(1000);            
         }
     });
 });

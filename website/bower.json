@@ -1,0 +1,32 @@
+{
+  "name": "Zyeeda Website",
+  "version": "0.1.0",
+  "authors": [
+    "Rui Tang <tangrui@zyeeda.com>"
+  ],
+  "description": "The official website of Zyeeda Corporation",
+  "main": "public/index.html",
+  "keywords": [
+    "zyeeda"
+  ],
+  "license": "Commercial License",
+  "homepage": "http://zyeeda.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "anijs": "~0.5.0",
+    "bootstrap": "~3.2.0",
+    "html5shiv": "~3.7.2",
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.3",
+    "respond": "~1.4.2",
+    "animate.css": "~3.2.0",
+    "mod": "https://github.com/fex-team/mod.git"
+  }
+}

@@ -1,20 +1,15 @@
 syntax: glob
 
 *.
-*.class
-.classpath
-.project
-.settings
 *.swp
 *.bak
 *~
 *.~ml
 *.orig
-*.tlog
+.DS_Store
 .vagrant
-.DS_Store
-*.h2.db
 
-.DS_Store
+public
+bower_components
 
 syntax: regexp

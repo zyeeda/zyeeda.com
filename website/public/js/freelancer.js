@@ -10,7 +10,7 @@ $(function() {
 });
 
 var calBgHeight = function() {
-    var hei = $(window).height() - 5;
+    var hei = $(window).height() - 35;
     $('header').height(hei);
     $('.bg').height(hei);
 }
@@ -30,10 +30,11 @@ $(function() {
         calBgHeight();
     });
     $(window).scroll(function() {
-        if($(document).scrollTop() >= $(window).height() - 5) {
-            $("#nav").fadeIn(1000);
+        if($(document).scrollTop() >= $(window).height() - 110) {
+            $("#nav").fadeIn(500);
         }else {
-            $('#nav').fadeOut(1000);            
+            // $('#nav').fadeOut(500);            
+            $('#nav').hide();
         }
     });
 });
@@ -41,6 +42,9 @@ $(function() {
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
-})
+});
 
+window.onload = function() {
+    $('#index-effect').removeClass('effect-lager').addClass('effect-lager');
+}
 

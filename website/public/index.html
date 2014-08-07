@@ -16,7 +16,7 @@
     <link href="css/freelancer.css" rel="stylesheet" type="text/css">
     
     <!-- Animate CSS library -->
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/animate.css" rel="stylesheet" type="text/css"> -->
 
 
     <!-- Custom 
@@ -27,9 +27,11 @@
     -->
     <!-- Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- iHover -->
+    <link href="css/hover.css" rel="stylesheet" type="text/css">
     
     <!--     
-    <link href='google/css.css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='google/css.css' rel='stylesheet' type='text/css'>
     -->    
     <link href='font-sans/css.css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/fix.css">
@@ -42,7 +44,7 @@
 </head>
 
 <body id="page-top" class="index">
-    <nav  id="nav" class="navbar navbar-default navbar-fixed-top" style="display: none;" >
+    <nav id="nav" class="navbar navbar-default navbar-fixed-top" style="display: none;" >
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -51,11 +53,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top"><img src="img/logo.png" /></a>
+                <a class="navbar-brand" href="#page-top"><img src="img/logo.svg" /></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" align="center">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -81,22 +83,21 @@
     </nav>
 
     <header>
-        <div class="bg"></div>
-        <div class="container company">
-            <div class="row" data-anijs="if: load, on: window, do: bounceIn animated;">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/logo-lager-inverse.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div id="index-effect" class="col-lg-12 effect-small">
+                    <img class="img-responsive fadein" src="img/logo-lager-inverse.png" alt="">
                     <div class="intro-text">
-                        <span class="name">中昱达</span>
+                        <span class="name fadein">中昱达</span>
                         <img src="img/heart.png" class="star-light" />
 
-                        <span class="zh-desc">为中国软件而生 </span><br />
-                        <span class="en-desc">Born for Chinese Software </span>
+                        <span class="zh-desc fadein">为中国软件而生 </span><br />
+                        <span class="en-desc fadein">Born for Chinese Software </span>
                     </div>
                 </div>
             </div>
-            <div id="mouse" class="mouse"><img src="img/mouse.gif" /></div>
-        </div>
+            <div class="down"><i class="fa fa-chevron-down"></i></div>
+       </div>
     </header>
 
     <section id="qualifications">
@@ -104,31 +105,71 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <span style="font-size: 36px;">我们的资质</span><br />
-                    <span style="font-size: 23px;">Our Qualification</span>
+                    <span style="font-size: 22px;">Our Qualification</span>
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row quali-names">                
-                <a class="col-lg-2dot4 portfolio-item" data-anijs="if: mouseover, do: pulse animated" href="javascript:void(0);">
-                    <div><img src="img/cmmi3.png"/></div>
-                    <div class="qualification-name">CMMI3级</div>
-                </a>
-                <a class="col-lg-2dot4 portfolio-item" data-anijs="if: mouseover, do: pulse animated" href="javascript:void(0);">
-                    <div><img src="img/hi-tech.png"  /></div>
-                    <div class="qualification-name">国家级高新技术企业</div>
-                </a>
-                <a class="col-lg-2dot4 portfolio-item" data-anijs="if: mouseover, do: pulse animated" href="javascript:void(0);">
-                    <div><img src="img/iso9001.png"  /></div>
-                    <div class="qualification-name">ISO9001</div>
-                </a>
-                <a class="col-lg-2dot4 portfolio-item" data-anijs="if: mouseover, do: pulse animated" href="javascript:void(0);">
-                    <div><img src="img/integrate3.png" /></div>
-                    <div class="qualification-name">集成资质叁级</div>
-                </a>
-                <a class="col-lg-2dot4 portfolio-item" data-anijs="if: mouseover, do: pulse animated" href="javascript:void(0);">
-                    <div><img src="img/double-soft.png" /></div>
-                    <div class="qualification-name">双软企业</div>
-                </a>
+            <div class="row quali-names" align="center"> 
+                <div class="col-lg-2dot4">
+                    <div class="ih-item circle effect1">
+                        <a href="javascript:void(0);">
+                            <div class="spinner"></div>
+                            <div class="img"><img src="img/cmmi3.png" alt="img"></div>
+                            <div class="qualification-name">CMMI 3级</div>
+                            <div class="info">
+                                <div class="info-back"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2dot4">
+                    <div class="ih-item circle effect1">
+                        <a href="javascript:void(0);">
+                            <div class="spinner"></div>
+                            <div class="img"><img src="img/hi-tech.png" alt="img"></div>
+                            <div class="qualification-name">高新技术企业</div>
+                            <div class="info">
+                                <div class="info-back"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2dot4">
+                    <div class="ih-item circle effect1">
+                        <a href="javascript:void(0);">
+                            <div class="spinner"></div>
+                            <div class="img"><img src="img/iso9001.png" alt="img"></div>
+                            <div class="qualification-name">ISO9001</div>
+                            <div class="info">
+                                <div class="info-back"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2dot4">
+                    <div class="ih-item circle effect1">
+                        <a href="javascript:void(0);">
+                            <div class="spinner"></div>
+                            <div class="img"><img src="img/integrate3.png" alt="img"></div>
+                            <div class="qualification-name">集成资质叁级</div>
+                            <div class="info">
+                                <div class="info-back"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2dot4">
+                    <div class="ih-item circle effect1">
+                        <a href="javascript:void(0);">
+                            <div class="spinner"></div>
+                            <div class="img"><img src="img/double-soft.png" alt="img"></div>
+                            <div class="qualification-name">双软企业</div>
+                            <div class="info">
+                                <div class="info-back"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -139,11 +180,12 @@
                     <img src="img/platform.png"/>
                 </div>
                 <div class="col-sm-6">
-                    <h2 align="right">平台<strong class="anijs-orange">易</strong>开发</h2>
+                    <h2 align="right"> <img src="img/yi.svg" /></h2>
+                    <!-- <h2 align="right">平台 <span class="anijs-orange">易</span> 开发</h2> -->
                     <p align="right">
-                    她不仅使用我们自己，也使您的开发团队更<br />
-                    <strong class="anijs-orange">简易</strong> 、<strong class="anijs-orange if">快捷</strong>
-                    和<strong class="anijs-orange if">稳定</strong>，效率才真。
+                    她不仅使我们自己，也使您的开发团队更<br />
+                    <span class="anijs-orange">简易</span> 、<span class="anijs-orange if">快捷</span>
+                    和 <span class="anijs-orange if">稳定</span>，效率才真。
                     </p>
                     <div style="float: right;"><a href="http://anijs.github.io/" class="btn btn-lg btn-green">
                         了解详情
@@ -157,9 +199,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h2>专属<strong class="anijs-blue">唯</strong>定制</h2>
+                    <h2> <img src="img/wei.svg" /></h2>
+                    <!-- <h2>专属 <span class="anijs-blue">唯</span> 定制</h2> -->
                     <p>
-                    定制每个不一样的你 <strong class="anijs-blue">量身</strong>定制，<strong class="anijs-blue if">整合</strong>
+                    定制每个不一样的你 <span class="anijs-blue">量身</span>定制，<span class="anijs-blue if">整合</span>
                     提升。<br />我们适合为不同的你，
                     做最适合的信息系统，合体才真。
                     </p>
@@ -181,13 +224,14 @@
                 <div><img src="img/services.png"></div>
                 <p class="service-info">
                     在哪里是次要的 <br />
-                    先<strong class="anijs-green">稳定</strong>下来，才更有可能。
+                    先<span class="anijs-green">稳定</span>下来，才更有可能。
                 </p>
                 </div>
                 <div class="col-sm-6">
-                    <h2 class="talent-h2">人才<strong class="anijs-green" >随</strong>心意</h2>
+                    <h2 class="talent-h2"> <img src="img/sui.svg" /></h2>
+                    <!-- <h2 class="talent-h2">人才 <span class="anijs-green" >随</span> 心意</h2> -->
                     <p align="right">
-                    人才外服，不仅满足企业中短期<strong class="anijs-green">人才</strong><br />随叫随到的心，也为随异乡人才有更多<br /><strong class="anijs-green if">价值</strong>体现的心，适应才真。
+                    人才外服，不仅满足企业中短期<span class="anijs-green">人才</span><br />随叫随到的心，也为随异乡人才有更多<br /><span class="anijs-green if">价值</span>体现的心，适应才真。
                     </p>
                     <div style="float: right;"><a href="http://anijs.github.io/" class="btn btn-lg btn-orange">
                         了解详情
@@ -206,7 +250,7 @@
                             <div><img src="img/logo-inverse.png"</div>
                             <div>深圳市中昱达信息技术有限责任公司</div>
                             <div>电话: 0755-82216224</div>
-                            <div>0755-26966586</div>
+                            <div>传真: 0755-26966586</div>
                             <div>地址: 深圳市罗湖区深南东路2015号中建大厦701室（518001）</div>
                             </div>
                         </div>
@@ -252,6 +296,7 @@
                             </div>  
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -281,8 +326,8 @@
     <!-- <script src="js/classie.js"></script> -->
     <!-- <script src="js/cbpAnimatedHeader.js"></script> -->
     <script src="js/freelancer.js"></script>
-    <script src="js/anijs/anijs.js"></script>
-    <script src="js/anijs/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
+    <!-- <script src="js/anijs/anijs.js"></script> -->
+    <!-- <script src="js/anijs/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script> -->
     <script>
       // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

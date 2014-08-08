@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Noto Sans S Blank';
+  font-style: normal;
+  src: local('Noto Sans S Blank') url(NotoSansHans-Black.otf);
+}
+@font-face {
+  font-family: 'Noto Sans S Medium';
+  font-style: normal;
+  src: local('Noto Sans S Medium') url(NotoSansHans-Medium.otf);
+}
+@font-face {
+  font-family: 'Noto Sans S Regular';
+  font-style: normal;
+  src: local('Noto Sans S Regular'), url(NotoSansHans-Regular.otf);
+}

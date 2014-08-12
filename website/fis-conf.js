@@ -37,6 +37,12 @@ fis.config.set('roadmap.path', [
         release: '/scripts/vendors/jquery.easing/jquery.easing.js',
         requires: ['jquery']
     },
+    // skrollr
+    {
+        id: 'skrollr',
+        reg: '/bower_components/skrollr/dist/skrollr.min.js',
+        release: 'release/scripts/vendors/skrollr/skrollr.js'
+    },
 
     // modernizr
     {
@@ -114,15 +120,17 @@ fis.config.merge({
     }
 });
 
-// fis.config.set('pack', {
-//     'pkg/lib.js': [
-//         '/scripts/vendors/jquery/**.js',
-//         '/scripts/vendors/bootstrap/**.js',
-//         '/scripts/vendors/html5shiv/**.js',
-//         '/scripts/vendors/modernizr/**.js',
-//         '/scripts/vendors/respond/**.js'
-//     ]
-// });
+fis.config.set('pack', {
+    'pkg/lib.js': [
+        '/scripts/vendors/jquery/**.js',
+        '/scripts/vendors/jquery.easing/**.js',
+        '/scripts/vendors/bootstrap/**.js',
+        '/scripts/vendors/html5shiv/**.js',
+        '/scripts/vendors/modernizr/**.js',
+        '/scripts/vendors/respond/**.js',
+        '/scripts/vendors/skrollr/**.js'
+    ]
+});
 
 //目录规范
 

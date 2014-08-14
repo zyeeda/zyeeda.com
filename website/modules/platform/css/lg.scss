@@ -1,0 +1,48 @@
+@import '../../const';
+
+@media (min-width: $retinaMinWidth) {
+	.header .intro .name {
+		font-size: 44px;
+	}
+
+	.header .intro .fullname {
+		font-size: 17px;
+	}
+
+	.header .intro .desc {
+		font-size: 20px;
+	}
+
+	.menu-item {
+        font-size: 20px;
+        width: 180px;
+		height: 50px;
+    }
+
+	.theme-4 {
+		margin-right: 5px;
+		float: right;
+	}
+
+	.theme-5 {
+		margin-left: 5px;
+	}
+	.roadmap .roadmap-img {
+		margin-left: 180px;
+		width: 80%;
+	}
+	.timeline {
+	    list-style: none;
+	    margin: 0 0 0px 250px;
+	    padding-left: 30px;
+	    border-left: 8px solid $whiteColor
+	}
+	.date {
+	    transform: translateX(0px);
+	}
+	.feature svg {
+		width: 60%;
+		height: 60%;
+	}
+}
+

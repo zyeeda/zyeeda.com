@@ -1,0 +1,14 @@
+@import '../../const';
+
+@media (min-width: $retinaMinWidth) {
+	.img-platform {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .img-develop {
+        width: 80%;
+    }
+    .title-item {
+        height: 53px;
+    }
+}

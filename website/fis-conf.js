@@ -1,6 +1,39 @@
 // fis.config.set('project.exclude', /^\/bower_components\//i);
 
+//项目排除掉_xxx.scss，这些属于框架文件，不用关心
+fis.config.set('project.exclude', '**/_*.scss');
+//scss后缀的文件，用fis-parser-sass插件编译
+fis.config.set('modules.parser.scss', 'sass');
+//scss文件产出为css文件
+fis.config.set('roadmap.ext.scss', 'css');
+
 fis.config.set('roadmap.path', [
+    //exclude htm 模板
+    {
+        reg: "**.htm",
+        release: false
+    },
+    // modules
+    {
+        id: 'main',
+        reg: 'modules/main.js',
+        release: 'modules/main.js'
+        // isMod: true
+    },
+    {
+        reg: /\/modules\/(.*)\/main.js/,
+        release: '/modules/$1/main.js',
+        requires: ['$1-xs.scss', '$1-sm.scss', '$1-md.scss', '$1-lg.scss'],
+        id: '$1'
+        // isMod : true
+
+    }, 
+    {
+        reg: /\/modules\/(.*)\/css\/(.*)/,
+        release: '/modules/$1/css/$2',
+        id: '$1-$2'
+    },
+
     // bootstrap
     {
         id: 'bootstrap',
@@ -30,18 +63,20 @@ fis.config.set('roadmap.path', [
         id: 'jquery',
         reg: '/bower_components/jquery/dist/jquery.js',
         release: '/scripts/vendors/jquery/jquery.js'
+        // isMod: true
     },
     {
         id: 'jquery.easing',
         reg: '/bower_components/jquery.easing/js/jquery.easing.js',
         release: '/scripts/vendors/jquery.easing/jquery.easing.js',
-        requires: ['jquery']
+        requires: ['jquery'],
+        // isMod: true
     },
     // skrollr
     {
         id: 'skrollr',
         reg: '/bower_components/skrollr/dist/skrollr.min.js',
-        release: 'release/scripts/vendors/skrollr/skrollr.js'
+        release: '/scripts/vendors/skrollr/skrollr.js'
     },
 
     // modernizr
@@ -75,12 +110,7 @@ fis.config.set('roadmap.path', [
         reg: 'bower.json',
         release: false
     },
-    // main
-    {
-        id: 'main',
-        reg: 'modules/main.js',
-        release: 'modules/main.js'
-    },
+
     // font
     {
         id: 'font.css',
@@ -90,18 +120,8 @@ fis.config.set('roadmap.path', [
     {
         reg: /\/font\/(.*)/,
         release: '/font/$1'
-    },
-    // index
-    {
-        id: 'index',
-        reg: 'modules/index/index.js',
-        release: 'modules/index/index.js',
-        requires: ['index.css']
-    }, {
-        id: 'index.css',
-        reg: '/modules/index/index.css',
-        release: '/modules/index/index.css'
     }
+    
 ]);
 // 插件与配置
 fis.config.merge({
@@ -120,6 +140,8 @@ fis.config.merge({
     }
 });
 
+
+
 fis.config.set('pack', {
     'pkg/lib.js': [
         '/scripts/vendors/jquery/**.js',
@@ -131,6 +153,7 @@ fis.config.set('pack', {
         '/scripts/vendors/skrollr/**.js'
     ]
 });
+
 
 //目录规范
 

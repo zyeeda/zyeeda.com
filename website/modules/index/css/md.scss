@@ -1,0 +1,15 @@
+@import '../../const';
+
+@media (min-width: $desktopMinWidth) {
+    .img-platform {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .img-develop {
+        width: 75%;
+    }
+    .title-item {
+        height: 49px;
+    }
+}
+

@@ -1,0 +1,101 @@
+@import '../../const';
+
+@media (min-width: $tabletMinWidth) {
+    .zh-desc {
+        font-size: 48px;
+    }
+    .en-desc {
+        font-size: 36px;
+    }
+
+    section h2 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .talent-h2 {
+        text-align: right;
+        padding-top: 0;
+    }
+
+    .img-platform {
+        width: 100%;
+        padding-left: 0px;
+
+    }
+    .img-develop {
+        width: 75%;
+    }
+    .img-gossip {
+        width: 100%;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .title-item {
+        height: 45px;
+    }
+    #platform .col-sm-6 h2, #platform .col-sm-6 p, #platform .col-sm-6 div {
+        text-align: right;
+        font-size: 20px !important;
+    }
+    .btn-lg, .btn-group-lg>.btn {
+        padding: 10px 50px;
+    }
+    .btn-green {
+        margin-top: 25px;
+        font-size: 20px;
+        color: #FFF;
+        border: solid 2px #FFF;
+        transition: all .3s ease-in-out;
+        color: #49CA94;
+        background: #FFF;
+    }
+    #scheme .col-sm-6 {
+        text-align: right;
+    }
+    #scheme .col-sm-6 h2, #scheme .col-sm-6 p, #scheme .col-sm-6 div {
+        text-align: left;
+        font-size: 20px !important;
+    }
+    .btn-blue {
+        margin-top: 25px;
+        font-size: 20px;
+        transition: all .3s ease-in-out;
+        border: solid 2px #49B1DF;
+        color: #FFF;
+        background: #49B1DF;
+    }
+    .warn {
+        background: url(/modules/index/img/orange-bg.svg) center bottom no-repeat, url(/modules/index/img/orange1px.png?__sprite);
+    }
+
+    .btn-orange {
+        margin-top: 25px;
+        font-size: 20px;
+        transition: all .3s ease-in-out;
+        border: solid 2px #FFF;
+        color: #FBB42F;
+        background: #FFF;
+    }
+
+    .service-info {
+        margin-top: 50px;
+    }
+
+    .img-services {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    #talent .align-left {
+        text-align: left;
+    }
+    #talent .align-right {
+        text-align: right;
+    }
+
+}

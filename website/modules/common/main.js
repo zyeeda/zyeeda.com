@@ -17,7 +17,8 @@ $(function() {
         $('body').css('overflow-y', 'auto');
         
         $('body').scrollspy({
-            target: '.navbar-fixed-top'
+            target: '.navbar-fixed-top',
+            selector: ''
         });
         
         // google-analytics

@@ -6,8 +6,22 @@ var changRemark = function(color) {
 	});
 }
 
+var c = 0;
+var t = undefined;
+var timedCount = function() {
+	if(c >= 5) {
+		stopCount();
+		$('.idea:first-child img').attr('src', '/modules/platform/img/thirty-seventy2.svg');
+	}
+	c += 5;
+	t = setTimeout("timedCount()", 5000);
+};
+
+var stopCount = function () {
+	clearTimeout(t);
+};
+
 $(function() {
-	$("#nav").addClass('show');
 	
 	changRemark("#BA84BB");
 	changRemark("#ED6A58");
@@ -18,4 +32,15 @@ $(function() {
 	changRemark("#65CAD0");
 	changRemark("#8CB743");
 	changRemark("#FECE69");
+
+	$('body').scrollspy({
+        target: '.platform-nav'
+    });
+
+
+	$(window).on('load', function() {
+		$("#nav").addClass('show');
+		timedCount();
+	});
 });
+

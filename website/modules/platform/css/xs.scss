@@ -27,11 +27,19 @@
 	}
 }
 
-.nav.platform {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 440px;
+.platform-nav {
+    // position: absolute;
+    // top: 440px;
+    // width: 90%;
+    // text-align: center;
+    // z-index:999;
+
+	.nav {
+		text-align: center;
+	}
+	.nav ul {
+		list-style: none;
+	}
 }
 
 .menu-item {
@@ -46,12 +54,31 @@
 }
 
 .menu-item:hover {
-	color: $whiteColor;
-	background-color: $nearGreenColor;
+	color: $nearGreenColor;
+	background-color: $whiteColor;
+}
+.platform-nav.skrollable-after {
+	height: 80px;
+	background-color: #FFF;
+	box-shadow: 0 1px #ececec;
+	
+	.menu-item {
+		border: 2px solid $nearGreenColor;
+		color: $nearGreenColor;
+	}
+	.menu-item:hover, .active .menu-item {
+		color: $whiteColor;
+		background-color: $nearGreenColor;
+	}	
 }
 
 .section.code {
-	min-height: 750px;
+	min-height: 630px;
+	color: $whiteColor;
+
+	p {
+		font-size: 16px;
+	}
 }
 
 .code .code-img {
@@ -60,52 +87,41 @@
 }
 
 .code.java {
-	background: url(../img/js.png) no-repeat 750px 60px, url(../img/deepblue1x.png);
-	background-size:500px 500px;
+	background: url(../img/java.png) no-repeat 75% 150px #ED6A58;
+	background-size:600px 400px;
+	// background-attachment: fixed;
 
-	background-attachment: fixed;
 }
 .code.js {
-	background: url(../img/java.png) no-repeat 750px 60px, url(../img/orange1px.png);
-	background-size:500px 500px;
-
+	background: url(../img/js.png) no-repeat 75% 150px #BA84BB;
+	background-size:600px 400px;
 	background-attachment: fixed;
 }
 
-.code.list {
-	background: url(../img/list.png) no-repeat 750px 60px, url(../img/deepblue1x.png);
-	background-size:500px 500px;
+.code.ui1 {
+	background: url(../img/ui1.png) no-repeat 75% 150px #ffa543;
+	background-size:600px 400px;
 	background-attachment: fixed;
 }
-.code.add {
-	background: url(../img/add.png) no-repeat 750px 60px, url(../img/orange1px.png);
-	background-size:500px 500px;
+.code.ui2 {
+	background: url(../img/ui2.png) no-repeat 75% 150px #0973BA;
+	background-size:600px 400px;
 	background-attachment: fixed;
 }
-.code.edit {
-	background: url(../img/edit.png) no-repeat 750px 60px, url(../img/deepblue1x.png);
-	background-size:500px 500px;
+.code.ui3 {
+	background: url(../img/ui3.png) no-repeat 75% 150px #65CAD0;
+	background-size:600px 400px;
 	background-attachment: fixed;
 }
-.code.show {
-	background: url(../img/show.png) no-repeat 750px 60px, url(../img/orange1px.png);
-	background-size:500px 500px;
+.code.ui4 {
+	background: url(../img/ui4.png) no-repeat 75% 150px #8CB743;
+	background-size:600px 400px;
 	background-attachment: fixed;
 }
-.code.del {
-	background: url(../img/del.png) no-repeat 750px 60px, url(../img/deepblue1x.png);
-	background-size:500px 500px;
+.code.ui5 {
+	background: url(../img/ui5.png) no-repeat 75% 150px #FECE69;
+	background-size:600px 400px;
 	background-attachment: fixed;
-}
-
-
-.header, .content {
-	background:#fff;
-	padding:1em;
-
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
 }
 
 .section.ideas {
@@ -311,17 +327,19 @@
 	margin-bottom: 30px;
 	width: 100%;
 }
+.roadmap .roadmap-img-div {
+	text-align: center;
+}
 
 .timeline {
     list-style: none;
-    margin: -40 0 0 120px;
     padding-left: 30px;
     border-left: 8px solid $whiteColor
 }
 
 
 .timeline li {
-    margin: 140px 0 0 0;
+    margin: 20px 0 0 0;
     position: relative
 }
 
@@ -351,12 +369,12 @@
 .circle {
     margin-top: -10px;
     top: 50%;
-    left: -43px;
+    left: -44px;
     width: 10px;
     height: 10px;
     background: $whiteColor;
     border: 5px solid $whiteColor;
-    border-radius: 50%;
+    // border-radius: 50%;
     display: block;
     position: absolute;
 
@@ -369,11 +387,14 @@
     border-color: transparent;
     border-width: 2px;
     border-style: solid;
-    // border-radius: 0.5em;
     position: relative;
     max-height: 300px;
-	max-width: 700px;
+	max-width: 380px;
+	height: 230px;
 }
+// .content.left {
+// 	position: absolute;
+// }
 .content:before, .content:after {
     content: "";
     width: 0;
@@ -423,7 +444,7 @@
     font-size: 20px;
     position: absolute;
     z-index: 100;
-    top: 20px;
+    top: 100px;
     // transition: transform 0.2s linear
 }
 
@@ -436,7 +457,7 @@
     background: $nearGreenColor;
 }
 .radio:checked ~ .content {
-    max-height: 300px;
+    max-height: 280px;
     border-color: $whiteColor;
     background-color: $whiteColor;
     margin-right: 20px;
@@ -446,7 +467,7 @@
     box-shadow: 0 2px $nearGreenColor;
 
     p {
-    	max-height: 300px;
+    	max-height: 280px;
     	color: #636363;
     	font-size: 16px;
     	transition: color 0.4s linear 0.5s

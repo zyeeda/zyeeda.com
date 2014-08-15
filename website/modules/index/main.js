@@ -5,11 +5,11 @@ var calBgHeight = function() {
 }
 
 $(function() {
-    calBgHeight();
+    // calBgHeight();
 
-    $(window).resize(function() {
-        calBgHeight();
-    });
+    // $(window).resize(function() {
+    //     calBgHeight();
+    // });
 
     var num = $(window).height() - 150;
 

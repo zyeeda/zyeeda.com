@@ -14,9 +14,10 @@
 	}
 
 	.menu-item {
-        font-size: 20px;
-        width: 180px;
-		height: 50px;
+		padding: 6px 0;
+        font-size: 18px;
+        width: 120px;
+		height: 40px;
     }
 
 	.theme-4 {
@@ -28,17 +29,9 @@
 		margin-left: 5px;
 	}
 	.roadmap .roadmap-img {
-		width: 80%;
+		width: 70%;
 	}
-	.timeline {
-	    list-style: none;
-	    margin: 0 0 0 550px;
-	    padding-left: 30px;
-	    border-left: 8px solid $whiteColor
-	}
-	.date {
-	    transform: translateX(0px);
-	}
+	
 	.feature svg {
 		width: 60%;
 		height: 60%;

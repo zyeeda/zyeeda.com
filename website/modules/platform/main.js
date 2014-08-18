@@ -9,7 +9,7 @@ var changRemark = function(color) {
 var c = 0;
 var t = undefined;
 var timedCount = function() {
-	if(c >= 5) {
+	if(c >= 20) {
 		stopCount();
 		$('.idea:first-child img').attr('src', '/modules/platform/img/thirty-seventy2.svg');
 	}
@@ -37,9 +37,9 @@ $(function() {
         target: '.platform-nav'
     });
 
-
 	$(window).on('load', function() {
-		$("#nav").addClass('show');
+		$("#nav").addClass('show').css('position', 'absolute');
+		$('#nav li a[href="#qualifications"]').attr('href', '/');
 		timedCount();
 	});
 });

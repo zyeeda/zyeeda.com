@@ -37,7 +37,7 @@ p {
 .navbar-default {
     border-bottom: #ececec solid 1px;
     background-color: #ffffff;
-
+    padding: 0;
     -webkit-transform: translate(0, -100%) translateZ(0);
     -ms-transform: translate(0, -100%) translateZ(0);
     transform: translate(0, -100%) translateZ(0); 
@@ -51,7 +51,7 @@ p {
     box-shadow: 0 1px #ececec;
     -webkit-transform: translate(0, 0) translateZ(0);
     -ms-transform: translate(0, 0) translateZ(0);
-    transform: translate(0, 0) translateZ(0); 
+    transform: translate(0, 0) translateZ(0);
 }
 
 .navbar-default .navbar-brand {
@@ -62,12 +62,12 @@ p {
     color: #636363;
     border-bottom: 3px solid #FFFFFF;
 }
-.navbar-fixed-top {
-    padding: 0;
-}
-.navbar-fixed-top.navbar-shrink {
-    padding: 0;
-}
+// .navbar-fixed-top {
+//     padding: 0;
+// }
+// .navbar-fixed-top.navbar-shrink {
+//     padding: 0;
+// }
 
 .navbar-default .navbar-toggle {
     background-color: #1a242f;

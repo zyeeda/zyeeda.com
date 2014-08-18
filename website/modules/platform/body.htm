@@ -13,7 +13,7 @@
                 </div>
             </div>
             
-            <div class="platform-nav" data-0="position: static;width: 100%;" data-415="position:fixed;top:32px;left: 0px;width: 100%; z-index: 999;background-color: #000;">
+            <div class="platform-nav" data-0="position: static;width: 100%;" data-415="position:fixed;top:0px;left: 0px;width: 100%; z-index: 999;background-color: #000;">
                 <div class="container">
                     <div class="row nav">
                         <ul>
@@ -162,11 +162,6 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3 idea">
-                <div><img src="img/thirty-seventy.svg" /></div>
-                <div class="zh_name">三七原则</div>
-                <div class="en_name">Thirty:Seventy</div>
-            </div>
-            <div class="col-sm-3 idea">
                 <div><img src="img/donot-think.svg" /></div>
                 <div class="zh_name">莫使我想</div>
                 <div class="en_name">Dont"t Make Me Think</div>
@@ -180,6 +175,11 @@
             <div><img src="img/less-is-more.svg" /></div>
                 <div class="zh_name">少即是多</div>
                 <div class="en_name">Less Is More</div>
+            </div>
+            <div class="col-sm-3 idea">
+                <div><img src="img/thirty-seventy.svg" /></div>
+                <div class="zh_name">三七原则</div>
+                <div class="en_name">Thirty:Seventy</div>
             </div>
         </div>
     </div>
@@ -333,12 +333,12 @@
             <div class="col-sm-12">
                 <div class="roadmap-img-div"><img class="roadmap-img" src="img/roadmap.svg" /></div>
                 <ul class="timeline">
-                    <li class="work">
+                    <li class="work left">
                         <input class="radio" id="nearwork" name="works" type="checkbox" checked>
                         <div class="relative">
-                            <label for="nearwork" class="labelbox">近期</label>
-                            <label for="nearwork" class="date">近期</label>
-                            <label for="nearwork" class="circle"></label>
+                            <!-- <label for="nearwork" class="labelbox">近期</label> -->
+                            <div class="date">近期</div>
+                            <div class="circle"></div>
                         </div>
                         <div class="content">
                             <div class="row">
@@ -359,14 +359,14 @@
                             </div>
                         </div>
                     </li>
-                    <li class="work">
+                    <li class="work right">
                         <input class="radio" id="midwork" name="works" type="checkbox" checked>
                         <div class="relative">
-                            <label for="midwork" class="labelbox">中期</label>
-                            <label for="midwork" class="date">中期</label>
-                            <label for="midwork" class="circle"></label>
+                            <!-- <label for="midwork" class="labelbox">中期</label> -->
+                            <div class="date">中期</div>
+                            <div class="circle"></div>
                         </div>
-                        <div class="content left">
+                        <div class="content">
                             <div class="row">
                                 <div class="col-sm-4 center">
                                     <p><img class="icon" src="img/midwork.png" /></p>
@@ -383,12 +383,12 @@
                             </div>
                         </div>
                     </li>
-                    <li class="work">
+                    <li class="work left">
                         <input class="radio" id="longwork" name="works" type="checkbox" checked>
                         <div class="relative">
-                            <label for="longwork" class="labelbox">长期</label>
-                            <label for="longwork" class="date">长期</label>
-                            <label for="longwork" class="circle"></label>
+                            <!-- <label for="longwork" class="labelbox">长期</label> -->
+                            <div class="date">长期</div>
+                            <div class="circle"></div>
                         </div>
                         <div class="content">
                             <div class="row">

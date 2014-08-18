@@ -83,6 +83,7 @@ header .intro-text .name {
     color: #ddd;
     background-color: #1a242f;
     border-color: #1a242f;
+    border-radius: 0;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
@@ -122,14 +123,17 @@ section.success {
 .anijs-orange {
     font-size: 140%;
     color: #FBB42F;
+    border-radius: 0;
 }
 .anijs-blue {
     font-size: 140%;
     color: #49B1DF;
+    border-radius: 0;
 }
 .anijs-green {
     font-size: 140%;
     color: #49CA94;
+    border-radius: 0;
 }
 
 #qualifications {
@@ -339,6 +343,7 @@ section.success {
     border: solid 2px #FFF;
     color: #49CA94;
     background: #FFF;
+    border-radius: 0;
 }
 #scheme .col-sm-6 {
     text-align: center;
@@ -351,6 +356,7 @@ section.success {
     border: solid 2px #49B1DF;
     color: #FFF;
     background: #49B1DF;
+    border-radius: 0;
 }
 
 section h2 {
@@ -377,6 +383,7 @@ section h2 {
     border: solid 2px #FFF;
     color: #FBB42F;
     background: #FFF;
+    border-radius: 0;
 }
 
 .service-info {

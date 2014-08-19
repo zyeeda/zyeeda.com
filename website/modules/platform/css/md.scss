@@ -12,5 +12,33 @@
 	.header .intro .desc {
 		font-size: 18px;
 	}
+
+	.platform-nav li {
+		margin: 0 16px;
+	}
+
+	.menu-item {
+		padding: 5px 0;
+        font-size: 17px;
+        width: 140px;
+		height: 36px;
+    }
+
+    .platform-nav .nav {
+		ul {
+			margin: 8px 10px;
+		}
+		li {
+			margin: 0 10px;
+		}
+	}
+
+	.menu-item {
+		padding: 5px 0;
+        font-size: 17px;
+        width: 140px;
+		height: 36px;
+    }
+	
 }
 

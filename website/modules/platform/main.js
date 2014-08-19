@@ -11,7 +11,7 @@ var t = undefined;
 var timedCount = function() {
 	if(c >= 20) {
 		stopCount();
-		$('.idea:first-child img').attr('src', '/modules/platform/img/thirty-seventy2.svg');
+		$('.idea:last-child img').attr('src', '/modules/platform/img/thirty-seventy2.svg');
 	}
 	c += 5;
 	t = setTimeout("timedCount()", 5000);
@@ -22,7 +22,6 @@ var stopCount = function () {
 };
 
 $(function() {
-	
 	changRemark("#BA84BB");
 	changRemark("#ED6A58");
 	changRemark("#62ACC5");

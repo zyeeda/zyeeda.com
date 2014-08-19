@@ -99,12 +99,23 @@ fis.config.set('roadmap.path', [
         reg: 'bower_components/mod/mod.js',
         release: '/scripts/vendors/mod/mod.js'
     },
+    // classie 
+    {   
+        id: 'classie',
+        reg: 'bower_components/classie/classie.js',
+        release: '/scripts/vendors/classie/classie.js'
+    },
+    //prelaoding
+    {
+        id: 'preloading',
+        reg: '/modules/common/preloading.js',
+        release: '/modules/common/preloading.js'
+    },
     // exclude bower_components
     {
         reg: '/bower_components/**',
         release: false
     },
-
     // exclude bower.json
     {
         reg: 'bower.json',

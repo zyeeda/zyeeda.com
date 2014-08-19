@@ -16,9 +16,28 @@
 	.menu-item {
 		padding: 6px 0;
         font-size: 18px;
-        width: 120px;
+        width: 150px;
 		height: 40px;
     }
+    .platform-nav li {
+		margin: 0 18px;
+	}
+
+	.menu-item {
+		padding: 6px 0;
+        font-size: 18px;
+        width: 150px;
+		height: 40px;
+    }
+
+    .platform-nav .nav {
+		ul {
+			margin: 5px 15px;
+		}
+		li {
+			margin: 0 15px;
+		}
+	}
 
 	.theme-4 {
 		margin-right: 5px;

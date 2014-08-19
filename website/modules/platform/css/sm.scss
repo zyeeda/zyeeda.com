@@ -12,5 +12,27 @@
 	.header .intro .desc {
 		font-size: 17px;
 	}
+	
+	.platform-nav .nav {
+		ul {
+			margin: 10px 8px;
+		}
+		li {
+			margin: 0 8px;
+		}
+	}
 
+	.menu-item {
+		padding: 4px 0;
+        font-size: 16px;
+        width: 120px;
+		height: 32px;
+		border: solid 2px $whiteColor;
+    }
+
+    .platform-nav.skrollable-after {
+		.menu-item {
+			border: 2px solid $nearGreenColor;
+		}
+	}
 }

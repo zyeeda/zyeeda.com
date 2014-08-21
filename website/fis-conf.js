@@ -105,6 +105,12 @@ fis.config.set('roadmap.path', [
         reg: 'bower_components/classie/classie.js',
         release: '/scripts/vendors/classie/classie.js'
     },
+    //snap
+    {
+        id: 'snap',
+        reg: 'bower_components/Snap.svg/dist/snap.svg.js',
+        release: '/scripts/vendors/snap.svg/snap.svg.js'
+    },
     //prelaoding
     {
         id: 'preloading',

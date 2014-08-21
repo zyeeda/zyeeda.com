@@ -16,8 +16,6 @@ $(function() {
         scrollEvent(this, event);
     });
 
-    skrollr.init({smoothScrolling: false, mobileDeceleration: 0.004 });
-
     $(window).on('load', function() {
         // $('.loading').hide();
         // $('body').css('overflow-y', 'auto');
@@ -46,5 +44,10 @@ $(function() {
 
 });
 
-
+var changeNav = function() {
+    $("#nav").addClass('show').css('position', 'absolute');
+    $('#nav li a[href="#qualifications"]').attr('href', '/');
+    $('#nav li a[href="#platform"]').attr('href', 'platform.html');
+    $('#nav li a[href="#scheme"]').attr('href', 'scheme.html');
+}
 

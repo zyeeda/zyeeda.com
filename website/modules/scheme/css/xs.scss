@@ -1,0 +1,167 @@
+@import '../../const';
+
+.header.scheme{
+	background: url('../img/header-bg.png') no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	min-height: 550px;
+}
+
+.header .intro {
+	min-height: 350px;
+	text-align: center;
+	margin-top: 100px;
+	font-family: "Noto Sans S Medium";
+	color: $whiteColor;
+
+	.name {
+		font-size: 38px;
+	}
+
+	.fullname {
+		font-size: 14px;
+	}
+	.desc {
+		font-size: 16px;
+		margin-top: 30px;
+	}
+}
+
+@mixin title-desc ($h2Color, $divColor) {
+    h2 {
+		font-family: "Noto Sans S Medium";
+		font-size: 36px;
+		color: $h2Color;
+	}
+	div {
+		font-family: "Noto Sans S Regular";
+		font-size: 18px;
+		color: $divColor;
+		margin-top: 20px;
+	}
+}
+
+.section.solutions {
+	min-height: 600px;
+	color: #81868c;
+
+	.solutions-title {
+		text-align: center;
+		@include title-desc(#565656, #8b8b8b);
+		a {
+			text-decoration: none;
+			color: #468cb5;
+		}
+	}
+
+	.solution {
+		margin-top: 100px;
+		padding-top: 50px;
+		display: none;
+
+		.solution-title {
+			font-family: "Noto Sans S Medium";
+			font-size: 30px;
+			margin-left: 30px;
+			vertical-align: middle;
+		}
+
+		p {
+			font-family: "Noto Sans S Regular";
+			font-size: 18px;
+			margin-top: 60px;
+			line-height: 40px;
+			color: #81868c;
+		}
+	}
+
+	.solutions-svg {
+		margin-top: 40px;
+		svg {
+			width: 90%;
+		}
+
+		path, polyline, polygon {
+			cursor: pointer;
+		}
+
+	}
+
+	.solution1 {
+		color: #96A854;
+	}
+	.solution2 {
+		color: #00A89B;
+	}
+	.solution3 {
+		color: #67C4C9;
+	}
+	.solution4 {
+		color: #F8B421;
+	}
+	.solution5 {
+		color: #EB6112;
+	}
+	.solution6 {
+		color: #00A999;
+	}
+	.solution7 {
+		color: #7E87C1;
+	}
+	.solution8 {
+		color: #269FC2;
+
+	}
+	.solution9 {
+		color: #6CC7EF;
+	}
+}
+
+
+.section.remark {
+	background-color: #37536b;
+	color: $whiteColor;
+	font-size: 22px;
+	line-height: 32px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+	.desc {
+		@include title-desc(#FFF, #FFF);
+	}
+}
+
+.section.manager {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	min-height: 600px;
+	// background-color: #eaf5f8;
+	@include title-desc(#37536b, #37536b);
+}
+
+.manager.manager1 {
+    background: url(../img/manager1.svg) no-repeat center bottom #ed6a58;
+    // background-attachment: fixed;
+}
+.manager.manager2 {
+    background: url(../img/manager2.svg) no-repeat center bottom #ffa543;
+    background-attachment: fixed;
+}
+.manager.manager3 {
+    background: url(../img/manager3.svg) no-repeat center bottom #0973ba;
+    background-attachment: fixed;
+}
+.manager.manager4 {
+    background: url(../img/manager4.svg) no-repeat center bottom #65cad0;
+    background-attachment: fixed;
+}
+.manager.manager5 {
+    background: url(../img/manager5.svg) no-repeat center bottom #8cb743;
+    background-attachment: fixed;
+}
+.manager.manager6 {
+    background: url(../img/manager6.svg) no-repeat center bottom #fece69;
+    background-attachment: fixed;
+}

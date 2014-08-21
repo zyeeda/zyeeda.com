@@ -136,6 +136,20 @@ p {
     background-color: #FFFFFF;
 }
 
+.btn-primary {
+    color: #ddd;
+    background-color: #1a242f;
+    border-color: #1a242f;
+    border-radius: 0;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    background-color: #8fb03e;
+    border-color: #8fb03e;
+}
+
+
 .scroll-top {
     z-index: 1049;
     position: fixed;

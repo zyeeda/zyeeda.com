@@ -26,5 +26,5 @@ $(function() {
 
     $(window).on('load', function() {
         $('#index-effect').removeClass('effect-small').addClass('effect-lager');
-    })
+    });
 });

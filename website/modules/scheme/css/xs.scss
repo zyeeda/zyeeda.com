@@ -139,29 +139,11 @@
 	min-height: 600px;
 	// background-color: #eaf5f8;
 	@include title-desc(#37536b, #37536b);
-}
 
-.manager.manager1 {
-    background: url(../img/manager1.svg) no-repeat center bottom #ed6a58;
-    // background-attachment: fixed;
-}
-.manager.manager2 {
-    background: url(../img/manager2.svg) no-repeat center bottom #ffa543;
-    background-attachment: fixed;
-}
-.manager.manager3 {
-    background: url(../img/manager3.svg) no-repeat center bottom #0973ba;
-    background-attachment: fixed;
-}
-.manager.manager4 {
-    background: url(../img/manager4.svg) no-repeat center bottom #65cad0;
-    background-attachment: fixed;
-}
-.manager.manager5 {
-    background: url(../img/manager5.svg) no-repeat center bottom #8cb743;
-    background-attachment: fixed;
-}
-.manager.manager6 {
-    background: url(../img/manager6.svg) no-repeat center bottom #fece69;
-    background-attachment: fixed;
+	.svc {
+		display: none;
+	}
+	.group {
+		min-height: 250px;
+	}
 }

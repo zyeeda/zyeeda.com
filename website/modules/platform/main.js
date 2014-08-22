@@ -37,7 +37,9 @@ $(function() {
     });
 
 	$(window).on('load', function() {
-		changeNav();
+		$("#nav").addClass('show').css('position', 'absolute');
+
+		console.log();
 		timedCount();
 	});
 

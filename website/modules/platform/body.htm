@@ -3,16 +3,16 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro">
-                    <div class="name">Zyeeda CDE</div>
-                    <div class="fullname">Introduction to Zyeeda Common Development Environment </div>
+                    <div class="name">Zyeeda Cdeio</div>
+                    <!--<div class="fullname">Zyeeda Common Development Environment </div>-->
                     <div class="desc">
-                        Zyeeda CDE 是一套面向快速构建的企业级应用开发平台。在 Java 环境下，融合了众多优秀的<br />
-                        框架和组件，以良好的设计、统一的封装、精简的 API 及友好的界面，让开发人员能够以不可思<br />
-                        议的速度构建复杂的企业级应用程序。
+                        Zyeeda Cdeio 是一款面向快速构建的企业级应用开发平台。在 Java 环境下，她融合了众多优秀的<br />
+                        组件与框架，以良好的设计、统一的封装、精简的 API 及完整定义的界面，让开发人员能够以意想<br />
+                        不到的速度创建复杂的企业级应用程序。
                     </div>
                 </div>
             </div>
-            
+
             <div class="platform-nav" data-0="position: static;width: 100%;" data-450="position:fixed;top:0px;left: 0px;width: 100%; z-index: 999;background-color: #000;">
                     <div class="nav">
                         <ul>
@@ -43,15 +43,19 @@
 <section id="p_code" class="section code java" data-0="background-attachment:inherit;" data-top-top="background-attachment:fixed;top:600px;" data-edge-strategy="set">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <h2>面向实体编程</h2>
+            <div class="col-sm-5">
+                <br />
+                <br />
+                <h2>定义实体</h2>
                 <p>
-                系统开发过程中，有大量工作是繁琐且重复的，开发人员<br />
-                纠结于各种实现细节而无法集中精力解决真正的业务问题。<br />
+                    使用 Zyeeda Cdeio 进行开发是从定义实体开始的。与大多数流行的 Java 框架类似，Zyeeda Cdeio 也是基于 Java Persistence API (JPA) 标准来实现数据可持久化的。<br />
+                    <br />
+                    但与众不同的是，Zyeeda Cdeio 为开发者提供了强大而可扩展的自动生成能力，通过在实体类上添加 @Scaffold 标记，平台会根据一些配置为该实体生成诸如列表、新增、编辑、删除和查看等常用功能的前端界面和后端业务逻辑。
                 </p>
             </div>
+            <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                
+
             </div>
         </div>
     </div>
@@ -61,15 +65,19 @@
 <section class="section code js">
     <div class="container">
         <div class="row">
-             <div class="col-sm-6">
-                <h2>动态脚手架</h2>
+            <div class="col-sm-5">
+                <br />
+                <br />
+                <h2>添加配置</h2>
                 <p>
-                系统开发过程中，有大量工作是繁琐且重复的，开发人员<br />
-                纠结于各种实现细节而无法集中精力解决真正的业务问题。<br />
+                    Zyeeda Cdeio 的自动生成功能需要一些额外的配置，这些配置以类似 DSL 风格的语法来编写，主要用于描述实体类定义中缺失的内容。<br />
+                    <br />
+                    scaffold.js 是配合自动生成功能使用的重要文件之一，这其中可以定义后端到前端的数据序列化规则，实体字段在页面上显示的名称，以及与表单有关的字段分组和布局信息等等。
                 </p>
             </div>
+            <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                
+
             </div>
         </div>
     </div>
@@ -78,79 +86,101 @@
 <section class="section code ui1">
     <div class="container">
         <div class="row">
-             <div class="col-sm-6">
-                <h2>列表展示界面</h2>
+            <div class="col-sm-5">
+                <br />
+                <br />
+                <h2>That's all. Let's rock!</h2>
                 <p>
-                系统开发过程中，有大量工作是繁琐且重复的，开发人员<br />
-                纠结于各种实现细节而无法集中精力解决真正的业务问题。<br />
+                    只需要这些，Zyeeda Cdeio 就可以为你生成全套的基本功能！<br />
+                    <br />
+                    列表界面是操作实体数据的主要入口，默认由按钮栏、分页栏、表头和表体组成。可以通过在 scaffold.js 中添加其它配置，为列表界面定制新的功能。
                 </p>
             </div>
+            <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                
+
             </div>
         </div>
     </div>
 </section>
+
 <section class="section code ui2">
     <div class="container">
         <div class="row">
-             <div class="col-sm-6">
+            <div class="col-sm-5">
+                <br />
+                <br />
                 <h2>新增界面</h2>
                 <p>
-                系统开发过程中，有大量工作是繁琐且重复的，开发人员<br />
-                纠结于各种实现细节而无法集中精力解决真正的业务问题。<br />
+                    正如你所想象的，Zyeeda Cdeio 会为你准备好新增数据所需的界面。<br />
+                    <br />
+                    在深入了解 Zyeeda Cdeio 的高级功能之后会发现，这样的表单可以实现得非常复杂：包括各种字段类型及验证、自由多变的布局风格，内联的数据列表以及相互嵌套的表单等等。一定可以满足你对表单界面的各种需求。
                 </p>
             </div>
+            <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                
+
             </div>
         </div>
     </div>
 </section>
+
 <section class="section code ui3">
     <div class="container">
         <div class="row">
-             <div class="col-sm-6">
-                <h2>填写表单确定</h2>
+            <div class="col-sm-5">
+                <br />
+                <br />
+                <h2>不只有界面</h2>
                 <p>
-                系统开发过程中，有大量工作是繁琐且重复的，开发人员<br />
-                纠结于各种实现细节而无法集中精力解决真正的业务问题。<br />
+                    Zyeeda Cdeio 不单单能生成符合要求的表单，而且相关的前后端逻辑也是一并完整可用的。直接在界面上输入信息，点击确定，数据就会被写入数据库。<br />
                 </p>
             </div>
+            <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                
+
             </div>
         </div>
     </div>
 </section>
+
 <section class="section code ui4">
     <div class="container">
         <div class="row">
-             <div class="col-sm-6">
-                <h2>选中数据后的列表</h2>
+            <div class="col-sm-5">
+                <br />
+                <br />
+                <h2>让我们继续摇滚</h2>
                 <p>
-                系统开发过程中，有大量工作是繁琐且重复的，开发人员<br />
-                纠结于各种实现细节而无法集中精力解决真正的业务问题。<br />
+                    列表界面会在新增数据之后刷新。<br />
+                    <br />
+                    选中一条数据，按钮栏会发生变化，多出来的按钮表示了针对该条数据可以进行的操作。这些功能操作都是真实有效地，而且也都是自动生成的，不需要任何多余的代码。<br />
+                    <br />
+                    按钮栏上的按钮也可以根据需要来定制，无论是去掉默认的，增添新功能的，改变按钮的文字、图标、颜色、分组和排序等等都是可以实现的。甚至按钮在什么状态下会隐藏或显示也可以由你来随意控制。
                 </p>
             </div>
+            <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                
+
             </div>
         </div>
     </div>
 </section>
+
 <section class="section code ui5" >
     <div class="container">
         <div class="row">
-             <div class="col-sm-6">
-                <h2>查看界面</h2>
+            <div class="col-sm-5">
+                <h2>比你想象的更精彩</h2>
                 <p>
-                系统开发过程中，有大量工作是繁琐且重复的，开发人员<br />
-                纠结于各种实现细节而无法集中精力解决真正的业务问题。<br />
+                    Zyeeda Cdeio 就是这样的一个平台：她的开发速度非常之快。<br />
+                    <br />
+                    虽说“天下武功，唯快不破”，但“快”毕竟只解决了效率问题，而作为一个企业级应用开发平台还需要很多功能方面的支持。Zyeeda Cdeio 在这方面也做了很多努力，可以方便的实现很多复杂的业务逻辑，但这个中的精彩就只能有待给位看官自行揭开了。
                 </p>
             </div>
+            <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                
+
             </div>
         </div>
     </div>
@@ -169,12 +199,13 @@
                         </div>
                         <div class="info-container">
                             <div class="info">
-                                <h3>title</h3>
-                                <p>content</p>
+                                <h3>Don't Make Me Think</h3>
+                                <p>使用 Zyeeda Cdeio 的人不会因为平台本身而陷入无休止的思考</p>
                             </div>
                         </div>
-                        <div class="zh_name">莫使我想</div>
-                        <div class="en_name">Dont't Make Me Think</div>
+                        <div class=""></div>
+                        <div class="zh_name">莫让我想</div>
+                        <!--<div class="en_name">Dont't Make Me Think</div>-->
                     </a>
                 </div>
             </div>
@@ -188,12 +219,12 @@
                         </div>
                         <div class="info-container">
                             <div class="info">
-                                <h3>title</h3>
-                                <p>content</p>
+                                <h3>One Way to Rome</h3>
+                                <p>统一的语言，统一的接口，统一的结构。在 Zyeeda Cdeio 的约束下，实现任何功能都只有唯一途径</p>
                             </div>
                         </div>
                         <div class="zh_name">唯一途径</div>
-                        <div class="en_name">One</div>
+                        <!--<div class="en_name">One</div>-->
                     </a>
                 </div>
             </div>
@@ -207,12 +238,12 @@
                         </div>
                         <div class="info-container">
                             <div class="info">
-                                <h3>title</h3>
-                                <p>content</p>
+                                <h3>Less Is More</h3>
+                                <p>Zyeeda Cdeio 的封装使得开发人员能够用最少的代码编写最多的功能</p>
                             </div>
                         </div>
                         <div class="zh_name">少即是多</div>
-                        <div class="en_name">Less Is More</div>
+                        <!--<div class="en_name">Less Is More</div>-->
                     </a>
                 </div>
             </div>
@@ -226,12 +257,12 @@
                         </div>
                         <div class="info-container">
                             <div class="info">
-                                <h3>title</h3>
-                                <p>content</p>
+                                <h3>30 : 70</h3>
+                                <p>在 Zyeeda Cdeio 能力的支撑下，可以仅用 30% 的开发时间来完成 70% 的业务功能</p>
                             </div>
                         </div>
                         <div class="zh_name">三七原则</div>
-                        <div class="en_name">Thirty:Seventy</div>
+                        <!--<div class="en_name">Thirty:Seventy</div>-->
                     </a>
                 </div>
             </div>
@@ -277,7 +308,7 @@
                         </div>
                     </a>
                 </div>
-                
+
             </div>
             <div class="col-sm-4">
                 <div class="ih-item square colored effect15 bottom_to_top">
@@ -477,3 +508,4 @@
 </section>
 
 <link rel="import" href="/modules/common/footer.htm?__inline" />
+                                <h3>莫让我想</h3>

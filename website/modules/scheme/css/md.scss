@@ -1,0 +1,18 @@
+@import '../../const';
+
+@media (min-width: $desktopMinWidth) {
+	.header .intro .name {
+		font-size: 42px;
+	}
+
+	.header .intro .fullname {
+		font-size: 16px;
+	}
+
+	.header .intro .desc {
+		font-size: 18px;
+	}
+
+	
+}
+

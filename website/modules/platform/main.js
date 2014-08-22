@@ -38,8 +38,11 @@ $(function() {
 
 	$(window).on('load', function() {
 		$("#nav").addClass('show').css('position', 'absolute');
-		$('#nav li a[href="#qualifications"]').attr('href', '/');
+
+		console.log();
 		timedCount();
 	});
+
+	skrollr.init({smoothScrolling: false, mobileDeceleration: 0.004 });
 });
 

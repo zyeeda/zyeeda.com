@@ -11,12 +11,29 @@
 </head>
 <body>
     <div id="allmap"></div>
+
 </body>
 </html>
 <script type="text/javascript">
+    function G(id) {
+        return document.getElementById(id);
+    }
+
     /** 百度地图API功能 **/
     var map = new BMap.Map("allmap");            // 创建Map实例
     var point = new BMap.Point(114.129208, 22.549973); // 创建点坐标
-    map.centerAndZoom(point,15);                 // 初始化地图,设置中心点坐标和地图级别。
+    map.centerAndZoom(point, 18);                 // 初始化地图,设置中心点坐标和地图级别。
     map.enableScrollWheelZoom();                 //启用滚轮放大缩小
+
+    map.addControl(new BMap.NavigationControl());    
+    map.addControl(new BMap.ScaleControl());    
+    map.addControl(new BMap.OverviewMapControl());    
+    map.addControl(new BMap.MapTypeControl());    
+    map.setCurrentCity("深圳"); // 仅当设置城市信息时，MapTypeControl的切换功能才能可用
+
+    var marker = new BMap.Marker(point);        // 创建标注    
+    map.addOverlay(marker);                     // 将标注添加到地图中
+    
+    
 </script>
+

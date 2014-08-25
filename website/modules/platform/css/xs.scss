@@ -535,7 +535,7 @@
 // end VerticalTimeline css
 
 
-//ihover.css modify of c8 s15
+//ihover.css modify of c13 s6
 .ih-item {
   position: relative;
   -webkit-transition: all 0.35s ease-in-out;
@@ -614,7 +614,7 @@
 }
 .ih-item.circle.effect13.colored .info {
   background: #1a4a72;
-  background: rgba(26, 74, 114, 0.6);
+  background: rgba(26, 74, 114, 0.8);
 }
 .ih-item.circle.effect13 .info {
   background: #333333;
@@ -642,11 +642,11 @@
 }
 .ih-item.circle.effect13 .info p {
   visibility: hidden;
-  color: #bbb;
+  color: #fff;
   padding: 10px 5px;
   font-style: italic;
   margin: 0 30px;
-  font-size: 12px;
+  font-size: 13px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -757,6 +757,26 @@
   background: #1a4a72;
   background: rgba(26, 74, 114, 0.6);
 }
+
+.ih-item.square.effect6.colored-1 .info {
+  background: #398a99;
+}
+.ih-item.square.effect6.colored-2 .info {
+  background: #2bb8d6;
+}
+.ih-item.square.effect6.colored-3 .info {
+  background: #f1bb66;
+}
+.ih-item.square.effect6.colored-4 .info {
+  background: #8fc354;
+}
+.ih-item.square.effect6.colored-5 .info {
+  background: #ef8f3e;
+}
+.ih-item.square.effect6.colored-6 .info {
+  background: #296781;
+}
+
 .ih-item.square.effect6.colored .info h3 {
   background: rgba(12, 34, 52, 0.6);
 }
@@ -772,7 +792,7 @@
 }
 .ih-item.square.effect6 .info {
   background: #333333;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.35s ease-in-out;
@@ -786,16 +806,16 @@
   font-size: 17px;
   padding: 10px;
   background: #111111;
-  margin: 30px 0 0 0;
+  margin: 21px 0 0 0;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 .ih-item.square.effect6 .info p {
   font-style: italic;
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
-  color: #bbb;
+  color: #fff;
   padding: 20px 20px 20px;
   text-align: center;
   -webkit-transition: all 0.35s 0.1s linear;

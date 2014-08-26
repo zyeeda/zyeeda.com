@@ -1,6 +1,6 @@
-var changRemark = function(color) {
+var changPRemark = function(color) {
 	$('.feature path[fill="' + color + '"]').on('click', function() {
-		$('.section.remark').css('background-color', color);
+		$('.section.premark').css('background-color', color);
 		$('.section .desc').hide();
 		$('.section div[data-fill="' + color + '"]').show();
 	});
@@ -22,15 +22,15 @@ var stopCount = function () {
 };
 
 $(function() {
-	changRemark("#BA84BB");
-	changRemark("#ED6A58");
-	changRemark("#62ACC5");
-	changRemark("#0973BA");
-	changRemark("#FFA543");
-	changRemark("#828385");
-	changRemark("#65CAD0");
-	changRemark("#8CB743");
-	changRemark("#FECE69");
+	changPRemark("#BA84BB");
+	changPRemark("#ED6A58");
+	changPRemark("#62ACC5");
+	changPRemark("#0973BA");
+	changPRemark("#FFA543");
+	changPRemark("#828385");
+	changPRemark("#65CAD0");
+	changPRemark("#8CB743");
+	changPRemark("#FECE69");
 
 	$('body').scrollspy({
         target: '.platform-nav'

@@ -30,7 +30,7 @@ header img {
 
 /* fix.css */
 header {
-    background: url("/modules/index/img/big-bg.jpg?__sprite") center center no-repeat;
+    background: url("../img/big-bg.jpg?__inline") center center no-repeat;
     background-size: cover;
 }
 
@@ -81,7 +81,7 @@ header .intro-text .name {
 }
 
 section.success {
-    background: url("/modules/index/img/green-bg.png?__sprite") repeat-x;
+    background: url("../img/green-bg.png?__inline") repeat-x;
 }
 
 .info img {
@@ -313,12 +313,12 @@ section.success {
     transform: rotate(90deg);
 }
 .title-item {
-    height: 41px;
+    margin-bottom: 41px;
 }
 #platform .col-sm-6 {
     text-align: center;
 }
-#platform .col-sm-6 h2, #platform .col-sm-6 p, #platform .col-sm-6 div {
+#platform .col-sm-6 p, #platform .col-sm-6 div {
     font-size: 18px !important;
 }
 .btn-lg, .btn-group-lg>.btn {

@@ -39,6 +39,7 @@ fis.config.set('roadmap.path', [
         id: 'bootstrap',
         reg: '/bower_components/bootstrap/dist/js/bootstrap.js',
         release: '/scripts/vendors/bootstrap/bootstrap.js',
+        // requires: ['bootstrap.min.css', 'jquery']
         requires: ['bootstrap.min.css', 'font.css', 'jquery']
     }, {
         id: 'bootstrap.min.css',
@@ -225,4 +226,4 @@ fis.config.set('roadmap.domain', 'http://127.0.0.1:8080');
 // fis.config.set('settings.lint.jshint.ignored', [ 'lib/**', /jquery|backbone|underscore/i ]);
 
 //csssprite处理时图片之间的边距，默认是3px
-// fis.config.set('settings.spriter.csssprites.margin', 20);
+fis.config.set('settings.spriter.csssprites.margin', 20);

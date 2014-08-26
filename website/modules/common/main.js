@@ -9,8 +9,10 @@ var scrollEvent = function(me, evt) {
 $(function() {
 
     $('.page-scroll a').bind('click', function(event) {
-        location.href = $(this).data('url');
-        //scrollEvent(this, event);
+        if($(this).data('url')) {
+            location.href = $(this).data('url');
+        }
+        scrollEvent(this, event);
     });
 
     $('.footer-above .page-scroll').bind('click', function(event) {

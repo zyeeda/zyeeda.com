@@ -42,6 +42,60 @@ header {
     color: #FFFFFF;
 }
 
+.mouse-icon {
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    bottom: 10%;
+    left: 50%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ie-transform: translateX(-50%);
+    z-index: 15;
+}
+
+.mouse-icon .wheel {
+    position: relative;
+    width: 4px;
+    height: 10px;
+    top: 5px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.glyphicon-chevron-down:before {
+    content: "\e114";
+    color: #FFF;
+    font-size: 14px;
+}
+.mouse-icon .wheel, .mouse-icon .glyphicon-chevron-down {
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.mouse-icon .glyphicon-chevron-down {
+    font-size: 24px;
+    margin-left: 6px;
+    margin-top: 38px;
+}
+
 .intro-text {
     color: #FFFFFF;
 }

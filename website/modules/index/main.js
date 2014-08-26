@@ -10,6 +10,10 @@ $(function() {
     // $(window).resize(function() {
     //     calBgHeight();
     // });
+    
+    $('#mouse').bind('click', function(event) {
+        scrollEvent(this, event);
+    });
 
     var num = $(window).height() - 150;
 

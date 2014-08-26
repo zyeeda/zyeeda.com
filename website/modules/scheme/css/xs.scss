@@ -132,6 +132,19 @@
 	}
 }
 
+.section.remark:after {
+	left: 50%;
+	margin-left: -20px;
+	right: auto;
+	content: '';
+	position: absolute;
+	border-bottom: 20px #FFF solid;
+	border-left: transparent 20px solid;
+	border-right: transparent 20px solid;
+	padding-top: 30px;
+	z-index: 2;
+}
+
 .section.manager {
 	padding-top: 50px;
 	padding-bottom: 50px;

@@ -18,7 +18,7 @@ hr.star-primary:after {
 
 //section
 .success {
-	color: $whiteColor;
+    color: $whiteColor;
 }
 
 
@@ -149,7 +149,7 @@ section.success {
     background: 0 0;
 }
 
-.btn-blue:hover, .btn-blue:focus, .btn-blue:active, .btn-blue.active {  
+.btn-blue:hover, .btn-blue:focus, .btn-blue:active, .btn-blue.active {
     border: solid 2px #49B1DF;
     color: #49B1DF;
     background: 0 0;
@@ -341,7 +341,7 @@ section.success {
 
 .zh-desc {
     font-family: "Noto Sans S Bold";
-    font-size: 40px;
+    font-size: 16px;
     letter-spacing: 2px;
 }
 .en-desc {
@@ -354,7 +354,7 @@ section.success {
     padding-left: 60px;
 }
 .img-develop {
-    width: 70%;
+    width: 60%;
 }
 .img-gossip {
     margin-top: 90px;

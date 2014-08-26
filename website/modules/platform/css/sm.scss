@@ -12,7 +12,7 @@
 	.header .intro .desc {
 		font-size: 17px;
 	}
-	
+
 	.platform-nav .nav {
 		ul {
 			margin: 10px 8px;
@@ -34,5 +34,14 @@
 		.menu-item {
 			border: 2px solid $nearGreenColor;
 		}
+	}
+
+	.section.target {
+		.margin-top {
+			margin-top: 40px;
+		}
+		.col-sm-4.margin-top{
+        	margin-top: 0px;
+    	}
 	}
 }

@@ -66,7 +66,7 @@
 	height: 50px;
 	background-color: #FFF;
 	box-shadow: 0 1px #ececec;
-	
+
 	.menu-item {
 		border: 1px solid $nearGreenColor;
 		color: $nearGreenColor;
@@ -74,7 +74,7 @@
 	.menu-item:hover, .active .menu-item {
 		color: $whiteColor;
 		background-color: $nearGreenColor;
-	}	
+	}
 }
 
 .section.code {
@@ -146,7 +146,7 @@
 	}
 	.en_name {
 		@extend .zh_name;
-		margin-top: 1px; 
+		margin-top: 1px;
 	}
 	img {
 		width: 220px;
@@ -161,8 +161,11 @@
 	background-color: #142636;
 
 	.margin-top {
-		margin-top: 40px;
+		margin-top: 0px;
 	}
+    .col-sm-4.margin-top{
+        margin-top: 40px;
+    }
 }
 
 .target .panel {
@@ -291,8 +294,8 @@
 @include pathChangeForme(#FECE69, 1s);
 
 @-webkit-keyframes changeForme {
-	0% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1) scaleY(1);}            
-	40% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);} 
+	0% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1) scaleY(1);}
+	40% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);}
 	50% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.05) scaleY(0.95);}
 	60% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);}
 	70% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.05) scaleY(0.95);}
@@ -356,7 +359,7 @@
 	padding: 0;
 	list-style: none;
 	position: relative;
-} 
+}
 
 /* The line */
 .cbp_tmtimeline:before {
@@ -418,7 +421,7 @@
 	background: #ececec;
 }
 
-.cbp_tmtimeline > li .cbp_tmlabel h2 { 
+.cbp_tmtimeline > li .cbp_tmlabel h2 {
 	margin-top: 0px;
 	padding: 0 0 10px 0;
 	border-bottom: 1px solid rgba(73,202,148,0.4);
@@ -530,7 +533,7 @@
 		float: right;
 		left: auto;
 		margin: -55px 5px 0 0px;
-	}	
+	}
 }
 // end VerticalTimeline css
 
@@ -621,6 +624,7 @@
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   pointer-events: none;
+  text-align: center;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;

@@ -23,7 +23,7 @@ fis.config.set('roadmap.path', [
     {
         reg: /\/modules\/(.*)\/main.js/,
         release: '/modules/$1/main.js',
-        requires: ['$1-xs.scss', '$1-sm.scss', '$1-md.scss', '$1-lg.scss'],
+        // requires: ['$1-xs.scss', '$1-sm.scss', '$1-md.scss', '$1-lg.scss'],
         id: '$1'
         // isMod : true
 

@@ -8,7 +8,7 @@
         font-size: 36px;
     }
 
-    section h2 {
+    .section h2 {
         padding-top: 40px;
         padding-bottom: 40px;
     }
@@ -38,7 +38,7 @@
     .title-item {
         height: 45px;
     }
-    #platform .col-sm-6 h2, #platform .col-sm-6 p, #platform .col-sm-6 div {
+    .com-platform .col-sm-6 h2, .com-platform .col-sm-6 p, .com-platform .col-sm-6 div {
         text-align: right;
         font-size: 20px !important;
     }
@@ -54,10 +54,10 @@
         color: #49CA94;
         background: #FFF;
     }
-    #scheme .col-sm-6 {
+    .com-scheme .col-sm-6 {
         text-align: right;
     }
-    #scheme .col-sm-6 h2, #scheme .col-sm-6 p, #scheme .col-sm-6 div {
+    .com-scheme .col-sm-6 h2, .com-scheme .col-sm-6 p, .com-scheme .col-sm-6 div {
         text-align: left;
         font-size: 20px !important;
     }
@@ -69,7 +69,7 @@
         color: #FFF;
         background: #49B1DF;
     }
-    .warn {
+    .com-talent {
         background: url("../img/orange-bg.svg?__inline") center bottom no-repeat, #ffb608;
     }
 
@@ -91,10 +91,10 @@
         margin-top: 20px;
     }
 
-    #talent .align-left {
+    .com-talent .align-left {
         text-align: left;
     }
-    #talent .align-right {
+    .com-talent .align-right {
         text-align: right;
     }
 

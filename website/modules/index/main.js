@@ -1,15 +1,15 @@
 var calBgHeight = function() {
     var hei = $(window).height();
-    $('header').height(hei);
+    $('.header.company').height(hei);
     $('.bg').height(hei);
 }
 
 $(function() {
-    // calBgHeight();
+    calBgHeight();
 
-    // $(window).resize(function() {
-    //     calBgHeight();
-    // });
+    $(window).resize(function() {
+        calBgHeight();
+    });
     
     $('#mouse').bind('click', function(event) {
         scrollEvent(this, event);

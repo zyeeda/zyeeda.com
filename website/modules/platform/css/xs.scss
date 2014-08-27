@@ -295,23 +295,23 @@
 
 @-webkit-keyframes changeForme {
 	0% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1) scaleY(1);}
-	40% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);}
-	50% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.05) scaleY(0.95);}
-	60% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);}
-	70% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.05) scaleY(0.95);}
-	80% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);}
-	90% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.05) scaleY(0.95);}
+	// 40% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);}
+	// 50% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.05) scaleY(0.95);}
+	// 60% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);}
+	// 70% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.05) scaleY(0.95);}
+	// 80% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);}
+	// 90% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.05) scaleY(0.95);}
 	100% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1) scaleY(1);}
 }
 
 @keyframes changeForme {
 	0% {transform-origin: 50% 100%;transform : scaleX(1) scaleY(1);}
-	40% {transform-origin: 50% 100%;transform : scaleX(0.95) scaleY(1.05);}
-	50% {transform-origin: 50% 100%;transform : scaleX(1.05) scaleY(0.95);}
-	60% {transform-origin: 50% 100%;transform : scaleX(0.95) scaleY(1.05);}
-	70% {transform-origin: 50% 100%;transform : scaleX(1.05) scaleY(0.95);}
-	80% {transform-origin: 50% 100%;transform : scaleX(0.95) scaleY(1.05);}
-	90% {transform-origin: 50% 100%;transform : scaleX(1.05) scaleY(0.95);}
+	// 40% {transform-origin: 50% 100%;transform : scaleX(0.95) scaleY(1.05);}
+	// 50% {transform-origin: 50% 100%;transform : scaleX(1.05) scaleY(0.95);}
+	// 60% {transform-origin: 50% 100%;transform : scaleX(0.95) scaleY(1.05);}
+	// 70% {transform-origin: 50% 100%;transform : scaleX(1.05) scaleY(0.95);}
+	// 80% {transform-origin: 50% 100%;transform : scaleX(0.95) scaleY(1.05);}
+	// 90% {transform-origin: 50% 100%;transform : scaleX(1.05) scaleY(0.95);}
 	100% {transform-origin: 50% 100%;transform : scaleX(1) scaleY(1);}
 }
 

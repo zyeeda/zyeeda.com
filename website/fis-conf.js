@@ -20,6 +20,7 @@ fis.config.set('roadmap.path', [
         id: '$1'
         // isMod : true
     }, 
+    // css
     {
         reg: /\/modules\/(.*)\/css\/(.*)/,
         release: '/modules/$1/css/$2',
@@ -30,35 +31,7 @@ fis.config.set('roadmap.path', [
         id: 'bootstrap',
         reg: '/bower_components/bootstrap/dist/js/bootstrap.js',
         release: '/scripts/vendors/bootstrap/bootstrap.js',
-        // requires: ['bootstrap.min.css', 'jquery']
-        requires: ['bootstrap.min.css', 'font.css', 
-
-            'common-xs.scss',
-            'common-sm.scss',
-            'common-md.scss',
-            'common-lg.scss',
-
-            'index-xs.scss',
-            'index-sm.scss',
-            'index-md.scss',
-            'index-lg.scss',
-
-            'platform-xs.scss',
-            'platform-sm.scss',
-            'platform-md.scss',
-            'platform-lg.scss',
-
-            'scheme-xs.scss',
-            'scheme-sm.scss',
-            'scheme-md.scss',
-            'scheme-lg.scss',
-
-            'talent-xs.scss',
-            'talent-sm.scss',
-            'talent-md.scss',
-            'talent-lg.scss'
-            
-        ]
+        requires: ['bootstrap.min.css', 'font.css']
     }, {
         id: 'bootstrap.min.css',
         reg: '/bower_components/bootstrap/dist/css/bootstrap.min.css',
@@ -130,11 +103,23 @@ fis.config.set('roadmap.path', [
         reg: 'bower_components/Snap.svg/dist/snap.svg.js',
         release: '/scripts/vendors/snap.svg/snap.svg.js'
     },
+    //slides
+    {
+        id: 'slides',
+        reg: 'bower_components/slides/source/jquery.slides.js',
+        release: '/scripts/vendors/slides/jquery.slides.js'
+    },
     //prelaoding
     {
         id: 'preloading',
         reg: '/modules/common/preloading.js',
         release: '/modules/common/preloading.js'
+    },
+    //main.js 
+    {
+        id: 'main',
+        reg: '/modules/main.js',
+        release: '/modules/main.js'
     },
     // exclude bower_components
     {
@@ -146,7 +131,6 @@ fis.config.set('roadmap.path', [
         reg: 'bower.json',
         release: false
     },
-
     // font
     {
         id: 'font.css',
@@ -244,4 +228,4 @@ fis.config.set('roadmap.domain', 'http://127.0.0.1:8080');
 // fis.config.set('settings.lint.jshint.ignored', [ 'lib/**', /jquery|backbone|underscore/i ]);
 
 //csssprite处理时图片之间的边距，默认是3px
-fis.config.set('settings.spriter.csssprites.margin', 20);
+// fis.config.set('settings.spriter.csssprites.margin', 20);

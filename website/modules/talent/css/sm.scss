@@ -2,9 +2,18 @@
 
 @media (min-width: $tabletMinWidth) {
 	
+	#cal_slides .slidesjs-navigation, #cal_slides .slidesjs-pagination {
+		margin-top: -10px;
+	}
+
 	.section.occupation .occupation-item .content {
 		font-size: 14px;
 		padding: 6px 4px;
+	}
+
+	.cal .desc {
+		font-size: 14px;
+		padding-top: 20px;
 	}
 	
 }

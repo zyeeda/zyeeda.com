@@ -70,6 +70,7 @@ $(function() {
 
 	$(window).on('load', function() {
 		$("#nav").addClass('show').css('position', 'absolute');
+		$("#nav #scheme-li").addClass('active');
 	});
 
 	var isShow = false;

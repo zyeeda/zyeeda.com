@@ -1,0 +1,10 @@
+@import '../../const';
+
+@media (min-width: $tabletMinWidth) {
+	
+	.section.occupation .occupation-item .content {
+		font-size: 14px;
+		padding: 6px 4px;
+	}
+	
+}

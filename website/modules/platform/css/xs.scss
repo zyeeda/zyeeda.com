@@ -221,15 +221,15 @@
 }
 
 .section.feature {
-	padding-top: 50px;
-	padding-bottom: 1px;
+	padding-top: 10px;
+	padding-bottom: 0px;
 	min-height: 350;
 	text-align: center;
 }
 
 .feature svg {
-	width: 90%;
-	height: 90%;
+	width: 80%;
+	height: 80%;
 }
 
 @mixin pathRespire ($color, $time) {
@@ -327,15 +327,26 @@
 	z-index: 2;
 }
 .section.premark {
-	min-height: 350px;
+	min-height: 300px;
 	background-color: #BA84BB;
 	color: $whiteColor;
 	font-size: 22px;
 	line-height: 32px;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 50px;
 	.desc {
 		display: none;
+
+		h2 {
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+
+		h4{
+			padding-top: 0;
+			padding-bottom: 30px;
+		}
 	}
 }
 
@@ -396,7 +407,7 @@
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
-	font-size: 2.9em;
+	font-size: 2.8em;
 	color: #fff;
 }
 

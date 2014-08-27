@@ -1,0 +1,10 @@
+@import '../../const';
+
+@media (min-width: $retinaMinWidth) {
+	
+	.section.occupation .occupation-item .content {
+		font-size: 17px;
+		padding: 10px 8px;
+	}
+}
+

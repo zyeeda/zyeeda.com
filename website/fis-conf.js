@@ -13,34 +13,52 @@ fis.config.set('roadmap.path', [
         reg: "**.htm",
         release: false
     },
-    // modules
-    {
-        id: 'main',
-        reg: 'modules/main.js',
-        release: 'modules/main.js'
-        // isMod: true
-    },
     {
         reg: /\/modules\/(.*)\/main.js/,
         release: '/modules/$1/main.js',
         // requires: ['$1-xs.scss', '$1-sm.scss', '$1-md.scss', '$1-lg.scss'],
         id: '$1'
         // isMod : true
-
     }, 
     {
         reg: /\/modules\/(.*)\/css\/(.*)/,
         release: '/modules/$1/css/$2',
         id: '$1-$2'
     },
-
     // bootstrap
     {
         id: 'bootstrap',
         reg: '/bower_components/bootstrap/dist/js/bootstrap.js',
         release: '/scripts/vendors/bootstrap/bootstrap.js',
         // requires: ['bootstrap.min.css', 'jquery']
-        requires: ['bootstrap.min.css', 'font.css', 'jquery']
+        requires: ['bootstrap.min.css', 'font.css', 
+
+            'common-xs.scss',
+            'common-sm.scss',
+            'common-md.scss',
+            'common-lg.scss',
+
+            'index-xs.scss',
+            'index-sm.scss',
+            'index-md.scss',
+            'index-lg.scss',
+
+            'platform-xs.scss',
+            'platform-sm.scss',
+            'platform-md.scss',
+            'platform-lg.scss',
+
+            'scheme-xs.scss',
+            'scheme-sm.scss',
+            'scheme-md.scss',
+            'scheme-lg.scss',
+
+            'talent-xs.scss',
+            'talent-sm.scss',
+            'talent-md.scss',
+            'talent-lg.scss'
+            
+        ]
     }, {
         id: 'bootstrap.min.css',
         reg: '/bower_components/bootstrap/dist/css/bootstrap.min.css',

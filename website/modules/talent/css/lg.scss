@@ -2,9 +2,20 @@
 
 @media (min-width: $retinaMinWidth) {
 	
+	#cal_slides .slidesjs-navigation, #cal_slides .slidesjs-pagination {
+		margin-top: 0px;
+	}
+
 	.section.occupation .occupation-item .content {
-		font-size: 17px;
+		font-size: 16px;
 		padding: 10px 8px;
 	}
+
+	.cal .desc {
+		font-size: 16px;
+		padding-top: 50px;
+	}
+
+
 }
 

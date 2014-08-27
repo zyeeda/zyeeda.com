@@ -38,8 +38,7 @@ $(function() {
 
 	$(window).on('load', function() {
 		$("#nav").addClass('show').css('position', 'absolute');
-
-		console.log();
+		$("#nav #platform-li").addClass('active');
 		timedCount();
 	});
 

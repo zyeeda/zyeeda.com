@@ -37,7 +37,7 @@
 		font-family: "Noto Sans S Regular";
 		font-size: 18px;
 		color: $divColor;
-		margin-top: 20px;
+		margin-top: -10px;
 	}
 }
 
@@ -146,17 +146,27 @@
 }
 
 .section.manager {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	text-align: center;
-	min-height: 600px;
+	min-height: 650px;
 	// background-color: #eaf5f8;
 	@include title-desc(#37536b, #37536b);
 
 	.svc {
-		display: none;
+		min-height: 650px;
 	}
-	.group {
-		min-height: 250px;
+}
+
+.carousel-control:hover, .carousel-control:focus {
+	opacity: 0.5;
+}
+
+.carousel-control {
+	opacity: 0.2;
+}
+#carousel-manager {
+	li {
+		background-color: #37536b;
 	}
 }

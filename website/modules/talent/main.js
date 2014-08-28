@@ -17,26 +17,7 @@ $(function() {
 	changeOccupation(2);
 	changeOccupation(3);
 
-	$('#cal_slides').slidesjs({
-		width: 720,
-		height: 270,
-        play: {
-			active: true,
-			auto: true,
-			interval: 3000,
-			swap: true,
-			effect: "fade"
-        },
-		navigation: {
-			effect: "fade"
-		},
-		pagination: {
-			effect: "fade"
-		},
-		effect: {
-			fade: {
-				speed: 500
-			}
-		}
-    });
+	$('#carousel-response').carousel({
+	 	interval: 3000
+	})
 })

@@ -332,7 +332,6 @@
 	color: $whiteColor;
 	font-size: 22px;
 	line-height: 32px;
-	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 50px;
 	.desc {
@@ -341,11 +340,13 @@
 		h2 {
 			padding-top: 20px;
 			padding-bottom: 10px;
+            text-align: center;
 		}
 
 		h4{
 			padding-top: 0;
 			padding-bottom: 30px;
+            text-align: center;
 		}
 	}
 }
@@ -832,7 +833,7 @@
   position: relative;
   color: #fff;
   padding: 20px 20px 20px;
-  text-align: center;
+  text-align: left;
   -webkit-transition: all 0.35s 0.1s linear;
   -moz-transition: all 0.35s 0.1s linear;
   transition: all 0.35s 0.1s linear;

@@ -39,9 +39,9 @@ p {
     padding: 0;
     -webkit-transform: translate(0, -100%) translateZ(0);
     -ms-transform: translate(0, -100%) translateZ(0);
-    transform: translate(0, -100%) translateZ(0); 
-    -webkit-transition: -webkit-transform 0.3s ease-in-out; 
-    transition: transform 0.3s ease-in-out; 
+    transform: translate(0, -100%) translateZ(0);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     /*background-color: rgba(255, 255, 255, 0);
     border-color: rgba(236, 236, 236, 0);*/
 }
@@ -185,7 +185,7 @@ p {
     list-style-type: none;
 }
 
-.link ul li:first-child {
+.link ul li:first-child a {
     color: #FFFFFF! important;
     font-size: 16px;
     padding-top: 12px;
@@ -195,6 +195,10 @@ p {
 .link ul li {
     padding-bottom: 10px;
     text-align: center;
+
+    a{
+    color: #AAB2BD;
+    }
 }
 
 .concat-info {
@@ -343,7 +347,7 @@ p {
     font-family: 'Blokk', Arial, sans-serif;
 }
 
-[class^="icon-"]::before, 
+[class^="icon-"]::before,
 [class*=" icon-"]::before {
     display: block;
     margin-bottom: 0.5em;

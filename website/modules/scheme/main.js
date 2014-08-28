@@ -1,7 +1,7 @@
 var changeSolution = function(solution, color) {
 	$('.solutions-svg *[fill="' + color + '"]').bind('click', function() {
 		$('.solutions .solution').hide();
-		$('.solutions .' + solution).show();
+		$('.solutions .' + solution).fadeIn(1000);
 	});
 };
 
@@ -28,7 +28,7 @@ var anima = function(interval) {
 
 	show('#g_management', 3 * interval, 1);
 	swap('#g_skill_svc', '#g_management_svc', 3 * interval);
-	
+
 	show('#g_whole', 4 * interval, 1);
 	swap('#g_management_svc', '#g_whole_svc', 4 * interval);
 
@@ -66,7 +66,7 @@ $(function() {
 	changeSolution("solution6", "#00A999");
 	changeSolution("solution7", "#7E87C1");
 	changeSolution("solution8", "#269FC2");
-	changeSolution("solution9", "#6CC7EF");	
+	changeSolution("solution9", "#6CC7EF");
 
 	$(window).on('load', function() {
 		$("#nav").addClass('show').css('position', 'absolute');
@@ -77,7 +77,7 @@ $(function() {
 	skrollr.init({
 		smoothScrolling: false, mobileDeceleration: 0.004,
 	    render: function(data) {
-	    	
+
 	    }
 	});
 	anima(3000);
@@ -87,7 +87,7 @@ $(function() {
     // 	if(this.id) {
     // 		svg.select('#' + this.id).animate({opacity: 1}, 200);
     // 	}
-    	
+
     // });
 
     // $('svg g[id^=g_]').bind('mouseover', function(e) {
@@ -98,4 +98,87 @@ $(function() {
     // 		$('#' + id + '_svc').fadeIn(500);
     // 	}, 200);
     // });
+
+
+    var svg = Snap("#svg");
+    svg.select("#nk").hover(function() {
+        this.animate({
+            fill: "#37536b"
+        }, 1000);
+    }, function() {
+        this.animate({
+            fill: "#67C4C9"
+        }, 1000);
+    });
+
+    svg.select("#to").hover(function() {
+        this.animate({
+            fill: "#37536b"
+        }, 1000);
+    }, function() {
+        this.animate({
+            fill: "#269FC2"
+        }, 1000);
+    });
+
+    svg.select("#sj").hover(function() {
+        this.animate({
+            fill: "#37536b"
+        }, 1000);
+    }, function() {
+        this.animate({
+            fill: "#00A89B"
+        }, 1000);
+    });
+
+    svg.select("#aq").hover(function() {
+        this.animate({
+            fill: "#37536b"
+        }, 1000);
+    }, function() {
+        this.animate({
+            fill: "#7E87C1"
+        }, 1000);
+    });
+
+    svg.select("#zc").hover(function() {
+        this.animate({
+            fill: "#37536b"
+        }, 1000);
+    }, function() {
+        this.animate({
+            fill: "#00A999"
+        }, 1000);
+    });
+
+    svg.select("#cw").hover(function() {
+        this.animate({
+            fill: "#37536b"
+        }, 1000);
+    }, function() {
+        this.animate({
+            fill: "#EB6112"
+        }, 1000);
+    });
+
+    svg.select("#rl").hover(function() {
+        this.animate({
+            fill: "#37536b"
+        }, 1000);
+    }, function() {
+        this.animate({
+            fill: "#F8B421"
+        }, 1000);
+    });
+
+    svg.select("#sjjc").hover(function() {
+        this.animate({
+            fill: "#37536b"
+        }, 1000);
+    }, function() {
+        this.animate({
+            fill: "#6CC7EF"
+        }, 1000);
+    });
+
 });

@@ -185,19 +185,28 @@ p {
     list-style-type: none;
 }
 
-.link ul li:first-child a {
-    color: #FFFFFF! important;
-    font-size: 16px;
-    padding-top: 12px;
-    padding-bottom: 30px;
+.link ul li:first-child {
+    a {
+        color: #FFFFFF! important;
+        font-size: 16px;
+        padding-top: 12px;
+        padding-bottom: 30px;
+        text-decoration:none;
+    }
+    a:hover {
+        color: #8fb03e !important;
+    }
 }
-
 .link ul li {
     padding-bottom: 10px;
     text-align: center;
 
-    a{
-    color: #AAB2BD;
+    a {
+        color: #AAB2BD;
+        text-decoration:none;
+    }
+    a:hover {
+        color: #8fb03e;
     }
 }
 

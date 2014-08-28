@@ -35,24 +35,24 @@
 	}
 }
 
-.response-mech {
-	.cal {
-		position: absolute;
-		width: 50%;
-		height: 300px;
-		left: 25%;
-		// background-color: #0CA587;
-
-		.desc {
-			text-align: left;
-		}
-	}
+#carousel-response .carousel-control.left {
+	background: rgba(0, 0, 0, 0);
+}
+#carousel-response .carousel-control.right {
+	background: rgba(0, 0, 0, 0);
 }
 
-.cal .desc {
-	font-size: 13px;
-	padding-top: 10px;
-	padding-left: 20px;
+.cal {
+	.desc {
+		font-size: 13px;
+		padding-top: 10px;
+		padding-left: 20px;
+		text-align: left;
+	}
+
+	.img {
+		text-align: right;
+	}
 }
 
 .section.mgr-system {
@@ -174,104 +174,5 @@
 		left: 74.9%;
 		margin-top: 3.5%;
 	}
-}
-
-
-#cal_slides .slidesjs-navigation {
-  margin-top:5px;
-}
-
-a.slidesjs-next,
-a.slidesjs-previous,
-a.slidesjs-play,
-a.slidesjs-stop {
-  background-image: url(../img/btns-next-prev.png?__inline);
-  background-repeat: no-repeat;
-  display:block;
-  width:12px;
-  height:18px;
-  overflow: hidden;
-  text-indent: -9999px;
-  float: left;
-  margin-right:5px;
-}
-
-a.slidesjs-next {
-  margin-right:10px;
-  background-position: -12px 0;
-}
-
-a:hover.slidesjs-next {
-  background-position: -12px -18px;
-}
-
-a.slidesjs-previous {
-  background-position: 0 0;
-}
-
-a:hover.slidesjs-previous {
-  background-position: 0 -18px;
-}
-
-a.slidesjs-play {
-  width:15px;
-  background-position: -25px 0;
-}
-
-a:hover.slidesjs-play {
-  background-position: -25px -18px;
-}
-
-a.slidesjs-stop {
-  width:18px;
-  background-position: -41px 0;
-}
-
-a:hover.slidesjs-stop {
-  background-position: -41px -18px;
-}
-
-.slidesjs-pagination {
-  margin: 7px 0 0;
-  float: right;
-  list-style: none;
-}
-
-.slidesjs-pagination li {
-  float: left;
-  margin: 0 1px;
-}
-
-.slidesjs-pagination li a {
-  display: block;
-  width: 13px;
-  height: 0;
-  padding-top: 13px;
-  background-image: url(../img/pagination.png?__inline);
-  background-position: 0 0;
-  float: left;
-  overflow: hidden;
-}
-
-.slidesjs-pagination li a.active,
-.slidesjs-pagination li a:hover.active {
-  background-position: 0 -13px
-}
-
-.slidesjs-pagination li a:hover {
-  background-position: 0 -26px
-}
-.slidesjs-container {
-	height: 270px;
-}
-
-#cal_slides a:link,
-#cal_slides a:visited {
-  color: #333
-}
-
-#cal_slides a:hover,
-#cal_slides a:active {
-  color: #9e2020
 }
 

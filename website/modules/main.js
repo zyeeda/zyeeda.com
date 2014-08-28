@@ -8,7 +8,6 @@
  * @require bootstrap
  * @require skrollr
  * @require snap
- * @require slides
  *
  * @require common
  *

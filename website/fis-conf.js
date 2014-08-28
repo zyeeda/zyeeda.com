@@ -103,12 +103,6 @@ fis.config.set('roadmap.path', [
         reg: 'bower_components/Snap.svg/dist/snap.svg.js',
         release: '/scripts/vendors/snap.svg/snap.svg.js'
     },
-    //slides
-    {
-        id: 'slides',
-        reg: 'bower_components/slides/source/jquery.slides.js',
-        release: '/scripts/vendors/slides/jquery.slides.js'
-    },
     //prelaoding
     {
         id: 'preloading',

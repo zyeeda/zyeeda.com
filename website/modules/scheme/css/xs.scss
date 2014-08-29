@@ -52,6 +52,9 @@
 			text-decoration: none;
 			color: #468cb5;
 		}
+		h2 {
+			padding-top: 0px;
+		}
 	}
 
 	.solution {
@@ -126,7 +129,7 @@
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	
+
 	.desc {
 		@include title-desc(#FFF, #FFF);
 	}

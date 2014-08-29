@@ -1,0 +1,92 @@
+@import '../../const';
+
+.header.joinus {
+	background: url('../img/header-bg.png?__inline') no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	min-height: 550px;
+}
+
+@mixin title-desc ($h2Color, $divColor) {
+    h2 {
+		font-family: $mediumFamily;
+		font-size: $titleFontSize;
+		color: $h2Color;
+		padding-top: 10px;
+	}
+	p {
+		font-family: $regularFamily;
+		font-size: $contentFontSize;
+		line-height: 30px;
+		color: $divColor;
+	}
+}
+
+.section.team {
+	@include title-desc(#000000, #8b8b8b);
+}
+
+.team .align-right {
+	text-align: right;
+}
+
+.section.notice {
+	padding: 0 0 30px 0;
+	background-color: #8fb03e;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.section.notice:after {
+	left: 50%;
+	margin-left: -20px;
+	right: auto;
+	content: '';
+	position: absolute;
+	border-bottom: 20px #FFFFFF solid;
+	border-left: transparent 20px solid;
+	border-right: transparent 20px solid;
+	padding-top: 10px;
+	z-index: 2;
+}
+
+.section.position {
+	hr {
+		margin-bottom: 0;
+	}
+
+	.position-op {
+		text-align: right;
+		height: 50px;
+
+		.send {
+			display: none;
+			background-color: #8fb03e;
+			padding: 6px 10px;
+			color: #FFFFFF;
+			cursor: pointer;
+		}
+		.msg {
+			cursor: pointer;
+		}
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+}
+
+.position-item {
+	h3 {
+		font-family: $mediumFamily;
+		color: #8fb03e;
+		font-size: $titleFontSize;
+	}
+
+	p {
+		font-family: $regularFamily;
+		font-size: $contentFontSize;
+		line-height: 30px;
+	}
+}

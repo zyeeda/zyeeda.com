@@ -38,5 +38,14 @@
  * @require talent-sm.scss
  * @require talent-md.scss
  * @require talent-lg.scss
- * 
+ *
+ * @require joinus-xs.scss
+ * @require joinus-sm.scss
+ * @require joinus-md.scss
+ * @require joinus-lg.scss
+ *
+ * @require contactus-xs.scss
+ * @require contactus-sm.scss
+ * @require contactus-md.scss
+ * @require contactus-lg.scss
  */

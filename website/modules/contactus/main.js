@@ -1,34 +1,11 @@
-<!DOCTYPE html>
-<html>
+$(function() {
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <style type="text/css">
-    #bdmap {
-        width: 100%;
-        height: 700px;
-        overflow: hidden;
-        margin: 0;
-    }
-    </style>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=zI87NqXseke8XAj7yq6bvwfe"></script>
-    <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
-    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
-    <title>位置</title>
-</head>
-
-<body>
-
-    <div id="bdmap"></div>
-
-    <script type="text/javascript">
     // 百度地图API功能
     var map = new BMap.Map('bdmap');
     var poi = new BMap.Point(114.129208, 22.549973);
     map.centerAndZoom(poi, 16);
 
-    map.enableScrollWheelZoom(); //启用滚轮放大缩小
+    // map.enableScrollWheelZoom(); //启用滚轮放大缩小
     map.addControl(new BMap.NavigationControl());
     map.addControl(new BMap.ScaleControl());
     map.addControl(new BMap.OverviewMapControl());
@@ -36,7 +13,7 @@
     map.setCurrentCity("深圳"); // 仅当设置城市信息时，MapTypeControl的切换功能才能可用
 
     var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-        '<img src="modules/concat/img/logo-no.svg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+        '<img src="modules/contactus/img/logo-no.svg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
         '地址：深圳市罗湖区深南东路2105号中建大厦7层 <br/>电话：(0755)xxxxxxxx<br/>简介：为中国软件而生<br />Born for Chinese Software' +
         '</div>';
 
@@ -55,6 +32,7 @@
             BMAPLIB_TAB_SEARCH //周边检索
         ]
     });
+
     var marker = new BMap.Marker(poi); //创建marker对象
     // marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
     marker.addEventListener("click", function(e) {
@@ -63,7 +41,8 @@
         } else {
             searchInfoWindow.open(marker);
         }
-    })
+    });
+
     map.addOverlay(marker); //在地图中添加marker
     searchInfoWindow.open(marker); //在marker上打开检索信息串口
 
@@ -77,7 +56,7 @@
     PositionControl.prototype.initialize = function(map) {
         var div = document.createElement("div");
         var img = document.createElement("img");
-        img.src = 'modules/concat/img/position.png';
+        img.src = 'modules/contactus/img/position.png';
         img.style.width = '36px';
         img.style.height = '36px';
         img.style.cursor = "pointer";
@@ -139,9 +118,8 @@
     function $(id) {
         return document.getElementById(id);
     }
-    </script>
+    
+    // $("#nav").addClass('show').css('position', 'absolute');
+    // $("#nav #joinus-li").addClass('active');
 
-</body>
-
-</html>
-</script>
+})

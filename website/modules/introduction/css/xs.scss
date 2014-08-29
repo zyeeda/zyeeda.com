@@ -1,0 +1,59 @@
+@import '../../const';
+
+.header.introduction {
+	background: url('../img/header-bg.png?__inline') no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	min-height: 550px;
+
+	.intro {
+		padding-top: 150px;
+	}
+}
+
+@mixin title-desc ($h2Color, $divColor) {
+    h2 {
+		font-family: $mediumFamily;
+		font-size: $titleFontSize;
+		color: $h2Color;
+		padding-top: 5px;
+		padding-bottom: 15px;
+	}
+	p {
+		font-family: $regularFamily;
+		font-size: $contentFontSize;
+		line-height: 30px;
+		color: $divColor;
+	}
+}
+
+.section.whoweare {
+	@include title-desc(#000000, #8b8b8b);
+}
+
+.section.whatwedo {
+	background-color: #F2F5F8;
+	text-align: right;
+	@include title-desc(#000000, #8b8b8b);
+}
+
+.section.history {
+	padding: 0 0 100px 0;
+
+	.history-img img {
+		width: 100%;
+	}
+}
+
+.section.bdmap {
+    min-height: 650px;
+    overflow: hidden;
+    margin: 0;
+
+    .iw_bt {
+    	margin-right: 0px !important;
+    }
+    #BMapLib_stationText0 {
+    	width: 30px;
+    }
+}

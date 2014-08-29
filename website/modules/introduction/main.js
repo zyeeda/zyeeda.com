@@ -13,7 +13,7 @@ var showMap = function() {
     map.setCurrentCity("深圳"); // 仅当设置城市信息时，MapTypeControl的切换功能才能可用
 
     var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-        '<img src="modules/contactus/img/logo-no.svg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+        '<img src="modules/common/img/logo-no.svg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
         '地址：深圳市罗湖区深南东路2105号中建大厦7层 <br/>电话：(0755)26966586<br/>简介：以市场为导向，以客户为中心' +
         '</div>';
 
@@ -56,7 +56,7 @@ var showMap = function() {
     PositionControl.prototype.initialize = function(map) {
         var div = document.createElement("div");
         var img = document.createElement("img");
-        img.src = 'modules/contactus/img/position.png';
+        img.src = 'modules/common/img/position.png';
         img.style.width = '24px';
         img.style.height = '24px';
         img.style.cursor = "pointer";

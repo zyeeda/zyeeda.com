@@ -155,6 +155,10 @@
 
 	.svc {
 		min-height: 650px;
+
+		.desc {
+			min-height: 150px;
+		}
 	}
 }
 

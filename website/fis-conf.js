@@ -31,7 +31,7 @@ fis.config.set('roadmap.path', [
         id: 'bootstrap',
         reg: '/bower_components/bootstrap/dist/js/bootstrap.js',
         release: '/scripts/vendors/bootstrap/bootstrap.js',
-        requires: ['bootstrap.min.css']
+        requires: ['bootstrap.min.css', 'font.css']
     }, {
         id: 'bootstrap.min.css',
         reg: '/bower_components/bootstrap/dist/css/bootstrap.min.css',

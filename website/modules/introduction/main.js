@@ -1,5 +1,5 @@
-$(function() {
 
+var showMap = function() {
     // 百度地图API功能
     var map = new BMap.Map('bdmap');
     var poi = new BMap.Point(114.129208, 22.549973);
@@ -13,8 +13,8 @@ $(function() {
     map.setCurrentCity("深圳"); // 仅当设置城市信息时，MapTypeControl的切换功能才能可用
 
     var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-        '<img src="modules/contactus/img/logo-no.svg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
-        '地址：深圳市罗湖区深南东路2105号中建大厦7层 <br/>电话：(0755)xxxxxxxx<br/>简介：为中国软件而生<br />Born for Chinese Software' +
+        '<img src="modules/common/img/logo-no.svg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+        '地址：深圳市罗湖区深南东路2105号中建大厦7层 <br/>电话：(0755)26966586<br/>简介：以市场为导向，以客户为中心' +
         '</div>';
 
     //创建检索信息窗口对象
@@ -49,16 +49,16 @@ $(function() {
     function PositionControl() {
         // 默认停靠位置和偏移量
         this.defaultAnchor = BMAP_ANCHOR_TOP_LEFT;
-        this.defaultOffset = new BMap.Size(13, 200);
+        this.defaultOffset = new BMap.Size(19, 200);
     }
     PositionControl.prototype = new BMap.Control();
 
     PositionControl.prototype.initialize = function(map) {
         var div = document.createElement("div");
         var img = document.createElement("img");
-        img.src = 'modules/contactus/img/position.png';
-        img.style.width = '36px';
-        img.style.height = '36px';
+        img.src = 'modules/common/img/position.png';
+        img.style.width = '24px';
+        img.style.height = '24px';
         img.style.cursor = "pointer";
         div.appendChild(img);
         img.onclick = function(e) {
@@ -115,11 +115,11 @@ $(function() {
     //     searchInfoWindow.hide();
     // }
 
-    function $(id) {
-        return document.getElementById(id);
-    }
-    
-    // $("#nav").addClass('show').css('position', 'absolute');
-    // $("#nav #joinus-li").addClass('active');
+}
 
+$(function() {
+	$("#nav").addClass('show').css('position', 'absolute');
+	$("#nav #introduction-li").addClass('active');
+
+    setTimeout(showMap, 1000);
 })

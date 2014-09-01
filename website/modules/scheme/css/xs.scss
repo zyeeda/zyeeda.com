@@ -122,10 +122,14 @@
 	font-size: 22px;
 	line-height: 32px;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-bottom: 50px;
 
 	.desc {
+		h2 {
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
 		@include title-desc(#FFF, #FFF);
 	}
 }
@@ -156,7 +160,13 @@
 
 		.desc {
 			min-height: 150px;
+			text-align: left;
+			letter-spacing: 1px;
 		}
+	}
+
+	svg {
+		margin-top:-40px;
 	}
 }
 

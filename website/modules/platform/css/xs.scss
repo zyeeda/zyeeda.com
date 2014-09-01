@@ -1,7 +1,7 @@
 @import '../../const';
 
 .header.platform{
-	background: url('../img/header-bg.png?__inline') no-repeat center center;
+	background: url('../img/header-bg.png') no-repeat center center;
 	background-size: cover;
 	text-align: center;
 	min-height: 550px;
@@ -90,45 +90,45 @@
 }
 
 .code.java {
-	background: url(../img/java.png?__inline) no-repeat 85% 130px #ED6A58;
+	background: url(../img/java.png) no-repeat 85% 130px #ED6A58;
 	background-size:90% ;
 	// background-attachment: fixed;
 
 }
 .code.js {
-	background: url(../img/js.png?__inline) no-repeat 85% 130px #BA84BB;
+	background: url(../img/js.png) no-repeat 85% 130px #BA84BB;
 	background-size:90%;
 	background-attachment: fixed;
 }
 
 .code.ui1 {
-	background: url(../img/ui1.png?__inline) no-repeat 85% 130px #ffa543;
+	background: url(../img/ui1.png) no-repeat 85% 130px #ffa543;
 	background-size:90%;
 	background-attachment: fixed;
 }
 .code.ui2 {
-	background: url(../img/ui2.png?__inline) no-repeat 85% 130px #0973BA;
+	background: url(../img/ui2.png) no-repeat 85% 130px #0973BA;
 	background-size:90%;
 	background-attachment: fixed;
 }
 .code.ui3 {
-	background: url(../img/ui3.png?__inline) no-repeat 85% 130px #65CAD0;
+	background: url(../img/ui3.png) no-repeat 85% 130px #65CAD0;
 	background-size:90%;
 	background-attachment: fixed;
 }
 .code.ui4 {
-	background: url(../img/ui4.png?__inline) no-repeat 85% 130px #8CB743;
+	background: url(../img/ui4.png) no-repeat 85% 130px #8CB743;
 	background-size:90%;
 	background-attachment: fixed;
 }
 .code.ui5 {
-	background: url(../img/ui5.png?__inline) no-repeat 85% 130px #FECE69;
+	background: url(../img/ui5.png) no-repeat 85% 130px #FECE69;
 	background-size:90%;
 	background-attachment: fixed;
 }
 
 .section.ideas {
-    background: url("../img/idea-bg.png?__inline") repeat;
+    background: url("../img/idea-bg.png") repeat;
 	min-height: 550px;
 }
 
@@ -350,6 +350,7 @@
 .section.roadmap {
 	min-height: 600px;
 	background-color: $nearGreenColor;
+	// background: url('../img/hai.svg') no-repeat center center;
 	padding-top: 50px;
 }
 .roadmap .roadmap-img {
@@ -404,12 +405,19 @@
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
-	font-size: 2.8em;
+	font-size: 20px;
 	color: #fff;
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
 	color: #fff;
+}
+
+.cbp_tmlabel h2 {
+	font-size: 20px;
+}
+.cbp_tmlabel p {
+	font-size: 16px;
 }
 
 /* Right content */

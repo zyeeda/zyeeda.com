@@ -31,7 +31,7 @@ fis.config.set('roadmap.path', [
         id: 'bootstrap',
         reg: '/bower_components/bootstrap/dist/js/bootstrap.js',
         release: '/scripts/vendors/bootstrap/bootstrap.js',
-        requires: ['bootstrap.min.css', 'font.css']
+        requires: ['bootstrap.min.css']
     }, {
         id: 'bootstrap.min.css',
         reg: '/bower_components/bootstrap/dist/css/bootstrap.min.css',
@@ -124,16 +124,6 @@ fis.config.set('roadmap.path', [
     {
         reg: 'bower.json',
         release: false
-    },
-    // font
-    {
-        id: 'font.css',
-        reg: 'font/font.css',
-        release: 'font/font.css'
-    },
-    {
-        reg: /\/font\/(.*)/,
-        release: '/font/$1'
     }
     
 ]);

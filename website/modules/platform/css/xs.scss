@@ -11,7 +11,6 @@
 	min-height: 350px;
 	text-align: center;
 	margin-top: 100px;
-	font-family: "Noto Sans S Medium";
 	color: $whiteColor;
 
 	.name {
@@ -46,7 +45,6 @@
 }
 
 .menu-item {
-	font-family: "Noto Sans S Medium";
 	font-size: 13px;
 	background: rgba(255, 255, 255, 0);
 	width: 60px;
@@ -208,12 +206,10 @@
 		margin-top: 50px;
 	}
 	.zh_name {
-		font-family: "Noto Sans S Bold";
 		font-size: 36px;
 		margin-top: 10px;
 	}
 	.en_name {
-		font-family: "Noto Sans S Medium";
 		font-size: 18px;
 		color: #5f5f5f;
 		margin-top: 1px;

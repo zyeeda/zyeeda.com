@@ -13,14 +13,12 @@
 
 @mixin title-desc ($h2Color, $divColor) {
     h2 {
-		font-family: $mediumFamily;
 		font-size: $titleFontSize;
 		color: $h2Color;
 		padding-top: 5px;
 		padding-bottom: 15px;
 	}
 	p {
-		font-family: $regularFamily;
 		font-size: $contentFontSize;
 		line-height: 30px;
 		color: $divColor;
@@ -46,7 +44,7 @@
 }
 
 .section.bdmap {
-    min-height: 650px;
+    min-height: 450px;
     overflow: hidden;
     margin: 0;
 

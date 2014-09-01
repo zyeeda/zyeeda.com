@@ -11,7 +11,6 @@
 	min-height: 350px;
 	text-align: center;
 	margin-top: 100px;
-	font-family: "Noto Sans S Medium";
 	color: $whiteColor;
 
 	.name {
@@ -29,12 +28,10 @@
 
 @mixin title-desc ($h2Color, $divColor) {
     h2 {
-		font-family: "Noto Sans S Medium";
 		font-size: 36px;
 		color: $h2Color;
 	}
 	div {
-		font-family: "Noto Sans S Regular";
 		font-size: 18px;
 		color: $divColor;
 		margin-top: -10px;
@@ -63,14 +60,12 @@
 		display: none;
 
 		.solution-title {
-			font-family: "Noto Sans S Medium";
 			font-size: 30px;
 			margin-left: 30px;
 			vertical-align: middle;
 		}
 
 		p {
-			font-family: "Noto Sans S Regular";
 			font-size: 18px;
 			margin-top: 60px;
 			line-height: 40px;

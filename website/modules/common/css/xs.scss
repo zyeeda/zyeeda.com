@@ -1,7 +1,7 @@
 @import '../../const';
 
 body {
-	font-family: "Noto Sans S Regular";
+	font-family: $bodyFamily;
     color: $bodyColor;
 	font-size: $bodyFontSize;
     overflow-x: hidden;
@@ -352,9 +352,6 @@ p {
     line-height: 1.5;
 }
 
-.box p {
-    font-family: 'Blokk', Arial, sans-serif;
-}
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {

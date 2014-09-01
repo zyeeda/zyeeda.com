@@ -94,7 +94,7 @@ hr.star-primary:after {
 }
 
 .company .intro-text .name {
-    font-family: $mediumFamily;
+    font-weight: bold;
     /*font-size: 48px;*/
     color: #8fb03e;
 
@@ -334,12 +334,11 @@ hr.star-primary:after {
 }
 
 .zh-desc {
-    font-family: "Noto Sans S Bold";
+    font-weight: bold;
     font-size: 16px;
     letter-spacing: 2px;
 }
 .en-desc {
-    font-family: "Noto Sans S Regular";
     font-size: 28px;
 }
 

@@ -9,12 +9,10 @@
 
 @mixin title-desc ($h2Color, $divColor) {
     h2 {
-		font-family: "Noto Sans S Medium";
 		font-size: 36px;
 		color: $h2Color;
 	}
 	div {
-		font-family: "Noto Sans S Regular";
 		font-size: 17px;
 		color: $divColor;
 		// margin-top: 20px;
@@ -143,7 +141,6 @@
 			height: 85%;
 			background-color: $nearOrangeColor;
 			border: 3px solid #FFF;
-			font-family: "Noto Sans S Regular";
 			font-size: 12px;
 			color: $whiteColor;
 			padding: 5px 3px; 
@@ -153,7 +150,6 @@
 		.title {
 			height: 15%;
 			background-color: rgba(0, 0, 0, 0);
-			font-family: "Noto Sans S Medium";
 			font-size: 30px; 
 			color: #595656;
 		}

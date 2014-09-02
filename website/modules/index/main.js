@@ -29,6 +29,7 @@ $(function() {
     }); 
 
     $(window).on('load', function() {
+        $("#nav #index-li").addClass('active');
         $('#index-effect').removeClass('effect-small').addClass('effect-lager');
     });
 });

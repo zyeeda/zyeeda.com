@@ -17,7 +17,7 @@ $(function() {
 	changeSolution("solution9", "#6CC7EF");
 
 	$(window).on('load', function() {
-		$("#nav").addClass('show').css('position', 'absolute');
+		$("#nav").addClass('show');
 		$("#nav #scheme-li").addClass('active');
 	});
 

@@ -1,6 +1,6 @@
 $(function() {
 	$(window).on('load', function() {
-		$("#nav").addClass('show').css('position', 'absolute');
+		$("#nav").addClass('show');
 		$("#nav #joinus-li").addClass('active');
 	});
 

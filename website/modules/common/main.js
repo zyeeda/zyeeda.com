@@ -23,10 +23,10 @@ $(function() {
         // $('.loading').hide();
         // $('body').css('overflow-y', 'auto');
         
-        $('body').scrollspy({
-            target: '.navbar-fixed-top',
-            selector: ''
-        });
+        // $('body').scrollspy({
+        //     target: '.navbar-fixed-top',
+        //     selector: ''
+        // });
         
         // google-analytics
         (function(b, o, i, l, e, r) {

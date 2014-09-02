@@ -9,7 +9,7 @@ var changeOccupation = function(num) {
 
 $(function() {
 	$(window).on('load', function() {
-		$("#nav").addClass('show').css('position', 'absolute');
+		$("#nav").addClass('show');
 		$("#nav #talent-li").addClass('active');
 	});
 

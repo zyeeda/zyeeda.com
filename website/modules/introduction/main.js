@@ -118,7 +118,7 @@ var showMap = function() {
 }
 
 $(function() {
-	$("#nav").addClass('show').css('position', 'absolute');
+	$("#nav").addClass('show');
 	$("#nav #introduction-li").addClass('active');
 
     setTimeout(showMap, 1000);

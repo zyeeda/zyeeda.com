@@ -9,11 +9,11 @@
 
 @mixin title-desc ($h2Color, $divColor) {
     h2 {
-		font-size: 36px;
+		font-size: $biggerTitleFontSize;
 		color: $h2Color;
 	}
 	div {
-		font-size: 17px;
+		font-size: $pDescFontSize;
 		color: $divColor;
 		// margin-top: 20px;
 	}
@@ -24,7 +24,7 @@
 	background: url('../img/hanging.svg') no-repeat top center, url('../img/retina_wood_@2X.png') repeat-x;
 	padding-top: 0px;
 	text-align: center;
-	
+
 	@include title-desc(#045545, #FFFFFF);
 
 	hr {
@@ -72,9 +72,9 @@
 
 	.system-item {
 		padding-top: 40px;
-		
+
 		span {
-			margin-left: 20px; 
+			margin-left: 20px;
 		}
 	}
 }
@@ -98,7 +98,7 @@
 
 .section.possibility {
 	padding: 10px 0 70px 0;
-	min-height: 250px;	
+	min-height: 250px;
 	background-color: $nearOrangeColor;
 	text-align: center;
 
@@ -130,7 +130,7 @@
 			cursor: pointer;
 		}
 	}
-	
+
 	.occupation-item {
 		display: none;
 		position: absolute;
@@ -143,18 +143,18 @@
 			border: 3px solid #FFF;
 			font-size: 12px;
 			color: $whiteColor;
-			padding: 5px 3px; 
+			padding: 5px 3px;
 
 		}
 
 		.title {
 			height: 15%;
 			background-color: rgba(0, 0, 0, 0);
-			font-size: 30px; 
+			font-size: 30px;
 			color: #595656;
 		}
 	}
-	
+
 	.occupation-item1 {
 		display: block;
 		left: 24.2%;

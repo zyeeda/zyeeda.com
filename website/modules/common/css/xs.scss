@@ -8,14 +8,27 @@ body {
 }
 
 p {
-	font-size: $pFontSize;
-    letter-spacing: 1px;
+	font-size: $pDescFontSize;
+    letter-spacing: 2px;
     line-height: 150%;
 }
 
 .section {
     padding: 80px 0;
 }
+
+.header .intro .name {
+     font-size: 38px;
+}
+
+.header .intro .fullname {
+    font-size: 14px;
+}
+
+.header .intro .desc {
+    font-size: 16px;
+}
+
 
 .loading {
     background-color: $nearGreenColor;

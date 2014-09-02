@@ -1,5 +1,15 @@
 @import '../../const';
 
 @media (min-width: $retinaMinWidth) {
-	
+	.header .intro .name {
+        font-size: $headerFontSize;
+    }
+
+    .header .intro .fullname {
+        font-size: 17px;
+    }
+
+    .header .intro .desc {
+        font-size: $underHeaderFontSize;
+    }
 }

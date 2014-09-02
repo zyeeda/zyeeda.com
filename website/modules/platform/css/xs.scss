@@ -13,15 +13,7 @@
 	margin-top: 100px;
 	color: $whiteColor;
 
-	.name {
-		font-size: 38px;
-	}
-
-	.fullname {
-		font-size: 14px;
-	}
 	.desc {
-		font-size: 16px;
 		margin-top: 30px;
 	}
 }
@@ -80,7 +72,7 @@
 	color: $whiteColor;
 
 	p {
-		font-size: 16px;
+		font-size: $pDescFontSize;
 	}
 }
 
@@ -326,7 +318,7 @@
 	min-height: 300px;
 	background-color: #BA84BB;
 	color: $whiteColor;
-	font-size: 22px;
+	font-size: $pDescFontSize;
 	line-height: 32px;
 	padding-top: 10px;
 	padding-bottom: 50px;
@@ -651,7 +643,7 @@
   text-transform: uppercase;
   position: relative;
   letter-spacing: 2px;
-  font-size: 22px;
+  font-size: 20px;
   margin: 0 30px;
   padding: 55px 0 0 0;
   height: 110px;

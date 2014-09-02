@@ -40,14 +40,15 @@
     }
     .com-platform .col-sm-6 h2, .com-platform .col-sm-6 p, .com-platform .col-sm-6 div {
         text-align: right;
-        font-size: 20px !important;
+        font-size: $pDescFontSize !important;
     }
     .btn-lg, .btn-group-lg>.btn {
         padding: 10px 50px;
     }
     .btn-green {
         margin-top: 25px;
-        font-size: 20px;
+        font-size: $shortSentenceFontSize;
+        letter-spacing: 2px;
         color: #FFF;
         border: solid 2px #FFF;
         transition: all .3s ease-in-out;
@@ -59,11 +60,12 @@
     }
     .com-scheme .col-sm-6 h2, .com-scheme .col-sm-6 p, .com-scheme .col-sm-6 div {
         text-align: left;
-        font-size: 20px !important;
+        font-size: $pDescFontSize !important;
     }
     .btn-blue {
         margin-top: 25px;
-        font-size: 20px;
+        font-size: $shortSentenceFontSize;
+        letter-spacing: 2px;
         transition: all .3s ease-in-out;
         border: solid 2px #49B1DF;
         color: #FFF;
@@ -75,7 +77,8 @@
 
     .btn-orange {
         margin-top: 25px;
-        font-size: 20px;
+        font-size: $shortSentenceFontSize;
+        letter-spacing: 2px;
         transition: all .3s ease-in-out;
         border: solid 2px #FFF;
         color: #FBB42F;

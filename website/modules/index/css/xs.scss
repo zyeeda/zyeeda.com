@@ -20,7 +20,9 @@ hr.star-primary:after {
     margin: 0 auto 20px;
 }
 
-
+.splash {
+    height: 35%;
+}
 /* fix.css */
 .header.company {
     background: url("../img/big-bg.jpg") center center no-repeat;
@@ -104,9 +106,6 @@ hr.star-primary:after {
     font-weight: 700;
 }
 
-.logo {
-    height: 12%;
-}
 .star-light {
     padding-top: 12px;
     padding-bottom: 6px;

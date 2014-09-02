@@ -18,6 +18,6 @@ $(function() {
 	changeOccupation(3);
 
 	$('#carousel-response').carousel({
-	 	interval: 3000
+	 	interval: 3500
 	})
 })

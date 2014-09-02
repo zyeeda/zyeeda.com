@@ -202,8 +202,8 @@
 }
 
 .feature svg {
-	width: 80%;
-	height: 80%;
+	width: 90%;
+	height: 90%;
 }
 
 @mixin pathRespire ($color, $time) {
@@ -221,6 +221,10 @@
 		animation-iteration-count: infinite;
 		-webkit-transition-timing-function: ease;
 		transition-timing-function: ease;
+	}
+
+	.feature text[data="#{$color}"] {
+		cursor: pointer;
 	}
 }
 
@@ -247,48 +251,6 @@
 	100% {transform-origin: 50% 100%;transform : scaleX(1) scaleY(1);}
 }
 
-@mixin pathChangeForme ($color, $time) {
-	.feature path[fill="#{$color}"]:hover {
-		-webkit-animation: changeForme $time;
-		animation: changeForme $time;
-		/*animation-iteration-count: infinite;*/
-		-webkit-transition-timing-function: ease-in-out;
-		transition-timing-function: ease-in-out;
-	}
-}
-
-@include pathChangeForme(#BA84BB, 1s);
-@include pathChangeForme(#ED6A58, 1s);
-@include pathChangeForme(#62ACC5, 1s);
-@include pathChangeForme(#0973BA, 1s);
-@include pathChangeForme(#FFA543, 1s);
-@include pathChangeForme(#828385, 1s);
-@include pathChangeForme(#65CAD0, 1s);
-@include pathChangeForme(#8CB743, 1s);
-@include pathChangeForme(#FECE69, 1s);
-
-@-webkit-keyframes changeForme {
-	0% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1) scaleY(1);}
-	// 40% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);}
-	// 50% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.05) scaleY(0.95);}
-	// 60% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);}
-	// 70% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.05) scaleY(0.95);}
-	// 80% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(0.95) scaleY(1.05);}
-	// 90% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.05) scaleY(0.95);}
-	100% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1) scaleY(1);}
-}
-
-@keyframes changeForme {
-	0% {transform-origin: 50% 100%;transform : scaleX(1) scaleY(1);}
-	// 40% {transform-origin: 50% 100%;transform : scaleX(0.95) scaleY(1.05);}
-	// 50% {transform-origin: 50% 100%;transform : scaleX(1.05) scaleY(0.95);}
-	// 60% {transform-origin: 50% 100%;transform : scaleX(0.95) scaleY(1.05);}
-	// 70% {transform-origin: 50% 100%;transform : scaleX(1.05) scaleY(0.95);}
-	// 80% {transform-origin: 50% 100%;transform : scaleX(0.95) scaleY(1.05);}
-	// 90% {transform-origin: 50% 100%;transform : scaleX(1.05) scaleY(0.95);}
-	100% {transform-origin: 50% 100%;transform : scaleX(1) scaleY(1);}
-}
-
 .section.feature:after {
 	left: 50%;
 	margin-left: -20px;
@@ -301,7 +263,7 @@
 	z-index: 2;
 }
 .section.premark {
-	min-height: 300px;
+	min-height: 250px;
 	background-color: #BA84BB;
 	color: $whiteColor;
 	font-size: $pDescFontSize;
@@ -312,30 +274,30 @@
 		display: none;
 
 		h2 {
-			padding-top: 20px;
-			padding-bottom: 10px;
+			padding-top: 10px;
+			padding-bottom: 5px;
             text-align: center;
 		}
 
 		h4{
 			padding-top: 0;
-			padding-bottom: 30px;
+			padding-bottom: 15px;
             text-align: center;
 		}
 	}
 }
 
-.section.roadmap {
+.section.course {
 	min-height: 600px;
 	background-color: $nearGreenColor;
 	// background: url('../img/hai.svg') no-repeat center center;
 	padding-top: 50px;
 }
-.roadmap .roadmap-img {
+.course .course-img {
 	margin-bottom: 30px;
 }
 
-.roadmap .roadmap-img-div {
+.course .course-img-div {
 	text-align: center;
 }
 

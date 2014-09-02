@@ -2,7 +2,13 @@ var changPRemark = function(color) {
 	$('.feature path[fill="' + color + '"]').on('click', function() {
 		$('.section.premark').css('background-color', color);
 		$('.section .desc').hide();
-		$('.section div[data-fill="' + color + '"]').show();
+		$('.section div[data-fill="' + color + '"]').fadeIn(1000);
+	});
+
+	$('.feature text[data="' + color + '"]').on('click', function() {
+		$('.section.premark').css('background-color', color);
+		$('.section .desc').hide();
+		$('.section div[data-fill="' + color + '"]').fadeIn(1000);
 	});
 }
 

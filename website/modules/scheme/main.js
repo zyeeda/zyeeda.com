@@ -1,4 +1,4 @@
-var currentSolutionColor = '#6CC7EF';
+var currentSolutionColor = '#269FC2';
 var changeSolution = function(solution, color) {
 	$('.solutions-svg *[fill="' + color + '"]').bind('click', function() {
         $('.high_opacity').attr("opacity", 0.3);
@@ -38,7 +38,6 @@ var changeSolution = function(solution, color) {
             $('.solutions-svg *[fill="' + color + '"]').attr("opacity", 0.3);
         }
     });
-
 
 };
 

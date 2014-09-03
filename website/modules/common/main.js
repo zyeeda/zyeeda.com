@@ -11,7 +11,7 @@ $(function() {
     var wow = new WOW({
       boxClass: 'wow',
       animateClass: 'animated',
-      offset: 100
+      offset: 0
     });
     wow.init();
 

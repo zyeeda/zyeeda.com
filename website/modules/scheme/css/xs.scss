@@ -71,7 +71,7 @@
 			width: 90%;
 		}
 
-		path, polyline, polygon {
+		path, polyline, polygon, text {
 			cursor: pointer;
 		}
 
@@ -161,6 +161,8 @@
 		margin-top:-40px;
 	}
 }
+
+
 
 .carousel-control:hover, .carousel-control:focus {
 	opacity: 0.5;

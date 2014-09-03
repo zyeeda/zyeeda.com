@@ -8,6 +8,7 @@
  * @require bootstrap
  * @require skrollr
  * @require snap
+ * @require wowjs
  *
  * @require common
  *

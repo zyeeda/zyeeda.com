@@ -109,7 +109,19 @@ fis.config.set('roadmap.path', [
         reg: '/modules/common/preloading.js',
         release: '/modules/common/preloading.js'
     },
-    //main.js 
+    // wow animate
+    {
+        id: 'animate.css',
+        reg: '/bower_components/animate.css/animate.css',
+        release: '/scripts/vendors/animate.css/animate.css',
+    },
+    {
+        id: 'wowjs',
+        reg: '/bower_components/wowjs/dist/wow.js',
+        release: '/scripts/vendors/wowjs/wow.js',
+        requires: ['animate.css']
+    },
+    //main.js
     {
         id: 'main',
         reg: '/modules/main.js',

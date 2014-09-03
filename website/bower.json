@@ -29,6 +29,8 @@
     "skrollr": "~0.6.26",
     "classie": "~1.0.1",
     "Snap.svg": "~0.3.0",
+    "animate.css": "~3.2.0",
+    "wowjs": "~1.0.1",
     "mod": "https://github.com/fex-team/mod.git"
   }
 }

@@ -8,6 +8,13 @@ var scrollEvent = function(me, evt) {
 
 $(function() {
 
+    var wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 100
+    });
+    wow.init();
+
     $('.page-scroll a').bind('click', function(event) {
         if($(this).data('url')) {
             location.href = $(this).data('url');

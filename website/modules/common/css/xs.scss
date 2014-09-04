@@ -5,11 +5,11 @@ body {
     color: $bodyColor;
 	font-size: $bodyFontSize;
     overflow-x: hidden;
+    letter-spacing: 1px;
 }
 
 p {
 	font-size: $pDescFontSize;
-    letter-spacing: 1px;
     line-height: 180%;
 }
 

@@ -74,7 +74,7 @@ $(function() {
 
 	$(window).on('load', function() {
 		$("#nav").addClass('show');
-		$("#nav #scheme-li").addClass('active');
+		$("#nav #solution-li").addClass('active');
 	});
 
 	$('#carousel-manager').carousel({

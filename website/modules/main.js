@@ -30,10 +30,10 @@
  * @require platform-md.scss
  * @require platform-lg.scss
  *
- * @require scheme-xs.scss
- * @require scheme-sm.scss
- * @require scheme-md.scss
- * @require scheme-lg.scss
+ * @require solution-xs.scss
+ * @require solution-sm.scss
+ * @require solution-md.scss
+ * @require solution-lg.scss
  *
  * @require talent-xs.scss
  * @require talent-sm.scss

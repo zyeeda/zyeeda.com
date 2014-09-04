@@ -78,7 +78,7 @@ $(function() {
 	});
 
 	$('#carousel-manager').carousel({
-	 	interval: 5000
+	 	interval: 15000
 	})
 
 });

@@ -94,8 +94,12 @@
 
 .welfare {
 	.welfare-svg {
-		margin-top: 80px;
+		margin-top: 30px;
 		width: 100%;
+
+		svg {
+			padding: 0px;
+		}
 	}
 }
 

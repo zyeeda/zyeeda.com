@@ -131,7 +131,7 @@
 	padding: 0;
 
 	.occupation-svg {
-		padding-top: 200px;
+
 		padding-bottom: 0px;
 
 		.ot {
@@ -142,41 +142,26 @@
 	.occupation-item {
 		display: none;
 		position: absolute;
-		width: 20%;
+		width: 30%;
 		height: 20%;
+		left: 18%;
+		margin-top: 10.2%;
 
 		.content {
-			height: 85%;
-			background-color: $nearOrangeColor;
-			border: 3px solid #FFF;
+			margin-top: 4px;
 			font-size: 12px;
-			color: $whiteColor;
-			padding: 5px 3px;
-
 		}
 
 		.title {
-			height: 15%;
 			background-color: rgba(0, 0, 0, 0);
 			font-size: 30px;
-			color: #595656;
+			color: #BECC66;
 		}
 	}
 
 	.occupation-item1 {
 		display: block;
-		left: 44.2%;
-		margin-top: 22.2%;
 	}
 
-	.occupation-item2 {
-		left: 56.3%;
-		margin-top: 14.2%;
-	}
-
-	.occupation-item3 {
-		left: 74.9%;
-		margin-top: 6.5%;
-	}
 }
 

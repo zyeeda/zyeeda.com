@@ -1,12 +1,12 @@
 @import '../../const';
 
 @media (min-width: $desktopMinWidth) {
-	
+
 	.section.occupation .occupation-item .content {
 		font-size: 15px;
-		padding: 6px 5px;
+		margin-top: 8px;
 	}
-	
+
 	.response-mech .item .desc {
 		font-size: 15px;
 		padding-top: 40px;

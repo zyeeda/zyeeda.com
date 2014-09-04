@@ -1,10 +1,10 @@
 @import '../../const';
 
 @media (min-width: $retinaMinWidth) {
-	
+
 	.section.occupation .occupation-item .content {
 		font-size: 16px;
-		padding: 10px 8px;
+        margin-top: 10px;
 	}
 
 	.response-mech .item .desc {

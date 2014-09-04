@@ -31,12 +31,16 @@
 		width: 80%;
 		border-top: 1px solid #FFF;
 	}
+
+	.carousel-indicators {
+		bottom: -20px;
+	}
 }
 
-#carousel-response .carousel-control.left {
+.carousel-control.left {
 	background: rgba(0, 0, 0, 0);
 }
-#carousel-response .carousel-control.right {
+.carousel-control.right {
 	background: rgba(0, 0, 0, 0);
 }
 
@@ -107,14 +111,14 @@
 
 .section.possibility:after {
 	left: 50%;
-	margin-left: -20px;
+	margin-left: -10px;
 	right: auto;
 	content: '';
 	position: absolute;
-	border-bottom: 20px #EFF1F4 solid;
-	border-left: transparent 20px solid;
-	border-right: transparent 20px solid;
-	padding-top: 50px;
+	border-bottom: 10px #EFF1F4 solid;
+	border-left: transparent 10px solid;
+	border-right: transparent 10px solid;
+	padding-top: 60px;
 	z-index: 2;
 }
 

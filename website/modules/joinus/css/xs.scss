@@ -37,14 +37,14 @@
 
 .section.notice:after {
 	left: 50%;
-	margin-left: -20px;
+	margin-left: -10px;
 	right: auto;
 	content: '';
 	position: absolute;
-	border-bottom: 20px #FFFFFF solid;
-	border-left: transparent 20px solid;
-	border-right: transparent 20px solid;
-	padding-top: 10px;
+	border-bottom: 10px #FFFFFF solid;
+	border-left: transparent 10px solid;
+	border-right: transparent 10px solid;
+	padding-top: 20px;
 	z-index: 2;
 }
 

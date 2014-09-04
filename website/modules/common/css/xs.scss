@@ -9,8 +9,8 @@ body {
 
 p {
 	font-size: $pDescFontSize;
-    letter-spacing: 2px;
-    line-height: 150%;
+    letter-spacing: 1px;
+    line-height: 180%;
 }
 
 .section {
@@ -51,7 +51,7 @@ p {
 
 .navbar-default {
     border-bottom: #ececec solid 1px;
-    background-color: #ffffff;
+    background-color: rgba(247,247,249,0.9);
     padding: 0;
     -webkit-transform: translate(0, -100%) translateZ(0);
     -ms-transform: translate(0, -100%) translateZ(0);
@@ -63,7 +63,7 @@ p {
 }
 
 .navbar-default.show {
-    box-shadow: 0 1px #ececec;
+    box-shadow: rgba(0,0,0,.2) 0 0 6px;
     -webkit-transform: translate(0, 0) translateZ(0);
     -ms-transform: translate(0, 0) translateZ(0);
     transform: translate(0, 0) translateZ(0);
@@ -75,14 +75,9 @@ p {
 }
 .navbar-default .navbar-nav>li>a {
     color: #636363;
-    border-bottom: 3px solid #FFFFFF;
+    // border-bottom: 3px solid #FFFFFF;
 }
-// .navbar-fixed-top {
-//     padding: 0;
-// }
-// .navbar-fixed-top.navbar-shrink {
-//     padding: 0;
-// }
+
 
 .navbar-default .navbar-toggle {
     background-color: #1a242f;
@@ -216,6 +211,7 @@ p {
 .link ul li {
     padding-bottom: 10px;
     text-align: center;
+    font-size: 13px;
 
     a {
         color: #AAB2BD;
@@ -233,6 +229,7 @@ p {
     line-height: 35px;
     padding-bottom: 100px;
     background: url("../img/map.png?__inline") bottom center no-repeat;
+    font-size: 13px;
 }
 .concat-info img {
     padding-bottom: 40px;
@@ -256,11 +253,8 @@ p {
 
 .footer-below p {
     color: $footerColor;
-    font-size: $bodyFontSize;
+    font-size: 13px;
 }
-
-
-
 
 // preloading
 .ip-header {

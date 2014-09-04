@@ -15,17 +15,28 @@ var changPRemark = function(color) {
 var c = 0;
 var t = undefined;
 var timedCount = function() {
-	if(c >= 20) {
+	var d = new Date();
+	if(d.getHours() === 10 && (d.getMinutes() === 30)) {
 		stopCount();
-		$('.idea:last-child img').attr('src', '/modules/platform/img/thirty-seventy2.svg');
+		$('.idea:last-child .img').html('<img src="/modules/platform/img/thirty-seventy2.svg" />');
+		return;
 	}
-	c += 5;
-	t = setTimeout("timedCount()", 5000);
+	t = setTimeout("timedCount()", 60000);
 };
 
 var stopCount = function () {
 	clearTimeout(t);
+	setTimeout(function() {
+		$('.idea:last-child .img').html('<img src="/modules/platform/img/thirty-seventy.svg" />');
+	}, 60000);
 };
+
+var startCount = function() {
+	var d = new Date();
+	if(d.getHours() === 9 && (d.getMinutes() >= 20 || d.getMinutes() <= 40)) {
+		timedCount();
+	}
+}
 
 $(function() {
 	changPRemark("#BA84BB");
@@ -38,14 +49,12 @@ $(function() {
 	changPRemark("#8CB743");
 	changPRemark("#FECE69");
 
-	$('body').scrollspy({
-        target: '.platform-nav'
-    });
 
 	$(window).on('load', function() {
 		$("#nav").addClass('show');
 		$("#nav #platform-li").addClass('active');
-		timedCount();
+
+		startCount();
 	});
 
 	skrollr.init({smoothScrolling: false, mobileDeceleration: 0.004 });

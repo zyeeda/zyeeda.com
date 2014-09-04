@@ -253,13 +253,13 @@
 
 .section.feature:after {
 	left: 50%;
-	margin-left: -20px;
+	margin-left: -10px;
 	right: auto;
 	content: '';
 	position: absolute;
-	border-top: 20px $whiteColor solid;
-	border-left: transparent 20px solid;
-	border-right: transparent 20px solid;
+	border-top: 10px $whiteColor solid;
+	border-left: transparent 10px solid;
+	border-right: transparent 10px solid;
 	z-index: 2;
 }
 .section.premark {
@@ -289,22 +289,21 @@
 
 .section.course {
 	min-height: 600px;
-	background-color: $nearGreenColor;
-	// background: url('../img/hai.svg') no-repeat center center;
+	// background-color: $nearGreenColor;
+	background: url('../img/hai.svg') no-repeat;
+	background-size: cover;
 	padding-top: 50px;
 }
 .course .course-img {
-	margin-bottom: 30px;
+	margin-top: -20px;
+	position: absolute;
+	left: 20%;
+	margin-left: -200px;
 }
-
-.course .course-img-div {
-	text-align: center;
-}
-
 
 // VerticalTimeline css
 .cbp_tmtimeline {
-	margin: 30px 0 0 0;
+	margin-top: 10%;
 	padding: 0;
 	list-style: none;
 	position: relative;
@@ -365,7 +364,7 @@
 	margin: 0 100px 15px 25%;
 	background: #FFF;
 	color: #49CA94;
-	padding: 2em;
+	padding: 1em;
 	font-size: 1.2em;
 	font-weight: 300;
 	line-height: 1.4;
@@ -534,6 +533,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  margin-top: -2px;
   box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.6), 0 2px 2px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -590,11 +590,11 @@
   color: #fff;
   text-transform: uppercase;
   position: relative;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 20px;
   margin: 0 30px;
   padding: 55px 0 0 0;
-  height: 110px;
+  height: 105px;
   text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -603,7 +603,7 @@
 .ih-item.circle.effect13 .info p {
   visibility: hidden;
   color: #fff;
-  padding: 10px 5px;
+  padding: 5px 5px;
   font-style: italic;
   margin: 0 30px;
   font-size: 13px;

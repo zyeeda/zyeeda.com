@@ -6,18 +6,18 @@
 	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
 	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
 ]>
-<svg version="1.1" id="图层_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 x="0px" y="0px" width="39.17px" height="31px" viewBox="0 0 39.17 31" style="enable-background:new 0 0 39.17 31;"
 	 xml:space="preserve">
 <polygon points="0,31 18.21,0 38.88,0 39.17,0 21.06,31 "/>
 <polygon points="6.11,15.33 0.8,0 15.27,0 "/>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="27.6465" y1="20.3965" x2="38.7109" y2="31.4609">
+<linearGradient id="SVGID_1_lgn" gradientUnits="userSpaceOnUse" x1="27.6465" y1="20.3965" x2="38.7109" y2="31.4609">
 	<stop  offset="0" style="stop-color:#8EAF3E"/>
 	<stop  offset="1" style="stop-color:#8EAF3E"/>
 	<a:midPointStop  offset="0" style="stop-color:#8EAF3E"/>
 	<a:midPointStop  offset="0.5" style="stop-color:#8EAF3E"/>
 	<a:midPointStop  offset="1" style="stop-color:#8EAF3E"/>
 </linearGradient>
-<path style="fill:url(#SVGID_1_);" d="M34.57,13.47L24.39,31h14.78L34.57,13.47z M33.28,20.48l1.85,6.95h-5.9L33.28,20.48z"/>
+<path style="fill:url(#SVGID_1_lgn);" d="M34.57,13.47L24.39,31h14.78L34.57,13.47z M33.28,20.48l1.85,6.95h-5.9L33.28,20.48z"/>
 </svg>

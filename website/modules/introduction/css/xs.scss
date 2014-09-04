@@ -1,7 +1,7 @@
 @import '../../const';
 
 .header.introduction {
-	background: url('../img/header-bg.png') no-repeat center center;
+	background: url('../img/header-bg.jpg') no-repeat center center;
 	background-size: cover;
 	text-align: center;
 	min-height: 550px;
@@ -54,4 +54,11 @@
     #BMapLib_stationText0 {
     	width: 30px;
     }
+}
+
+.BMapLib_SearchInfoWindow {
+	font: 12px "Microsoft YaHei", "Helvetica Neue", sans-serif, SimHei, "宋体" !important;
+}
+.BMapLib_nav_tab_content li {
+	font-family: "Microsoft YaHei", "Helvetica Neue", sans-serif, SimHei, "宋体" !important;
 }

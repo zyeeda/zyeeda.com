@@ -289,23 +289,24 @@
 }
 
 .section.course {
-	height: 1440px;
+	height: 1350px;
 	// background-color: $nearGreenColor;
 	background: url('../img/hai.svg') no-repeat;
 	background-size: cover;
 	padding-top: 50px;
 }
-.course .course-img {
-	margin-top: -20px;
+.course .gou-img {
 	position: absolute;
 	left: 20%;
-	margin-left: -200px;
+	margin-left: 12px;
+	margin-top: 1293px;
+	
 }
 
 // VerticalTimeline css
 .cbp_tmtimeline {
-	margin-top: 80px;
-	padding: 40px 0 10px 0;
+	margin-top: 110px;
+	padding: 0;
 	list-style: none;
 	position: relative;
 }

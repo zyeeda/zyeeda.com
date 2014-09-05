@@ -136,6 +136,17 @@ fis.config.set('roadmap.path', [
     {
         reg: 'bower.json',
         release: false
+    },
+    // exclude md5
+    {
+        reg: '/modules/aboutus/img/position.png',
+        release: '/modules/aboutus/img/position.png',
+        useHash: false
+    },
+    {
+        reg: '/modules/aboutus/img/logo-no.svg',
+        release: '/modules/aboutus/img/logo-no.svg',
+        useHash: false
     }
     
 ]);

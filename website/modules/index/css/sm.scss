@@ -20,15 +20,13 @@
     .img-platform {
         width: 120%;
         padding-left: 0px;
-        padding-top: 20px;
     }
     .img-develop {
         width: 110%;
-        padding-top: 20px;
         padding-right: 0px;
     }
     .img-gossip {
-        width: 90%;
+        width: 80%;
         // -webkit-transform: rotate(0deg);
         // -moz-transform: rotate(0deg);
         // -ms-transform: rotate(0deg);
@@ -36,6 +34,9 @@
         // transform: rotate(0deg);
         margin-top: 50px;
         margin-bottom: 30px;
+    }
+    .com-talent .col-sm-4 {
+        text-align: left;
     }
     .title-item {
         height: 45px;

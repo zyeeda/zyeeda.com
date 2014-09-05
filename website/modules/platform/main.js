@@ -39,15 +39,15 @@ var startCount = function() {
 }
 
 $(function() {
-	changPRemark("#BA84BB");
-	changPRemark("#ED6A58");
-	changPRemark("#62ACC5");
-	changPRemark("#0973BA");
-	changPRemark("#FFA543");
+	changPRemark("#B280B4");
+	changPRemark("#E16856");
+	changPRemark("#61A5BC");
+	changPRemark("#136DAE");
+	changPRemark("#F4A046");
 	changPRemark("#828385");
-	changPRemark("#65CAD0");
-	changPRemark("#8CB743");
-	changPRemark("#FECE69");
+	changPRemark("#64C1C6");
+	changPRemark("#89B046");
+	changPRemark("#EAB32B");
 
 
 	$(window).on('load', function() {

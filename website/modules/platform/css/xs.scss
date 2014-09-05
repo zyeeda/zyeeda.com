@@ -229,15 +229,15 @@
 	}
 }
 
-@include pathRespire(#BA84BB, 3s);
-@include pathRespire(#ED6A58, 2.3s);
-@include pathRespire(#62ACC5, 4.0s);
-@include pathRespire(#0973BA, 1.8s);
-@include pathRespire(#FFA543, 2.8s);
+@include pathRespire(#B280B4, 3s);
+@include pathRespire(#E16856, 2.3s);
+@include pathRespire(#61A5BC, 4.0s);
+@include pathRespire(#136DAE, 1.8s);
+@include pathRespire(#F4A046, 2.8s);
 @include pathRespire(#828385, 1.0s);
-@include pathRespire(#65CAD0, 2.0s);
-@include pathRespire(#8CB743, 3.2s);
-@include pathRespire(#FECE69, 3.5s);
+@include pathRespire(#64C1C6, 2.0s);
+@include pathRespire(#89B046, 3.2s);
+@include pathRespire(#EAB32B, 3.5s);
 
 @-webkit-keyframes respire {
 	0% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1) scaleY(1);}
@@ -265,7 +265,7 @@
 }
 .section.premark {
 	min-height: 250px;
-	background-color: #BA84BB;
+	background-color: #B280B4;
 	color: $whiteColor;
 	font-size: $pDescFontSize;
 	line-height: 32px;

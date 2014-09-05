@@ -57,15 +57,13 @@
 		text-align: right;
 		height: 50px;
 
-		.send {
-			display: none;
-			background-color: #8fb03e;
-			padding: 6px 10px;
-			color: #FFFFFF;
-			cursor: pointer;
-		}
 		.msg {
 			cursor: pointer;
+			font-size: 30px;
+			color: #8b8b8b;
+		}
+		.msg:hover {
+			color: #8fb03e;
 		}
 	}
 

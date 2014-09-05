@@ -202,10 +202,6 @@
 	text-align: center;
 }
 
-.feature svg {
-	width: 90%;
-	height: 90%;
-}
 
 @mixin pathRespire ($color, $time) {
     .feature path[fill="#{$color}"] {

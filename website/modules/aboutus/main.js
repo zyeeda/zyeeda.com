@@ -13,7 +13,7 @@ var showMap = function() {
     map.setCurrentCity("深圳"); // 仅当设置城市信息时，MapTypeControl的切换功能才能可用
 
     var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-        '<img src="modules/aboutus/img/logo-no.svg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+        '<img src="modules/aboutus/img/logo-no.svg" alt="" style="float:right;zoom:1;overflow:hidden;width:80px;height:80px;margin-left:3px;"/>' +
         '电话: 0755-26966586<br/>传真: 0755-26966586-809<br/>地址: 深圳市罗湖区深南东路 2105 号中建大厦 701 室' +
         '</div>';
 

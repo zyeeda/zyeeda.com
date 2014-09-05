@@ -307,11 +307,12 @@
 }
 
 .section.course {
-	height: 1350px;
+	// height: 1350px;
 	// background-color: $nearGreenColor;
 	background: url('../img/hai.svg') no-repeat;
 	background-size: cover;
 	padding-top: 50px;
+    margin-bottom: -55px;
 }
 .course .gou-img {
 	position: absolute;
@@ -323,7 +324,7 @@
 
 // VerticalTimeline css
 .cbp_tmtimeline {
-	margin-top: 110px;
+	margin-top: 150px;
 	padding: 0;
 	list-style: none;
 	position: relative;

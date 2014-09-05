@@ -218,10 +218,18 @@
 
 		-webkit-animation: respire $time;
 		animation: respire $time;
+		-moz-animation: respire $time;
+		-o-animation: respire $time;
+
 		-webkit-animation-iteration-count: infinite;
 		animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		-o-animation-iteration-count: infinite;
+
 		-webkit-transition-timing-function: ease;
 		transition-timing-function: ease;
+		-moz-transition-timing-function: ease;
+		-o-transition-timing-function: ease;
 	}
 
 	.feature text[data="#{$color}"] {
@@ -239,17 +247,27 @@
 @include pathRespire(#89B046, 3.2s);
 @include pathRespire(#EAB32B, 3.5s);
 
+
+// @keyframes respire
+// {
+// 	0% {transform-origin: 50% 100%;transform : scaleX(1) scaleY(1);}
+// 	50% {transform-origin: 50% 100%;transform : scaleX(1.02) scaleY(0.95);}
+// 	100% {transform-origin: 50% 100%;transform : scaleX(1) scaleY(1);}
+// }
 @-webkit-keyframes respire {
 	0% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1) scaleY(1);}
 	50% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1.02) scaleY(0.95);}
 	100% {-webkit-transform-origin: 50% 100%;-webkit-transform : scaleX(1) scaleY(1);}
 }
-
-@keyframes respire
-{
-	0% {transform-origin: 50% 100%;transform : scaleX(1) scaleY(1);}
-	50% {transform-origin: 50% 100%;transform : scaleX(1.02) scaleY(0.95);}
-	100% {transform-origin: 50% 100%;transform : scaleX(1) scaleY(1);}
+// @-moz-keyframes respire {
+// 	0% {-moz-transform-origin: 50% 100%;-moz-transform : scaleX(1) scaleY(1);}
+// 	50% {-moz-transform-origin: 50% 100%;-moz-transform : scaleX(1.02) scaleY(0.95);}
+// 	100% {-moz-transform-origin: 50% 100%;-moz-transform : scaleX(1) scaleY(1);}
+// }
+@-o-keyframes respire {
+	0% {-o-transform-origin: 50% 100%;-o-transform : scaleX(1) scaleY(1);}
+	50% {-o-transform-origin: 50% 100%;-o-transform : scaleX(1.02) scaleY(0.95);}
+	100% {-o-transform-origin: 50% 100%;-o-transform : scaleX(1) scaleY(1);}
 }
 
 .section.feature:after {

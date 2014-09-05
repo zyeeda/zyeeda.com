@@ -178,7 +178,7 @@ hr.star-primary:after {
     min-height: 520px;
 }
 .com-solution {
-    min-height: 560px;
+    min-height: 527px;
 }
 .com-talent {
     min-height: 460px;
@@ -351,7 +351,7 @@ hr.star-primary:after {
 .img-gossip {
     margin-top: 90px;
     margin-bottom: 40px;
-    width: 80%;
+    width: 50%;
     // -webkit-transform: rotate(90deg);
     // -moz-transform: rotate(90deg);
     // -ms-transform: rotate(90deg);
@@ -362,6 +362,9 @@ hr.star-primary:after {
     margin-bottom: 41px;
 }
 .com-platform .col-sm-6 {
+    text-align: center;
+}
+.com-talent .col-sm-4 {
     text-align: center;
 }
 .com-platform .col-sm-6 p, .com-platform .col-sm-6 div {

@@ -18,22 +18,24 @@
     }
 
     .img-platform {
-        width: 100%;
+        width: 120%;
         padding-left: 0px;
-
+        padding-top: 20px;
     }
     .img-develop {
-        width: 75%;
+        width: 110%;
+        padding-top: 20px;
+        padding-right: 0px;
     }
     .img-gossip {
-        width: 80%;
+        width: 90%;
         // -webkit-transform: rotate(0deg);
         // -moz-transform: rotate(0deg);
         // -ms-transform: rotate(0deg);
         // -o-transform: rotate(0deg);
         // transform: rotate(0deg);
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     .title-item {
         height: 45px;

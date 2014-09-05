@@ -45,8 +45,8 @@
  * @require joinus-md.scss
  * @require joinus-lg.scss
  *
- * @require introduction-xs.scss
- * @require introduction-sm.scss
- * @require introduction-md.scss
- * @require introduction-lg.scss
+ * @require aboutus-xs.scss
+ * @require aboutus-sm.scss
+ * @require aboutus-md.scss
+ * @require aboutus-lg.scss
  */

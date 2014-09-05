@@ -18,7 +18,7 @@ var timedCount = function() {
 	var d = new Date();
 	if(d.getHours() === 10 && (d.getMinutes() === 30)) {
 		stopCount();
-		$('.idea:last-child .img').html('<img src="/modules/platform/img/thirty-seventy2.svg" />');
+		$('.idea:last-child .img').html('<img src=' + __uri("/modules/platform/img/thirty-seventy2.svg") + ' />');
 		return;
 	}
 	t = setTimeout("timedCount()", 60000);
@@ -27,7 +27,7 @@ var timedCount = function() {
 var stopCount = function () {
 	clearTimeout(t);
 	setTimeout(function() {
-		$('.idea:last-child .img').html('<img src="/modules/platform/img/thirty-seventy.svg" />');
+		$('.idea:last-child .img').html('<img src=' + __uri("/modules/platform/img/thirty-seventy.svg") + ' />');
 	}, 60000);
 };
 

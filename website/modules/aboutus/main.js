@@ -14,7 +14,7 @@ var showMap = function() {
 
     var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
         '<img src="modules/aboutus/img/logo-no.svg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
-        '地址：深圳市罗湖区深南东路 2105 号中建大厦7层 <br/>电话：0755-26966586<br/>口号：终其而为， 欲达则至' +
+        '电话: 0755-26966586<br/>传真: 0755-26966586-809<br/>地址: 深圳市罗湖区深南东路 2105 号中建大厦 701 室' +
         '</div>';
 
     //创建检索信息窗口对象
@@ -22,7 +22,7 @@ var showMap = function() {
     searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
         title: "中昱达信息技术有限责任公司", //标题
         width: 290, //宽度
-        height: 105, //高度
+        height: 90, //高度
         panel: "panel", //检索结果面板
         enableAutoPan: true, //自动平移
         enableSendToPhone: true,

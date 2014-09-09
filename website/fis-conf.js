@@ -139,13 +139,13 @@ fis.config.set('roadmap.path', [
     },
     // exclude md5
     {
-        reg: '/modules/aboutus/img/position.png',
-        release: '/modules/aboutus/img/position.png',
+        reg: '/img/aboutus/position.png',
+        release: '/img/aboutus/position.png',
         useHash: false
     },
     {
-        reg: '/modules/aboutus/img/logo-no.svg',
-        release: '/modules/aboutus/img/logo-no.svg',
+        reg: '/img/aboutus/logo-no.svg',
+        release: '/img/aboutus/logo-no.svg',
         useHash: false
     }
     
@@ -166,58 +166,6 @@ fis.config.merge({
         }
     }
 });
-
-
-
-fis.config.set('pack', {
-    'pkg/lib.js': [
-        '/scripts/vendors/jquery/**.js',
-        '/scripts/vendors/jquery.easing/**.js',
-        '/scripts/vendors/bootstrap/**.js',
-        '/scripts/vendors/html5shiv/**.js',
-        '/scripts/vendors/modernizr/**.js',
-        '/scripts/vendors/respond/**.js',
-        '/scripts/vendors/skrollr/**.js'
-    ]
-});
-
-
-//目录规范
-
-// fis.config.merge({
-//     roadmap : {
-//         path : [
-//             {
-//                 //一级同名组件，可以引用短路径，比如modules/jquery/juqery.js
-//                 //直接引用为var $ = require('jquery');
-//                 reg : /^\/modules\/([^\/]+)\/\1\.(js)$/i,
-//                 //是组件化的，会被jswrapper包装
-//                 isMod : true,
-//                 //id为文件夹名
-//                 id : '$1'
-//             },
-//             {
-//                 //modules目录下的其他文件
-//                 reg : /^\/modules\/(.*)\.(js)$/i,
-//                 //是组件化的，会被jswrapper包装
-//                 isMod : true,
-//                 //id是去掉modules和.js后缀中间的部分
-//                 id : '$1'
-//             },
-//             {
-//                 //其他css文件
-//                 reg : "**.css",
-//                 //css文件会做csssprite处理
-//                 useSprite : true
-//             },
-//             {
-//                 //readme文件，不要发布
-//                 reg : /\/readme.md$/i,
-//                 release : false
-//             }
-//         ]
-//     }
-// });
 
 //css 合并
 fis.config.set('settings.postpackager.simple.autoCombine', true);

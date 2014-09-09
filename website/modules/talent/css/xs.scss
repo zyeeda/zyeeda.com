@@ -1,7 +1,7 @@
 @import '../../const';
 
 .header.talent {
-	background: url('../img/header-bg.jpg') no-repeat center center;
+	background: url('/img/talent/header-bg.jpg') no-repeat center center;
 	background-size: cover;
 	text-align: center;
 	min-height: 550px;
@@ -21,7 +21,7 @@
 
 .section.response-mech {
 	min-height: 550px;
-	background: url('../img/hanging.svg') no-repeat top center, url('../img/retina_wood_@2X.jpg') repeat-x;
+	background: url('/img/talent/hanging.svg') no-repeat top center, url('/img/talent/retina_wood_@2X.jpg') repeat-x;
 	padding-top: 0px;
 	text-align: center;
 

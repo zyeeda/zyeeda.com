@@ -1,7 +1,7 @@
 @import '../../const';
 
 .header.platform{
-	background: url('../img/header-bg.jpg') no-repeat center center;
+	background: url('/img/platform/header-bg.jpg') no-repeat center center;
 	background-size: cover;
 	text-align: center;
 	min-height: 550px;
@@ -107,7 +107,7 @@
 }
 
 .section.ideas {
-    background: url("../img/idea-bg.jpg") repeat;
+    background: url("/img/platform/idea-bg.jpg") repeat;
 	min-height: 550px;
 }
 
@@ -305,7 +305,7 @@
 .section.course {
 	// height: 1350px;
 	// background-color: $nearGreenColor;
-	background: url('../img/hai.svg') no-repeat;
+	background: url('/img/platform/hai.svg') no-repeat;
 	background-size: cover;
 	padding-top: 50px;
     margin-bottom: -55px;

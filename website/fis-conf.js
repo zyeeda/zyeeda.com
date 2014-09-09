@@ -164,6 +164,12 @@ fis.config.merge({
                 type : 'amd'
             }
         }
+    },
+    deploy : {
+        default : {
+            to : '../public',
+            exclude : /\/scripts|modules/
+        }
     }
 });
 

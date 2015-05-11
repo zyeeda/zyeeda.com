@@ -1,35 +1,16 @@
-var calBgHeight = function() {
-    var hei = $(window).height();
-    $('.header.company').height(hei);
-    $('.bg').height(hei);
-}
-
 $(function() {
-    calBgHeight();
-
-    $(window).resize(function() {
-        calBgHeight();
-    });
-    
-    $('#mouse').bind('click', function(event) {
-        scrollEvent(this, event);
-    });
-
-    var num = $(window).height() - 150;
 
     $(window).scroll(function() {
-        if($(document).scrollTop() >= num) {
+        console.log($(window).height());
+        console.log($(document).scrollTop());
+        if($(document).scrollTop() >= 380 && $(document).scrollTop() <= 500) {
             // $("#nav").fadeIn(1000);
-            $("#nav").addClass('show');
+            // $("#nav").addClass('show');
+            // console.log('123');
         }else {
             // $('#nav').fadeOut(500);            
             // $('#nav').hide();
-            $("#nav").removeClass('show');
+            // $("#nav").removeClass('show');
         }
-    }); 
-
-    $(window).on('load', function() {
-        $("#nav #index-li").addClass('active');
-        $('#index-effect').removeClass('effect-small').addClass('effect-lager');
     });
 });

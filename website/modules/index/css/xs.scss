@@ -12,10 +12,7 @@ ol li.active {
 
 /* -- end -- */
 
-.content {
-
-}
-
+/* -- main -- */
 .com-exposition {
 	padding-top: 50px;
 	padding-bottom: 40px;
@@ -32,41 +29,33 @@ ol li.active {
 	text-decoration: none;
 }
 
+/* -- agent -- */
 .com-agent {
-	min-height: 600px;
 	background-color: #FF0048;
 	color: #FFF;
+	padding: 50px 0 0 0;
 }
-
-.com-smartcity {
-	min-height: 600px;
-	// display: none;
-}
-
-#smartcity_2 {
-	background-color: #2D5CEA;
-	color: #FFF;
-}
-
-// .img-shadow {
-// 	height: 10px;
-// 	width: 20px;
-// 	border-radius: 50%;
-// 	-webkit-box-shadow: 10px 10px inset;
-// } 
 
 .agent-total {
-	width: 150px;
-	height: 150px;
-	padding: 10px;
+	width: 130px;
+	height: 130px;
+	padding: 5px;
 	border-radius: 50%;
 	border: 2px dashed;
 	margin: auto;
+	background-color: #FF0048;
+
+	position: relative;
+	z-index: 1;
+}
+
+.agent-item {
+	width: 600px;
 }
 
 .agent-total .circle-inner {
-	width: 126px;
-	height: 126px;
+	width: 116px;
+	height: 116px;
 	background-color: #FFF;
 	border-radius: 50%;
 	text-align: center;
@@ -74,18 +63,69 @@ ol li.active {
 	padding: 22px 0; 
 }
 
+.agent-total .circle-inner:hover {
+	cursor: pointer;
+}
+
 .agent-total .circle-inner span {
 	font-size: 40px;
 	line-height: 1em;
 }
 
+.agent-line {
+	position: relative;
+	top: -60px;
+	overflow: hidden;
+	height: 105px;
+	left: 75px;
+}
+
+.agent-line .arc-line {
+	border-radius: 50%;
+	border: 2px solid #fff;
+	width: 450px;
+	height: 450px;
+}
+
+.agent-line .artical-line {
+	width: 1px;
+	height: 400px;
+	border: 1px solid #fff;
+	position: relative;
+	left: 50%;
+}
+
+.agent-point ul {
+	list-style: none;
+	position: relative;
+	left: 65px;
+	top: -70px;
+}
+
+.agent-point ul li {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #FFF;
+	float: left;
+}
+
 .agent-branch {
-	margin-top: 50px;
+	position: relative;
+	top: -50px;
+}
+
+.agent-branch > div:first-child {
+	position: relative;
+}
+
+.agent-branch > div:last-child {
+	position: relative;
 }
 
 .agent-branch .circle {
-	width: 126px;
-	height: 126px;
+	width: 116px;
+	height: 116px;
 	margin: auto;
 	background: transparent;
 	border-radius: 50%;
@@ -95,15 +135,17 @@ ol li.active {
 	text-align: center;
 }
 
-.agent-branch .circle > span {
+.agent-branch .circle span {
 	font-size: 20px;
 	line-height: 1em;
 }
 
-// .agent-branch .circle:first-child > span {
-// 	font-size: 30px;
-// 	line-height: 1em;
-// } 
+.agent-branch .col-sm-4:first-child .circle span {
+	font-size: 30px;
+	position: absolute;;
+	top: 50px;
+	left: 50px;
+}
 
 .agent-branch .list-item {
 	text-align: center;
@@ -115,40 +157,205 @@ ol li.active {
 	margin-top: 10px;
 }
 
-.smartcity.title {
-	font-size: 45px;
-	line-height: 1em;
-	margin-top: 10px;
+.circle:hover {
+	cursor: pointer;
 }
 
-.contractor .contractor-logo {
-	border: 1px solid #ddd;
-	padding: 5px 10px; 
-	width: 200px;
+/* -- smartcity -- */
+.com-smartcity {
+	height: 675px;
+}
+
+.com-smartcity .row {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.btn-title {
+	width: 120px;
+	height: 35px;
+	font-size: 25px;
 	text-align: center;
+	border-radius: 5px;
+}
+
+.smartcity.title {
+	font-size: 52px;
+	line-height: 1em;
+	margin-top: 10px;
+	color: #000;
+	font-weight: bold;
+}
+
+#smartcity_1 .row, #smartcity_2 .row {
 	margin-top: 40px;
 }
 
-.contractor .contractor-info {
+/* -- smartcity_1 -- */
+
+#smartcity_1 .btn-title {
+	background-color: #F5B23F;
+	color: #FFF;
+}
+
+.project-info {
+	margin-top: 35px;
+	margin-bottom: 10px;
+}
+
+.project-info span {
 	border: 1px solid #ddd;
-	border-top: 0;
-	width: 200px;
+	padding: 5px 12px;
+	font-size: 15px;
+}
+
+#smartcity_1 .row > .col-sm-5:last-child {
+	position: relative;
+	top: -30px;
+	left: 50px;
+}
+
+#smartcity_1 .row > .col-sm-5:last-child img {
+	height: 450px;
+}
+
+/* -- smartcity_2 -- */
+#smartcity_2 {
+	background-color: #2D5CEA;
+	color: #FFF;
+}
+
+#smartcity_2 .btn-title {
+	background-color: #FFF;
+	color: #2D5CEA;
+}
+
+#smartcity_2 .service-obj {
+	margin-top: 100px;
+}
+
+#smartcity_2 .service-obj .obj-item {
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+#smartcity_2 .row > .col-sm-8 {
+	position: relative;
+	left: -150px;
+}
+
+#smartcity_2 .row > .col-sm-8 img {
+	width: 800px;
+}
+
+/* -- smartcity_3 -- */
+#smartcity_3 .btn-title {
+	background-color: #F20074;
+	color: #FFF;
+}
+
+#smartcity_3 .framework {
+	margin-top: 10px;
+	background: url(../img/framework.png?__inline) no-repeat center center;
+	background-size: contain;
+	height: 380px;
+	color: #FFF;
+}
+
+.framework .item-left {
+	position: relative;
+	top: 110px;
+	left: 80px;
+	float: left;
 	text-align: center;
 }
 
+.framework .item-left > span,.framework .item-center > span,.framework .item-right > span {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.framework ul {
+	list-style: none;
+	position: relative;
+	left: -20px;
+	margin-top: 5px;
+}
+
+.framework .item-center {
+	position: relative;
+	float: left;
+	left:210px;
+	top: 28px;
+	text-align: center;
+}
+
+.framework .item-center .item {
+	float: left;
+	position: relative;
+	top: 60px;
+	left: -20px;
+}
+
+.framework .item-center .item span {
+	font-size: 16px;
+}
+
+.framework .item-right {
+	position: relative;
+	float: left;
+	left:330px;
+	top: 110px;
+	text-align: center;
+}
+
+
+/* -- nav-right -- */
 .nav-right {
 	position: fixed;
-	top: 40%;
+	top: 250px;
 	right: 50px;
-	color: #DDD;
+	color: #aaa;
 	text-align: right;
 }
 
-.nav-right li {
+.nav-right ul li {
 	margin: 5px 0;
+	height: 20px;
 }
 
-.nav-right li a {
+.nav-right ul li a {
 	color: #777886;
 	text-decoration: none;
+}
+
+.nav-right ul li a div{
+	width: 12px;
+	height: 12px;
+	border: 2px solid #777886;
+	border-radius: 50%;
+	position: relative;
+	top: -17px;
+	left: 115px;
+}
+
+.nav-right ul li:first-child a span {
+	position: relative;
+	left: 20px;
+} 
+
+.nav-right ul li a i {
+	left: 23px;
+}
+
+.toggle-color {
+	color: #FFF !important;
+}
+
+.toggle-border {
+	border: 2px solid #FFF !important;
+}
+
+.toggle-background {
+	background-color: transparent !important;
 }

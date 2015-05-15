@@ -1,77 +1,64 @@
 var changeColor = function() {
-    $('.nav-right ul li a').each(function(element, index){
+    $('.nav-right ul li a').each(function(element,index) {
         var top = $(this).offset().top;
-        var state = $('.carousel-inner .item').eq(1).hasClass('active'); 
-        if(top >= 638 && top <= 1300) {
-            $(this).addClass('toggle-color');
-            $(this).find('div').addClass('toggle-border');
-        } else if(top > 1300 && state) {
-            $(this).addClass('toggle-color');
-            $(this).find('div').addClass('toggle-border');
-        } else {
-            $(this).removeClass('toggle-color');
-            $(this).find('div').removeClass('toggle-border');
+        if(element == 0) {
+            if((top >= 642 && top < 1300) || (top >= 1965 && top < 2638)) {
+                $(this).css('color','#FFF');
+            } else {
+                $(this).css('color','#777886');
+            }
         }
-    });
-}
-
-var toggleColor = function() {
-    var state = $('.carousel-inner .item').eq(1).hasClass('active'); 
-    $('.nav-right ul li a').each(function(element, index){
-        var top = $(this).offset().top;
-        if(state) {
-            if(top > 1300) {
-                $(this).addClass('toggle-color');
-                $(this).find('div').addClass('toggle-border');
-                $('.nav-right ul li:last-child a div').css('background-color', '#FFF');
+        if(top >= 0 && top < 642) {
+            $(this).find('div').removeClass('toggle-border');
+            $(this).find('div').css('background-color','transparent');
+            if(element == 1){
+                $('.nav-right ul li a:eq(1) div').css('background-color','#777886');
+            }
+        } else if(top >= 642 && top < 1300) {
+            $(this).find('div').addClass('toggle-border');
+            $(this).find('div').css('background-color','transparent');
+            if(element == 2) {
+                $('.nav-right ul li a:eq(2) div').css('background-color','#FFF');
+            }
+        } else if(top >= 1300 && top< 1960 ) {
+            $(this).find('div').removeClass('toggle-border');
+            $(this).find('div').css('background-color','transparent');
+            if(element == 3) {
+                $('.nav-right ul li a:eq(3) div').css('background-color','#777886');            
+            }
+        } else if(top >= 1965 && top < 2638) {
+            $(this).find('div').addClass('toggle-border');
+            $(this).find('div').css('background-color','transparent');
+            if(element == 4) {
+                $('.nav-right ul li a:eq(4) div').css('background-color','#FFF');
             }
         } else {
-            $(this).removeClass('toggle-color');
             $(this).find('div').removeClass('toggle-border');
-            $('.nav-right ul li:last-child a div').css('background-color', '#777886');
+            $(this).find('div').css('background-color','transparent');
+            if(element == 5) {
+                $('.nav-right ul li a:eq(5) div').css('background-color','#777886');
+            }
         }
     });
 }
 
-var changeProgressPoint = function() {
-    var top = $(document).scrollTop();
-    var state = $('.carousel-inner .item').eq(1).hasClass('active');
-
-    if(top >= 0 && top < 348) {
-        setBackground();
-        $('.nav-right ul li:eq(1) a div').css('background-color', '#777886');
-    } else if( top >= 348 && top < 980) {
-        setBackground();
-        $('.nav-right ul li:eq(2) a div').css('background-color', '#FFF');
-    } else {
-        if(state) {
-            setBackground();
-            $('.nav-right ul li:last-child a div').css('background-color', '#FFF');
-        } else {
-            setBackground();
-            $('.nav-right ul li:last-child a div').css('background-color', '#777886');
-        }
-    }
-}
-
-var setBackground = function() {
-    $('.nav-right ul li a div').each(function() {
-        $(this).css('background-color', 'transparent');
-    });
+var adaptWidth = function() {
+    var width = ($(window).width() > 1400) ? 1400 : $(window).width();
+    $('.content').css('width', width);
+    $('.nav-right').css('margin-left', (width/2)-125);
 }
 
 $(function() {
+    adaptWidth();
+
     changeColor();
 
-    changeProgressPoint();
+    $(window).resize(function(){
+        adaptWidth();
+    });
 
     $(window).on('scroll', function() {
         changeColor();
-        changeProgressPoint();
-    });
-
-    $('#carousel-smartcity').on('slid.bs.carousel', function(){
-        toggleColor();
     });
 
     $('#nav').addClass('show');

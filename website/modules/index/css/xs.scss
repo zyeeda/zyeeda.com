@@ -1,18 +1,11 @@
 @import '../../const';
 
-/* -- 覆盖原有的样式 -- */
-
-ol li {
-	border: 2px solid #ddd !important;
-}
-
-ol li.active {
-	background-color: #ddd !important;
-}
-
-/* -- end -- */
-
 /* -- main -- */
+.content {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .com-exposition {
 	padding-top: 50px;
 	padding-bottom: 40px;
@@ -163,7 +156,7 @@ ol li.active {
 
 /* -- smartcity -- */
 .com-smartcity {
-	height: 675px;
+	height: 670px;
 }
 
 .com-smartcity .row {
@@ -231,12 +224,16 @@ ol li.active {
 }
 
 #smartcity_2 .service-obj {
-	margin-top: 100px;
+	margin-top: 40px;
+	float: right;
+	margin-right: 20px;
 }
 
 #smartcity_2 .service-obj .obj-item {
 	margin-top: 20px;
 	font-size: 18px;
+	float: left;
+	margin-right: 20px;
 }
 
 #smartcity_2 .row > .col-sm-8 {
@@ -244,7 +241,7 @@ ol li.active {
 	left: -150px;
 }
 
-#smartcity_2 .row > .col-sm-8 img {
+#smartcity_2 .row > .col-sm-8 > img {
 	width: 800px;
 }
 
@@ -309,14 +306,14 @@ ol li.active {
 	text-align: center;
 }
 
-
 /* -- nav-right -- */
 .nav-right {
 	position: fixed;
 	top: 250px;
-	right: 50px;
 	color: #aaa;
 	text-align: right;
+	left: 50%;
+	margin-left: 550px;
 }
 
 .nav-right ul li {
@@ -335,21 +332,11 @@ ol li.active {
 	border: 2px solid #777886;
 	border-radius: 50%;
 	position: relative;
-	top: -17px;
-	left: 115px;
+	left: 10px;
 }
-
-.nav-right ul li:first-child a span {
-	position: relative;
-	left: 20px;
-} 
 
 .nav-right ul li a i {
-	left: 23px;
-}
-
-.toggle-color {
-	color: #FFF !important;
+	left: 8px;
 }
 
 .toggle-border {
@@ -357,5 +344,5 @@ ol li.active {
 }
 
 .toggle-background {
-	background-color: transparent !important;
+	background-color: transparent;
 }

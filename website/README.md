@@ -35,6 +35,6 @@ cd website
 
 bower install
 
-fis release
+fis release -opm
 
-fis start
+fis server start

@@ -50,8 +50,8 @@
  * @require aboutus-md.scss
  * @require aboutus-lg.scss
  * 
- * @require homepage-xs.scss
- * @require homepage-sm.scss
- * @require homepage-md.scss
- * @require homepage-lg.scss
+ * @require bigdata-xs.scss
+ * @require bigdata-sm.scss
+ * @require bigdata-md.scss
+ * @require bigdata-lg.scss
  */

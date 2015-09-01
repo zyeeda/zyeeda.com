@@ -1,6 +1,7 @@
 node_modules
 bower_components
 build
+public
 dist
 .DS_Store
 npm-debug.log

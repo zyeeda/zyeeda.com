@@ -1,29 +1,51 @@
 import React , {Component} from "react";
 import Utils from "./Utils"
+import $ from "jquery"
+
+let regs = {
+    name :/^[\w|\s]{2,24}$/,
+    email : /^\w{1,20}@\w{1,20}\.\w{2,5}$/,
+    phone :/^\d{11}$/,
+    description :/[\w|\s]{20,400}/
+};
+
+const validCss = {borderColor :'#e1e1e1'};
+const invalidCss = {borderColor :'red'};
 
 class UserInput extends Component {
-
-    static checkUserInput(event) {
-        let regs = {
-            name :/^\S{2,10}$/,
-            email : /^\w{1,10}@\w{1,10}\.{2,5}$/,
-            phone :/^\d{11}$/,
-            description :/\w{10,200}/g
-        };
-        let valid ;
-        try {
-            valid = regs[event.target.name].test(event.target.value);
-        } catch (err) {
-            console.log('unknow input name');
-        }
-        console.log(valid);
-        console.log(event.target);
+    static onChange(event) {
+        $(event.target).css(validCss);
     }
-
+    static check(value , fileName) {
+        return regs[fileName].test(value.trim());
+    }
+    static onBlur(event) {
+        // event.target
+        // todo :
+        if ( !UserInput.check(event.target.value , event.target.name) ) {
+            $(event.target).css(validCss);
+        }
+    }
+    static send() {
+        let validInputs = [];
+        let invalidInputs = [];
+        $('.about input ,.about textarea').each((index , item) =>{
+            if( UserInput.check(item.value , item.name) ) {
+                validInputs.push(item);
+            }else {
+                invalidInputs.push(item);
+            }
+        });
+        if(invalidInputs.length != 0) {
+            // todo : do something
+        }
+        $(validInputs).css(validCss);
+        $(invalidInputs).css(invalidCss);
+    }
     render() {
         return (
             <p>
-                <input onChange={UserInput.checkUserInput} {...this.props} />
+                <input onBlur={UserInput.onBlur} onChange={UserInput.onChange} {...this.props} />
             </p>
         );
     }
@@ -34,9 +56,6 @@ export default React.createClass({
         const root = document.getElementById('root');
         Utils.transitionOpacity(root);
         Utils.setDocTitle('中昱达-关于我们');
-    },
-    send() {
-
     },
     render() {
         return (
@@ -106,18 +125,16 @@ export default React.createClass({
                                 <p>
                                     感谢您来到中昱达,若您有合作意向,请为我们留言或使用以下方式联系我们,我们将尽快给您回复,并为您提供真诚的服务. 谢谢 !
                                 </p>
-                                <form  >
-                                    <UserInput type="text" name="name"  placeholder="您的姓名"/>
-                                    <UserInput type="text" name="phone"  placeholder="您的电话" />
-                                    <UserInput type="text" name="email" placeholder="您的邮箱" />
-                                    <p>
-                                    <textarea ref="textarea" name="description" placeholder="您的详细要求">
+                                    <UserInput ref="name" type="text" name="name"  placeholder="您的姓名"/>
+                                    <UserInput ref="phone" type="text" name="phone"  placeholder="您的电话" />
+                                    <UserInput ref="email" type="text" name="email" placeholder="您的邮箱" />
+                                <p>
+                                    <textarea onBlur={UserInput.onBlur} onChange={UserInput.onChange} ref="textarea" name="description" placeholder="您的详细要求: 20 ~ 200 字">
                                     </textarea>
-                                    </p>
+                                </p>
                                     <p>
-                                        <button onClick={this.send}>完成发送</button>
+                                        <button onClick={UserInput.send}>完成发送</button>
                                     </p>
-                               </form>
                             </div>
                         </div>
                         <div className="pure-u-1 pure-u-md-1-2">

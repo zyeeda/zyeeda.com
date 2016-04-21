@@ -36,14 +36,12 @@ export default {
         let count = 0;
         $( window ).scroll(function() {
            if(count !=0 ) {
-               console.log('start');
                f1();
            }
             clearTimeout( $.data( this, "scrollCheck" ) );
             $.data( this, "scrollCheck", setTimeout(function() {
                 if(count !=0 ) {
                     f2();
-                    console.log('stop');
                 }
                 count++;
             }, 250) );

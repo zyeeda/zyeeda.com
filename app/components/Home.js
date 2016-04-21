@@ -20,7 +20,7 @@ const Home = React.createClass({
                     <li className="tw pure-g">
                         <img className="gif-bg" src="../images/home/bg-1.gif" />
                         <div className="loc pure-u-1 pure-u-lg-1-2">
-                            <img  src="../images/home/loc-tw.png" alt="tw"/>
+                            <img  src="../images/home/loc-tw.png"/>
                         </div>
                         <div className="pure-u-1 pure-u-lg-1-2">
                             <div className="text-wrap" id="text-wrap">

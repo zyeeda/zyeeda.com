@@ -1,0 +1,12 @@
+#header {
+    img.banner {
+        width: 100%;
+        z-index: -1;
+    }
+    position: relative;
+    color: white;
+    background-size: cover;
+    text-align: center;
+    background: $bgColor;
+}
+

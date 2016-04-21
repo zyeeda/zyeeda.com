@@ -1,0 +1,24 @@
+/* font size */
+// s --> small , m --> middle , l --> large
+$sFontSize : 10px;
+$baseFontSize : 12px;
+$lFontSize : 14px;
+$xlFontSize : 16px;
+$bFontSize : 18px;
+
+$h2Size : 18px;
+
+$h1Color :#c31632;
+$h1Size :#c31632;
+$lightGrayColro:#f6f6f6;
+$navBarBorderColor:#d3d3d3;
+$navBarColor:$lightGrayColro;
+$bgColor: #111C29;
+$fontColor: #000;
+$linkHoverBgColor:#7DA528;
+
+// pure grid system's breakpoint
+$pureSm :35.5em;
+$pureMd :48em;
+$pureLg :64em;
+$pureXl:80em;

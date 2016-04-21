@@ -1,0 +1,56 @@
+$navColor : #505050;
+
+.nav-bar {
+    font-size: 14px;
+    color : #505050;
+    width : 100%;
+    height : 50px;
+    background : $lightGrayColro;
+    opacity : 0.9;
+    z-index : 3;
+    top : 0px ;
+    position: fixed;
+    border-bottom: 1px solid $navBarBorderColor;
+}
+.nav-bar img.logo {
+    top : 14px;
+    left: 60px;
+    position: absolute;
+}
+
+
+.nav-link {
+    right : 6% ;
+    top: 4px;
+    position: absolute;
+    margin-top: 10px;
+    color : $navColor;
+    text-align: center;
+
+    .spaceMaker {
+        display: inline-block;
+        width: 46px;
+    }
+}
+
+.nav-link li {
+    display: inline-block;
+    a {
+        color: $navColor;
+        text-decoration: none;
+        &:hover {
+            //background: $linkHoverBgColor;
+        }
+    }
+}
+
+
+@media screen and (max-width: $pureMd) {
+   #nav-bar img.logo{
+       left: 20px;
+
+   }
+   #nav-bar .spaceMaker {
+       width: 30px;
+   }
+}

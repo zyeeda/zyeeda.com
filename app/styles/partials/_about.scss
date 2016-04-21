@@ -1,0 +1,143 @@
+//$maxTextWidth : 300px;
+$formBorderColor: #e1e1e1;
+
+.about {
+    input {
+        width : 100%;
+        outline: none;
+        height : 30px;
+        padding-left : 6px;
+        border : 1px solid $formBorderColor;
+    }
+    textarea{
+        padding-left : 6px;
+        width : 100%;
+        height : 200px;
+        resize: none;
+        outline: none;
+        border : 1px solid $formBorderColor;
+    }
+    button{
+        width : 100px;
+        background: $h1Color;
+        border : none;
+        outline: none;
+        height : 30px;
+        margin: 20px 0;
+        color : white;
+    }
+    ul li:nth-child(odd) {
+        background : $lightGrayColro;
+    }
+    ul li img{
+        min-width : 320px;
+    }
+    h1{
+        line-height: 2.2em;
+        margin : 0 auto ;
+        color : $h1Color;
+        font-size : $h1Size;
+    }
+    .text-wrap{
+        max-width : 360px;
+        p{
+            margin-top: 12px;
+            line-height: 1.8em;
+        }
+    }
+}
+
+#about .time-line{
+    div:nth-child(1) {
+        margin: 0 0 30px 0 ;
+    }
+    h1,p{
+        text-align: center;
+        margin : 0 ;
+    }
+    img{
+        margin : 0 auto !important;
+        display : block;
+        max-width : 1290px !important;
+        width : 67.2%!important;
+    }
+}
+
+@media screen and (min-width:$pureMd) {
+    #about {
+        ul li{
+            padding : 160px 0 ;
+        }
+    }
+    #about .about-us{
+        text-align: right;
+        img{
+            display : inline;
+            margin-right : 60px;
+            margin-top : 30px;
+            max-width : 330px;
+            width : 85%;
+        }
+        .text-wrap{
+            text-align: left;
+            margin-left: 80px;
+        }
+    }
+    #about .prods {
+        text-align: left;
+        img{
+            max-width : 420px;
+            width : 95%;
+            margin-left : 60px;
+            margin-top : 60px;
+        }
+        .text-wrap{
+            float : right;
+            text-align: left;
+            margin-right: 100px;
+        }
+    }
+
+    #about .form {
+        text-align: left;
+        img{
+            margin-right : 60px;
+            margin-top : 30px;
+            max-width : 420px;
+            width : 95%;
+        }
+        .text-wrap{
+            float : right;
+            text-align: left;
+            margin-right: 100px;
+        }
+    }
+
+}
+
+@media screen and (max-width:$pureMd) {
+    #about {
+        text-align: left;
+        ul li img{
+            display : block;
+            margin : 0 auto ;
+        }
+        .about-us, .prods , .form{
+            img{
+                margin-top : 30px;
+                width : 320px;
+            }
+        }
+        .text-wrap{
+            margin : 0 auto;
+        }
+        .prods img{
+            width: 60%;
+        }
+
+        ul li{
+            padding : 80px 0 ;
+        }
+    }
+}
+

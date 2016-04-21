@@ -2,14 +2,15 @@
 中昱达公司网站V2.0
 ## useage
 
-### start project
+- start
 
-``` bash
-$ # start on localhost
-$ npm start local
-```
+    ``` bash
+    $ # start on localhost
+    $ npm start local
+    ```
 
-### build 
-```bash
-$  npm run build
-```
+- build 
+
+    ```bash
+    $  npm run build
+    ```

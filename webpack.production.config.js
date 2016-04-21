@@ -32,7 +32,7 @@ module.exports = {
         new webpack.optimize.DedupePlugin(),
         new ExtractTextPlugin("[name]-[hash].css"),
         new OpenBrowserPlugin({url: 'http://localhost:8080'}),
-        new CopyWebpackPlugin([{from: 'app/images', to: 'images'})
+        new CopyWebpackPlugin([{from: 'app/images', to: 'images'}])
     ],
     resolve: {
         // you can now require('file') instead of require('file.coffee')

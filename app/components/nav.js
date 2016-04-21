@@ -12,13 +12,10 @@ import Utils from "./Utils"
 const ACTIVE = { borderBottom : "2px solid red" , paddingBottom:"2px" };
 export default React.createClass({
     componentDidMount() {
+        $('#nav-bar').slideUp(100);
         Utils.scrollDetect(function(){
-            // $('.nav-bar').addClass('animated slideInDown');
-            // $('.nav-bar').removeClass('animated slideOutUp');
+            $('#nav-bar').slideDown();
         } , function() {
-            // $('.nav-bar').addClass('animated slideOutUp');
-            // $('.nav-bar').addClass('animated slideInDown');
-            // $('.nav-bar').removeClass('animated slideInDown');
         });
     },
     render() {

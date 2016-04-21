@@ -1,19 +1,42 @@
-import React from "react";
+import React , {Component} from "react";
 import Utils from "./Utils"
+
+class UserInput extends Component {
+
+    static checkUserInput(event) {
+        let regs = {
+            name :/^\S{2,10}$/,
+            email : /^\w{1,10}@\w{1,10}\.{2,5}$/,
+            phone :/^\d{11}$/,
+            description :/\w{10,200}/g
+        };
+        let valid ;
+        try {
+            valid = regs[event.target.name].test(event.target.value);
+        } catch (err) {
+            console.log('unknow input name');
+        }
+        console.log(valid);
+        console.log(event.target);
+    }
+
+    render() {
+        return (
+            <p>
+                <input onChange={UserInput.checkUserInput} {...this.props} />
+            </p>
+        );
+    }
+}
+
 export default React.createClass({
     componentDidMount() {
         const root = document.getElementById('root');
         Utils.transitionOpacity(root);
         Utils.setDocTitle('中昱达-关于我们');
     },
-    // onSubmit={this.handleSubmit}
-    handleSubmit() {
-        event.preventDefault();
-        let name =  event.target.name.value;
-        let email =  event.target.email.value;
-        let phone =  event.target.phone.value;
-        let dsc =  event.target.decription.value;
-        console.log(`name: ${name} , email: ${email} , phone ${phone} , dec: ${dsc}`)
+    send() {
+
     },
     render() {
         return (
@@ -84,22 +107,15 @@ export default React.createClass({
                                     感谢您来到中昱达,若您有合作意向,请为我们留言或使用以下方式联系我们,我们将尽快给您回复,并为您提供真诚的服务. 谢谢 !
                                 </p>
                                 <form  >
+                                    <UserInput type="text" name="name"  placeholder="您的姓名"/>
+                                    <UserInput type="text" name="phone"  placeholder="您的电话" />
+                                    <UserInput type="text" name="email" placeholder="您的邮箱" />
                                     <p>
-                                        <input type="text" name="name"  placeholder="您的姓名"/>
-                                    </p>
-
-                                    <p>
-                                        <input type="text" name="phone"  placeholder="您的电话" />
-                                    </p>
-                                    <p>
-                                        <input type="text" name="email" placeholder="您的邮箱" />
-                                    </p>
-                                    <p>
-                                    <textarea name="description" placeholder="您的详细要求">
+                                    <textarea ref="textarea" name="description" placeholder="您的详细要求">
                                     </textarea>
                                     </p>
                                     <p>
-                                        <button type="submit">完成发送</button>
+                                        <button onClick={this.send}>完成发送</button>
                                     </p>
                                </form>
                             </div>

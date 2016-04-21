@@ -33,13 +33,19 @@ export default {
      * @param container : scroll container on where scroll happens
      */
     scrollDetect(f1 , f2 ) {
+        let count = 0;
         $( window ).scroll(function() {
-            f1();
-            console.log( 'scrolling' );
+           if(count !=0 ) {
+               console.log('start');
+               f1();
+           }
             clearTimeout( $.data( this, "scrollCheck" ) );
             $.data( this, "scrollCheck", setTimeout(function() {
-                f2();
-                console.log( 'stopped' );
+                if(count !=0 ) {
+                    f2();
+                    console.log('stop');
+                }
+                count++;
             }, 250) );
         });
     }

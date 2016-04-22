@@ -4,19 +4,21 @@ import $ from "jquery"
 
 let regs = {
     name :/^[\w|\s]{2,24}$/,
-    email : /^\w{1,20}@\w{1,20}\.\w{2,5}$/,
+    email : /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,5})+$/,
+    // email : /^\w{1,20}@\w{1,20}\.\w{2,5}$/,
     phone :/^\d{11}$/,
     description :/[\w|\s]{20,400}/
 };
 
 const validCss = {borderColor :'#e1e1e1'};
 const invalidCss = {borderColor :'red'};
-
-
+const succBtnCss = {background :'#9DDB9C'};
+const normalBtnCss = {background : '#c31632'} ;
 
 class UserInput extends Component {
     static onChange(event) {
         $(event.target).css(validCss);
+        $('.about button').css(normalBtnCss).html('完成发送');
     }
     static check(value , fileName) {
         return regs[fileName].test(value.trim());
@@ -29,16 +31,23 @@ class UserInput extends Component {
     static send() {
         let validInputs = [];
         let invalidInputs = [];
+        let result = {};
         $('.about input ,.about textarea').each((index , item) =>{
             if( UserInput.check(item.value , item.name) ) {
                 validInputs.push(item);
+                result[item.name] = item.value;
             }else {
                 invalidInputs.push(item);
             }
         });
+        let btn = $('.about button');
         if(invalidInputs.length != 0) {
-            // todo : do something
-            $('button').vibrate({duration:200});
+            btn.vibrate({duration:200});
+            btn.css(normalBtnCss).html('完成发送');
+        }else {
+            btn.css(succBtnCss).html("已发送");
+            $('.about input ,.about textarea').val('');
+            console.log('form content :' , result);
         }
         $(validInputs).css(validCss);
         $(invalidInputs).css(invalidCss);

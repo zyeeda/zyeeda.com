@@ -98,93 +98,49 @@
         animation-iteration-count: infinite;
     }
 }
-
-
-@mixin hpPosition($bkPoint , $left1 , $top1 , $left2 , $top2 , $left3 , $top3) {
-    @media screen and (min-width:$bkPoint) {
+@mixin hpPosition($minWidth , $maxWidth , $left1 , $top1 , $left2 , $top2 , $left3 , $top3) {
+    @media screen and (min-width:$minWidth) and (max-width:$maxWidth){
         .container.ptw {
-            //border : 1px solid red;
             left : $left1;
             top : $top1;
         }
-
         .container.phk{
             left : $left2;
             top : $top2;
         }
-
         .container.psz{
             left : $left3;
             top : $top3;
         }
-
     }
 }
-#header .hp-wrap .container.ptw {
-    left : 54.4%;
-    top : 71.2%;
-}
 
-#header .hp-wrap .container.phk{
-    left : 49.6%;
-    top : 75.5%;
-}
 
-#header .hp-wrap .container.psz{
-    left : 48.4%;
-    top : 73.7%;
+#header .hp-wrap {
+    @include hpPosition(0 , $pureXs, 51.6%, 66.0%,46.6%,70.4%, 45.8% , 68.8%);
 }
 
 #header .hp-wrap {
-    @include hpPosition($pureXxl , 54.4%, 72% ,50% , 76.3%, 48.8% , 74.3%);
+    @include hpPosition($pureXs,$pureSm , 52.6%, 66.8%,47.6%,72.4%, 46.8% , 70.6%);
 }
 
 #header .hp-wrap {
-    @include hpPosition($pureXl , 54.4%, 71.8% ,49.7% , 75.6%, 48.8% , 73.6%);
+    @include hpPosition($pureSm , $pureMd , 53.3%, 68.9%,48.6%,73.4%, 48.0% , 71.8%);
 }
 
 #header .hp-wrap {
-    @include hpPosition($pureLg , 54%, 71.2% ,49.4% , 75%, 48.3% , 73.2%);
+    @include hpPosition( $pureMd , $pureLg , 53.8%, 70.6%,49.0%,74.6%, 48.0% , 73.0%);
 }
 
-@media screen and (max-width:$pureMd) {
-
-    #header .hp-wrap .container.ptw {
-        left : 53%;
-        top : 68%;
-    }
-
-    #header .hp-wrap .container.phk{
-        left : 48.1%;
-        top : 72%;
-    }
-
-    #header .hp-wrap .container.psz{
-        left : 47%;
-        top : 71%;
-    }
+#header .hp-wrap {
+    @include hpPosition( $pureLg , $pureXl , 53.8%, 70.6%,49.0%,74.6%, 48.0% , 73.0%);
 }
 
-
-//
-//#header .hp-wrap {
-//    @include hpPosition($pureMd , 53.5%, 70.2% ,49.4% , 75%, 48.3% , 73.2%);
-//}
-
-@media screen and (max-width:$pureSm) {
-
-    #header .hp-wrap .container.ptw {
-        left : 52%;
-        top : 66.2%;
-    }
-
-    #header .hp-wrap .container.phk{
-        left : 47.1%;
-        top : 71%;
-    }
-
-    #header .hp-wrap .container.psz{
-        left : 46%;
-        top : 68%;
-    }
+#header .hp-wrap {
+    @include hpPosition($pureXl , $pureXxl , 54.3%, 71.4%,49.8%,75.6%, 48.8% , 74.0%);
 }
+
+#header .hp-wrap {
+    @include hpPosition($pureXxl , 1000em , 54.3%, 71.4%,49.8%,75.6%, 48.8% , 74.0%);
+}
+

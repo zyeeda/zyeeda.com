@@ -5,7 +5,6 @@
 
 import React from 'react'
 import $ from "jquery";
-import animate from "animate.css"
 import NavLink from './NavLink';
 import Utils from "./Utils"
 
@@ -19,7 +18,6 @@ export default React.createClass({
         });
     },
     render() {
-        console.log(animate);
         return(
             <div className="nav-bar" id="nav-bar">
                 <NavLink to="/" activeStyle={ACTIVE} onlyActiveOnIndex={true}>

@@ -25,14 +25,15 @@
     }
 
 }
-
-@media screen and (min-width: $pureLg) {
+@mixin gifBg($bottom) {
     .home img.gif-bg{
         position :absolute;
         width : 100%;
-        bottom : 160px;
+        bottom : $bottom;
     }
-
+}
+@media screen and (min-width: $pureLg) {
+    @include gifBg(160px);
     .home ul li {
         padding : 180px 0;
         .loc {
@@ -92,11 +93,9 @@
     }
 }
 @media screen and (max-width: $pureLg) {
+    @include gifBg(425px);
     .home img.gif-bg{
-        position :absolute;
-        width : 100%;
         z-index : 1;
-        bottom : 425px;
     }
     .home ul li {
         padding : 80px 0;
@@ -141,3 +140,4 @@
     .home ul li.sz{
     }
 }
+

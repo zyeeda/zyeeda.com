@@ -1,7 +1,7 @@
 {
-  "name": "webpack_test",
-  "version": "1.0.0",
-  "description": "webpack learning",
+  "name": "Zyeeda Website 2.0",
+  "version": "2.0.0",
+  "description": "Zyeeda Website 2.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

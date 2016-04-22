@@ -21,7 +21,7 @@ export default React.createClass({
         return(
             <div className="nav-bar" id="nav-bar">
                 <NavLink to="/" activeStyle={ACTIVE} onlyActiveOnIndex={true}>
-                    <img className="logo" src="../images/logo/logo.svg" alt="logo" />
+                    <img className="logo" src="../images/logos/logo.svg" alt="logo" />
                     {/*
                      <img className="logo" src={getUrl()==="/" ? "../images/logo/logo-white.svg" : "../images/logo/logo.svg"} alt="logo" />
                     */}

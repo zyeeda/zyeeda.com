@@ -100,6 +100,26 @@
 }
 
 
+@mixin hpPosition($bkPoint , $left1 , $top1 , $left2 , $top2 , $left3 , $top3) {
+    @media screen and (min-width:$bkPoint) {
+        .container.ptw {
+            //border : 1px solid red;
+            left : $left1;
+            top : $top1;
+        }
+
+        .container.phk{
+            left : $left2;
+            top : $top2;
+        }
+
+        .container.psz{
+            left : $left3;
+            top : $top3;
+        }
+
+    }
+}
 #header .hp-wrap .container.ptw {
     left : 54.4%;
     top : 71.2%;
@@ -115,40 +135,16 @@
     top : 73.7%;
 }
 
-
-@media screen and (min-width:$pureXxl) {
-    #header .hp-wrap .container.ptw {
-        left : 54.4%;
-        top : 72%;
-    }
-
-    #header .hp-wrap .container.phk{
-        left : 49.8%;
-        top : 76%;
-    }
-
-    #header .hp-wrap .container.psz{
-        left : 48.6%;
-        top : 74%;
-    }
+#header .hp-wrap {
+    @include hpPosition($pureXxl , 54.4%, 72% ,50% , 76.3%, 48.8% , 74.3%);
 }
 
-@media screen and (max-width:$pureLg) {
-    #header .hp-wrap .container.ptw {
-        left : 53.6%;
-        top : 70%;
-    }
+#header .hp-wrap {
+    @include hpPosition($pureXl , 54.4%, 71.8% ,49.7% , 75.6%, 48.8% , 73.6%);
+}
 
-    #header .hp-wrap .container.phk{
-        left : 49%;
-        top : 74%;
-    }
-
-    #header .hp-wrap .container.psz{
-        left : 48%;
-        top : 72%;
-    }
-
+#header .hp-wrap {
+    @include hpPosition($pureLg , 54%, 71.2% ,49.4% , 75%, 48.3% , 73.2%);
 }
 
 @media screen and (max-width:$pureMd) {
@@ -168,6 +164,12 @@
         top : 71%;
     }
 }
+
+
+//
+//#header .hp-wrap {
+//    @include hpPosition($pureMd , 53.5%, 70.2% ,49.4% , 75%, 48.3% , 73.2%);
+//}
 
 @media screen and (max-width:$pureSm) {
 

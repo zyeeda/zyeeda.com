@@ -11,7 +11,7 @@ const hpList = [
     {className : 'phk'},
     {className : 'psz'}
 ];
-// <img src="../images/home/hot-point.gif" />
+
 class HotPoints extends Component {
 
     getHotpoints() {
@@ -27,19 +27,10 @@ class HotPoints extends Component {
     }
 }
 
-$('.hot-point').hover(() => {
+// $('#header .container').hover((event) => {
+//     console.log(event);
+// });
 
-});
-
-// <div className="hp-wrap">
-//     <div className="container tw">
-//         <div className="popup"></div>
-//         <div className="dot"></div>
-//         <div className="pulse"></div>
-//     </div>
-// </div>
-
-// <HotPoints hpList={hpList}/>
  export default React.createClass({
     render() {
         return (

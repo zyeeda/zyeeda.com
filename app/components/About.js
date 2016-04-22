@@ -12,6 +12,8 @@ let regs = {
 const validCss = {borderColor :'#e1e1e1'};
 const invalidCss = {borderColor :'red'};
 
+
+
 class UserInput extends Component {
     static onChange(event) {
         $(event.target).css(validCss);
@@ -20,10 +22,8 @@ class UserInput extends Component {
         return regs[fileName].test(value.trim());
     }
     static onBlur(event) {
-        // event.target
-        // todo :
         if ( !UserInput.check(event.target.value , event.target.name) ) {
-            $(event.target).css(validCss);
+            $(event.target).css(invalidCss);
         }
     }
     static send() {
@@ -38,6 +38,7 @@ class UserInput extends Component {
         });
         if(invalidInputs.length != 0) {
             // todo : do something
+            $('button').vibrate({duration:200});
         }
         $(validInputs).css(validCss);
         $(invalidInputs).css(invalidCss);

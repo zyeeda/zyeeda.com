@@ -8,30 +8,27 @@
     background: $bgColor;
 }
 
+@mixin popmap($width , $right , $bottom ) {
+    display: none;
+    width : $width;
+    bottom : $right;
+    right : $bottom;
+}
+
 #header .map-wrap{
     img.popmap {
         position : absolute;
         z-index : 100;
     }
     img.popmap.ptw {
-        //display: none;
-        width : 288px;
-        bottom : 42px;
-        right : -204px
+        @include popmap(288px , 42px , -204px);
     }
 
     img.popmap.phk {
-        display: none;
-        width : 292px;
-        bottom : 18px;
-        right : -138px
+        @include popmap(292px , 18px , -138px);
     }
-
     img.popmap.psz {
-        display: none;
-        width : 338px;
-        bottom : 40px;
-        right : -128px
+        @include popmap(338px , 40px , -128px);
     }
 
 }

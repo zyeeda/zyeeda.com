@@ -7,7 +7,7 @@ let regs = {
     email : /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,5})+$/,
     // email : /^\w{1,20}@\w{1,20}\.\w{2,5}$/,
     phone :/^\d{11}$/,
-    description :/(.|\s){20,400}/
+    description :/(.|\s){5,400}/
 };
 const validCss = {borderColor :'#e1e1e1'};
 const invalidCss = {borderColor :'red'};
@@ -46,7 +46,10 @@ class UserInput extends Component {
         }else {
             btn.css(succBtnCss).html("已发送");
             $('.about input ,.about textarea').val('');
-            console.log('form content :' , result);
+
+            setTimeout(function() {
+                btn.css(normalBtnCss).html('完成发送');
+            }, 2000)
         }
         $(validInputs).css(validCss);
         $(invalidInputs).css(invalidCss);
@@ -138,7 +141,7 @@ export default React.createClass({
                                     <UserInput ref="phone" type="text" name="phone"  placeholder="您的电话" />
                                     <UserInput ref="email" type="text" name="email" placeholder="您的邮箱" />
                                 <p>
-                                    <textarea onBlur={UserInput.onBlur} onChange={UserInput.onChange} ref="textarea" name="description" placeholder="您的详细要求: 20 ~ 200 字">
+                                    <textarea onBlur={UserInput.onBlur} onChange={UserInput.onChange} ref="textarea" name="description" placeholder="您的详细要求: 5 ~ 200 字">
                                     </textarea>
                                 </p>
                                     <p>

@@ -1,12 +1,11 @@
 {
-  "name": "webpack_test",
-  "version": "1.0.0",
-  "description": "webpack learning",
+  "name": "Zyeeda Website 2.0",
+  "version": "2.0.0",
+  "description": "Zyeeda Website 2.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --progress --inline --content-base . --history-api-fallback --host 10.1.2.84",
-    "home": "webpack-dev-server --progress --inline --content-base . --history-api-fallback --host 192.168.1.102",
+    "start": "webpack-dev-server --progress --inline --content-base . --history-api-fallback --host 0.0.0.0",
     "local": "webpack-dev-server --progress --inline --content-base . --history-api-fallback ",
     "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress  --inline --content-base . --history-api-fallback"
   },

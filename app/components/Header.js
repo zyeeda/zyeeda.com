@@ -7,11 +7,11 @@ import React,{Component} from 'react';
 import $ from 'jquery';
 
 function hoverEffect(element) {
-    // use closure maintain element's reference
+    // maintain element's reference
     (function(element){
         let className = String($(element).attr('class')).split(" ")[1];
-        let e = $(`.popmap.${className}`);
         $('.popmap').hide();
+        let e = $(`.popmap.${className}`);
         e.fadeIn(800);
         $(element).mouseleave(() => {
             e.fadeOut(1000);
@@ -32,7 +32,7 @@ function setCenter() {
         // bind event
         $('#header .container').delayedHover({
             delayedAction : hoverEffect,
-            hoverTime : 500
+            hoverTime : 1000
         });
     }
 }

@@ -3,13 +3,12 @@ import Utils from "./Utils"
 import $ from "jquery"
 
 let regs = {
-    name :/^[\w|\s]{2,24}$/,
+    name :/^([\u4e00-\u9fa5]|[a-zA-Z]|\s){2,24}$/,
     email : /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,5})+$/,
     // email : /^\w{1,20}@\w{1,20}\.\w{2,5}$/,
     phone :/^\d{11}$/,
-    description :/[\w|\s]{20,400}/
+    description :/(.|\s){20,400}/
 };
-
 const validCss = {borderColor :'#e1e1e1'};
 const invalidCss = {borderColor :'red'};
 const succBtnCss = {background :'#9DDB9C'};

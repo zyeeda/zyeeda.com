@@ -14,7 +14,7 @@ export default React.createClass({
                         <img src="../images/home/map.png"/>
                     </div>
                     <div className="pure-u-1 pure-u-lg-3-24">
-                        <img src="../images/logo/logo-white.svg" alt="中昱达logo"/>
+                        <img src="../images/logos/logo-white.svg" alt="中昱达logo"/>
                     </div>
                     <div className="pure-u-1 pure-u-lg-3-24">
                         <span></span>

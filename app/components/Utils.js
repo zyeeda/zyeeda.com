@@ -31,17 +31,17 @@ export default {
     /**
      * @param f1 : scroll start callback
      * @param f2 : scroll stop callback
-     * @param container : scroll container on where scroll happens
      */
     scrollDetect(f1 , f2 ) {
         let count = 0;
+        let initScroll = $(document).scrollTop();
         $( window ).scroll(function() {
-           if(count !=0 ) {
+           if(count !=0 || initScroll===0) {
                f1();
            }
             clearTimeout( $.data( this, "scrollCheck" ) );
             $.data( this, "scrollCheck", setTimeout(function() {
-                if(count !=0 ) {
+                if(count !=0 || initScroll===0) {
                     f2();
                 }
                 count++;
@@ -90,3 +90,38 @@ $.fn.vibrate = function (conf) {
     });
 };
 
+/**
+ * do something base on the period of hover time
+ * @param options
+ * @returns dom element which have just been hovered
+ */
+$.fn.delayedHover = function(options)
+{
+    var settings = $.extend(
+        {},
+        {
+            delayedAction : function(){},
+            cancelledAction: function(){},
+            hoverTime: 1000
+        },
+        options);
+
+    return this.each(function(){
+        var $this = $(this);
+        $this.hover(function(){
+                $this.data('timerId',
+                    setTimeout(function(){
+                        $this.data('hover',false);
+                        settings.delayedAction($this);
+                    },settings.hoverTime));
+                $this.data('hover',true);
+            },
+            function(){
+                if($this.data('hover')){
+                    clearTimeout($this.data('timerId'));
+                    settings.cancelledAction($this);
+                }
+                $this.data('hover',false);
+            } );
+    });
+};

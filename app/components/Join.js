@@ -25,10 +25,10 @@ const jobList = [
 class Job extends Component{
     render() {
         let lines = this.props.job.text.split('||').map((string) => {
-            return <p>{string}</p>
+            return <p key={string}>{string}</p>
         }) ;
         return (
-            <li className={"pure-g " + this.props.job.className}>
+            <li key={this.props.job.className} className={"pure-g " + this.props.job.className}>
                 <div className="pure-u-1 pure-u-md-1-2">
                     <img src={this.props.job.imgUrl} alt={this.props.job.title}/>
                 </div>
@@ -49,7 +49,7 @@ class Job extends Component{
 class Jobs extends Component{
     render() {
         let jobs = this.props.jobList.map((item) => {
-            return <Job job={item}/>
+            return <Job key={item.title} job={item}/>
         });
         return (
             <ul>
@@ -80,7 +80,13 @@ export default React.createClass({
                        中昱达是一个专业的团队，精益求精是我们的追求，关注细节是我们的习惯，客户满意凝结着我们所有中昱达人的辛勤努力
                    </p>
                </div>
-               <img src="../images/join/banner.png" alt="高级开发工程师"/>
+               <div className="map-wrap">
+                   <img src="../images/join/banner.png" alt="高级开发工程师"/>
+                   <div className="container">
+                       <div className="dot"></div>
+                       <div className="pulse"></div>
+                   </div>
+               </div>
            </div>
             <Jobs jobList={jobList} />
         </div>

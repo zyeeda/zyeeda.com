@@ -6,7 +6,6 @@ const path = require('path');
 
 module.exports = {
     devtool: 'source-map',
-    // entry: ['babel-polyfill', __dirname + "/app/index.js"] ,
     entry: ['babel-polyfill', __dirname + "/app/index.js"] ,
     /*
     * Note: The build folder wont be created until we make a production

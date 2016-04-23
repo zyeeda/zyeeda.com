@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --progress --inline --content-base . --history-api-fallback --host 10.1.2.84",
+    "home": "webpack-dev-server --progress --inline --content-base . --history-api-fallback --host 192.168.1.102",
     "local": "webpack-dev-server --progress --inline --content-base . --history-api-fallback ",
     "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress  --inline --content-base . --history-api-fallback"
   },
@@ -39,7 +40,6 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.7.4",
-    "fbemitter": "^2.0.2",
     "flux": "^2.1.1",
     "jquery": "^2.2.3",
     "normalize.css": "^4.1.1",

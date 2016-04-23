@@ -1,15 +1,30 @@
-.join{
-    .banner{
-        background : $lightGrayColro;
+@mixin mapWrap($width) {
+    .banner .map-wrap {
         position : relative;
-        padding : 120px 0 ;
-        text-align:center;
+        margin:0 auto;
+        width: $width;
         img{
-            position : relative;
-            min-width: 320px;
-            width : 42%;
+            width: 100%;
         }
     }
+}
+
+.join{
+    .banner{
+        padding: 180px 0 ;
+        background : $lightGrayColro;
+        position : relative;
+        text-align:center;
+    }
+    @include mapWrap(700px);
+
+   .map-wrap {
+       @include hotPot();
+       .container {
+           top :480px ;
+           right : 168px;
+       }
+   }
    .banner .team {
        text-align: center;
        position : absolute;
@@ -47,43 +62,33 @@
         padding : 180px 0;
         text-align: right;
         div>img{
-            margin-top: 20px;
-            margin-right: 100px;
+        }
+        .text-wrap{
+            margin-left: 30px;
         }
     }
-
-    #join li.engineer{
-        div>img{
-            width : 130px;
-        }
-    }
-    #join li.designer{
-        div>img{
-            width : 156px;
-            position:relative;
-            right : -25px;
-        }
-    }
-
-    #join li.producer{
-        div>img{
-            width : 136px;
-            position:relative;
-        }
-    }
-
 }
 
 @media  screen and (max-width:$pureMd) {
     #join{
+        .banner{
+            padding : 120px 0 80px 0 ;
+            overflow: hidden;
+        }
+        @include mapWrap(400px);
         ul li{
             padding : 80px 0;
         }
+        .map-wrap {
+            @include hotPot();
+            .container {
+                top :269px ;
+                right : 90px;
+            }
+        }
+
         .pure-u-1 {
             text-align: center;
-        }
-        ul li img{
-
         }
         .text-wrap{
             width : 320px;
@@ -95,6 +100,3 @@
 }
 
 
-@media screen and (max-width:$pureMd) {
-
-}

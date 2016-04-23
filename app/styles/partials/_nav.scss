@@ -7,10 +7,10 @@ $navColor : #505050;
     height : 50px;
     background : $lightGrayColro;
     opacity : 0.9;
-    z-index : 3;
     top : 0px ;
     position: fixed;
     border-bottom: 1px solid $navBarBorderColor;
+    z-index : 100;
 }
 .nav-bar img.logo {
     top : 14px;

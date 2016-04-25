@@ -102,13 +102,17 @@ export default React.createClass({
                             </div>
                         </div>
                     </li>
-
-                    <li className="pure-g form time-line">
+                    <li className="pure-g certifications">
                         <div className="pure-u-1">
                             <h1>我们的资质</h1>
-                        </div>
-                        <div className="pure-u-1">
-                            <img src="../images/about/time-line.png" alt="公司发展历程"/>
+                            <div className="certifications-wrap">
+                                <img src="../images/about/certification-1.png" />
+                                <img src="../images/about/certification-2.png" />
+                                <img src="../images/about/certification-3.png" />
+                                <img src="../images/about/certification-4.png" />
+                                <img src="../images/about/certification-5.png" />
+                                <img src="../images/about/certification-6.png" />
+                            </div>
                         </div>
                     </li>
 

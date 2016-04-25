@@ -31,7 +31,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({template : __dirname + "/app/index.tmpl.html"}),
         new webpack.HotModuleReplacementPlugin(),
-        // new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
+        new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
         new CopyWebpackPlugin([
             // {output}/file.txt
             { from: 'app/images' , to:'images' }

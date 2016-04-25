@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --progress --inline --content-base . --history-api-fallback --host 0.0.0.0",
+    "dev": "webpack-dev-server --progress --inline --content-base . --history-api-fallback --host 10.1.2.104",
     "local": "webpack-dev-server --progress --inline --content-base . --history-api-fallback ",
     "build": "rm -rf build && NODE_ENV=production webpack --config ./webpack.production.config.js --progress  --inline --content-base . --history-api-fallback"
   },

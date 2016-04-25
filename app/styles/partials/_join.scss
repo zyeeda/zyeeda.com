@@ -1,7 +1,7 @@
 @mixin mapWrap($width) {
     .banner .map-wrap {
         position : relative;
-        margin:0 auto;
+        margin:0 auto !important;
         width: $width;
         img{
             width: 100%;

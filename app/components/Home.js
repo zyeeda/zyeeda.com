@@ -69,7 +69,7 @@ const Home = React.createClass({
                                 <p><span>汇聚创新之城的先进技术</span></p>
                                 <p><span>让您在全国各地都能方便快捷的收获来自台湾的馈赠</span></p>
                                 <p><span>专业贴心细致的客户服务让您无后顾之忧</span></p>
-                                <p><span>只为您的欢心！</span></p>
+                                <p><span>只为您的放心！</span></p>
                             </div>
                         </div>
 

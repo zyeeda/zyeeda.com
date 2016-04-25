@@ -63,7 +63,7 @@ $formBorderColor: #e1e1e1;
     }
 }
 
-@media screen and (min-width:$pureMd) {
+@media screen and (min-width:$pureLg) {
     #about {
         ul li{
             padding : 160px 0 ;
@@ -115,7 +115,7 @@ $formBorderColor: #e1e1e1;
 
 }
 
-@media screen and (max-width:$pureMd) {
+@media screen and (max-width:$pureLg) {
     #about {
         text-align: left;
         ul li img{

@@ -7,6 +7,7 @@ import $ from "jquery";
 
 export default {
     transitionOpacity( elm ) {
+        $(document).scrollTop(0);
         elm.style.opacity = 0;
         setTimeout(() => {
             this.incOpacity(elm);

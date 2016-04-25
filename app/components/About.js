@@ -74,37 +74,24 @@ export default React.createClass({
             <div className="about" id="about">
                 <ul>
                     <li className="pure-g about-us">
-                        <div className="pure-u-1 pure-u-md-1-2">
+                        <div className="pure-u-1 pure-u-lg-1-2">
                             <img src="../images/about/us.png" alt="关于我们"/>
                         </div>
-                        <div className="pure-u-1 pure-u-md-1-2">
+                        <div className="pure-u-1 pure-u-lg-1-2">
                             <div className="text-wrap">
                                 <h1>关于我们</h1>
                                 <p>
-                                    深圳市中昱达信息技术有限责任公司（以下简称中昱达公司）成立于2007年
-                                    10月，办公地点设立在福田区新天世纪CBC。
+                                    深圳市中昱达信息技术有限责任公司成立于2007年10月，在香港和台湾设立分公司。中昱达公司致力于打造两岸快销品电商贸易交易平台。通过先进的跨境电商平台，海峡两岸的仓储、物流运输管理，通过与海关接口集成和极速供应链管理，从而实现两岸供销电商化、一体化、便捷化。
                                 </p>
                                 <p>
-                                    自成立以来，中昱达一直坚持“以市场为导向，以客户为中心”的经营理念
-                                    中昱达为您提供开发平台产品服务、项目定制开发解决方案和人才服务。
-                                    中昱达成立至今，已成功为多家客户提供项目定制开发解决方案，覆盖到电
-                                    力、通信、金融等行业。
-                                </p>
-                                <p>
-                                    中昱达长期为企业提供人才服务，针对客户人员需求，快速培养和提供相关
-                                    人才到客户现场。使客户只需关注生产，不需要在人员人事管理上耗费过多
-                                    精力，从而有更多精力专注于提高自身的核心竞争力上。
-                                </p>
-                                <p>
-                                    企业文化：爱人敬业<br/>
-                                    企业使命：“让软件因为我们的存在而变得更美好” <br/>
+                                    公司致力于为消费者提供快捷、高品质、值得信赖的台湾正品贸易体验，深入货源产地直采，保证商品品质，为顾客提供多元化种类的商品，满足各类顾客的需要，让每一位顾客在追寻健康和美丽的路途上，享受更愉悦美好的体验。
                                 </p>
                             </div>
                         </div>
                     </li>
 
                     <li className="pure-g prods">
-                        <div className="pure-u-1 pure-u-md-1-2">
+                        <div className="pure-u-1 pure-u-lg-1-2">
                             <div className="text-wrap">
                                 <h1>我们做什么</h1>
                                 <p>
@@ -116,7 +103,7 @@ export default React.createClass({
                             </div>
                         </div>
 
-                        <div className="pure-u-1 pure-u-md-1-2">
+                        <div className="pure-u-1 pure-u-lg-1-2">
                             <img src="../images/about/prods.png" alt="我们做什么"/>
                         </div>
                     </li>
@@ -131,7 +118,7 @@ export default React.createClass({
                     </li>
 
                     <li className="pure-g form">
-                        <div className="pure-u-1 pure-u-md-1-2">
+                        <div className="pure-u-1 pure-u-lg-1-2">
                             <div className="text-wrap">
                                 <h2>请填写您的需求与建议</h2>
                                 <p>
@@ -149,7 +136,7 @@ export default React.createClass({
                                     </p>
                             </div>
                         </div>
-                        <div className="pure-u-1 pure-u-md-1-2">
+                        <div className="pure-u-1 pure-u-lg-1-2">
                             <img src="../images/about/map.png" alt="关于我们"/>
                         </div>
 

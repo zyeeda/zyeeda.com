@@ -6,6 +6,7 @@ import About from "./components/About";
 import Join from "./components/Join";
 import Home from "./components/Home";
 
+
 import './styles/main.scss';
 import './styles/libs/pure-grids.min.css';
 

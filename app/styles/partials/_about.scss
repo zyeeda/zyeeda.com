@@ -49,39 +49,73 @@ $formBorderColor: #e1e1e1;
 
 #about {
     .daili , .certifications {
+        img{
+            width : 120px!important;
+            min-width: 0;
+        }
         h1{
             text-align: center !important;
             margin-bottom: 20px;
         }
     }
     .daili-wrap {
-        max-width: 1000px;
+        //max-width: 662px;
         margin : 0 auto;
     }
 }
 
+.certifications-wrap ,.daili-wrap {
+    text-align: center;
+    p{
+        margin-bottom: 40px;
+    }
+}
 
+
+#about .daili-wrap ,#about .certifications-wrap {
+    text-align: center;
+    p{
+
+    }
+    img {
+        box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);
+        border-radius: 2px;
+        margin-bottom: 20px;
+        &:nth-child(5) {
+            margin-right: 0;
+        }
+    }
+}
 
 @media screen and (min-width:$pureLg) {
-
     #about .daili {
         text-align: center;
         .daili-wrap{
             img{
-                margin-right: 10px;
-                margin-bottom: 30px;
-                width : 240px !important;
+                min-width: 0;
+                width : 160px !important;
             }
         }
     }
 
     #about .certifications-wrap {
-        width: 662px;
-        margin : 0 auto;
+        text-align: center;
         img{
             min-width : 0;
-            width : 200px!important;
-            margin-right: 20px;
+            border-radius: 100px;
+            box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.1);
+        }
+    }
+    #about  {
+        .certifications-wrap ,.daili-wrap {
+            p {
+                margin-right: 54px;
+                text-align: center;
+                display: inline-block;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
         }
     }
 
@@ -121,28 +155,27 @@ $formBorderColor: #e1e1e1;
 
 }
 
-
-
 @media screen and (max-width:$pureLg) {
    #about .daili-wrap{
        text-align: center;
         img{
-            margin-bottom: 20px;
-            width : 320px !important;
+            box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            min-width: 0;
+            width : 280px !important;
         }
     }
     #about .certifications-wrap {
-        width: 314px;
         text-align: center;
         margin: 0 auto;
         img{
             display: inline-block;
             min-width: 0;
-            width : 140px!important;
-            margin-bottom: 20px;
-            margin-right: 30px;
+            width : 160px!important;
+            border-radius: 100px;
+            box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.1);
             &:nth-child(2n) {
-                margin-right:0px;
+                margin-right:0;
             }
         }
     }

@@ -94,11 +94,26 @@ export default React.createClass({
                         <div className="pure-u-1">
                             <h1>我们的授权</h1>
                             <div className="daili-wrap">
-                                <img src="../images/about/daili-ximi.jpg" />
-                                <img src="../images/about/daili-huana.png"/>
-                                <img src="../images/about/daili-nijinshi.jpg" />
-                                <img src="../images/about/daili-beiwei.jpg" />
-                                <img src="../images/about/daili-hualian.png" />
+                                <p>
+                                    <img src="../images/about/daili-hualian.png" />
+                                    <h2>花恋肌</h2>
+                                </p>
+                                <p>
+                                    <img src="../images/about/daili-beiwei.jpg" />
+                                    <h2>23.5<sup><sup>。</sup></sup>N</h2>
+                                </p>
+                                <p>
+                                    <img src="../images/about/daili-ximi.jpg" />
+                                    <h2>喜蜜</h2>
+                                </p>
+                                <p>
+                                    <img src="../images/about/daili-nijinshi.jpg" />
+                                    <h2>霓净思</h2>
+                                </p>
+                                <p>
+                                    <img src="../images/about/daili-huana.png"/>
+                                    <h2>花娜小姐</h2>
+                                </p>
                             </div>
                         </div>
                     </li>
@@ -106,12 +121,30 @@ export default React.createClass({
                         <div className="pure-u-1">
                             <h1>我们的资质</h1>
                             <div className="certifications-wrap">
-                                <img src="../images/about/certification-1.png" />
-                                <img src="../images/about/certification-2.png" />
-                                <img src="../images/about/certification-3.png" />
-                                <img src="../images/about/certification-4.png" />
-                                <img src="../images/about/certification-5.png" />
-                                <img src="../images/about/certification-6.png" />
+                                <p>
+                                    <img src="../images/about/certification-1.png" />
+                                    <h2>双软企业</h2>
+                                </p>
+                                <p>
+                                    <img src="../images/about/certification-2.png" />
+                                    <h2>ISO 9001</h2>
+                                </p>
+                                <p>
+                                    <img src="../images/about/certification-3.png" />
+                                    <h2>高新技术企业</h2>
+                                </p>
+                                <p>
+                                    <img src="../images/about/certification-4.png" />
+                                    <h2>出入境</h2>
+                                </p>
+                                <p>
+                                    <img src="../images/about/certification-5.png" />
+                                    <h2>对外贸易</h2>
+                                </p>
+                                <p>
+                                    <img src="../images/about/certification-6.png" />
+                                    <h2>海关报关</h2>
+                                </p>
                             </div>
                         </div>
                     </li>

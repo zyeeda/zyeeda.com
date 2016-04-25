@@ -90,21 +90,16 @@ export default React.createClass({
                         </div>
                     </li>
 
-                    <li className="pure-g prods">
-                        <div className="pure-u-1 pure-u-lg-1-2">
-                            <div className="text-wrap">
-                                <h1>我们做什么</h1>
-                                <p>
-                                    中昱达为客户提供开发平台产品服务、项目定制开发解决方案和人才服务。成立至今，已成功为多家企业提供优质的服务，覆盖到电力、通信、金融等行业。中昱达提供基于企业级应用的快速开发平台及其相关服务。
-                                </p>
-                                <p>
-                                    公司的产品、服务正尽最大可能帮助中国软件开发团队生产出高质量的产品，为各行业的信息化建设加油助力。中昱达长期为企业提供人才服务，针对客户人员需求快速培养，提供相关人才到客户现场。使客户只需关注生产，不需要在人员人事管理上耗费过多精力，从而有更多时间专注于提高自身的核心竞争力上。
-                                </p>
+                    <li className="pure-g daili">
+                        <div className="pure-u-1">
+                            <h1>我们的授权</h1>
+                            <div className="daili-wrap">
+                                <img src="../images/about/daili-ximi.jpg" />
+                                <img src="../images/about/daili-huana.png"/>
+                                <img src="../images/about/daili-nijinshi.jpg" />
+                                <img src="../images/about/daili-beiwei.jpg" />
+                                <img src="../images/about/daili-hualian.png" />
                             </div>
-                        </div>
-
-                        <div className="pure-u-1 pure-u-lg-1-2">
-                            <img src="../images/about/prods.png" alt="我们做什么"/>
                         </div>
                     </li>
 

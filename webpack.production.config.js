@@ -25,6 +25,11 @@ module.exports = {
         require('autoprefixer')
     ],
     plugins: [
+        new webpack.DefinePlugin({
+            'process.env':{
+                'NODE_ENV': JSON.stringify('production')
+            }
+        }),
         new webpack.BannerPlugin("Copyright Zyeeda Unicorns inc."),
         new HtmlWebpackPlugin({template: __dirname + "/app/index.tmpl.html", title: 'www.zyeed.com'}),
         new webpack.optimize.OccurenceOrderPlugin(),

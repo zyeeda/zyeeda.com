@@ -92,7 +92,7 @@ export default React.createClass({
 
                     <li className="pure-g daili">
                         <div className="pure-u-1">
-                            <h1>我们的授权</h1>
+                            <h1>我们的品牌授权</h1>
                             <div className="daili-wrap">
                                 <p>
                                     <img src="../images/about/daili-hualian.png" />

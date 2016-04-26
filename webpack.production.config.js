@@ -4,7 +4,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
-    entry: __dirname + "/app/index.js",
+    entry: ['babel-polyfill', __dirname + "/app/index.js"] ,
+    // entry: __dirname + "/app/index.js",
     output: {
         path: __dirname + "/build",
         filename: "[name]-[hash].js"
@@ -17,14 +18,14 @@ module.exports = {
             {test: /\.scss$/, loaders: ["style", "css", "sass", "postcss"]},
             {test: /\s[a|c]ss$/, exclude: /node_modules/, loader: 'sasslint'},
             {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
-            // { test: /\.css$/, loader: 'style!css?components!postcss' }
-            //{ test: /\.coffee$/, loader: 'coffee-loader' },
         ]
     },
     postcss: [
         require('autoprefixer')
     ],
     plugins: [
+        // use optimized production version of react 
+        // more details --> : http://dev.topheman.com/make-your-react-production-minified-version-with-webpack/
         new webpack.DefinePlugin({
             'process.env':{
                 'NODE_ENV': JSON.stringify('production')
@@ -44,5 +45,5 @@ module.exports = {
         extensions: ['', '.js', '.json', '.coffee', 'jsx']
     }
 
-}
+};
 

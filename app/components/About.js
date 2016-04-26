@@ -135,15 +135,15 @@ export default React.createClass({
                                 </p>
                                 <p>
                                     <img src="../images/about/certification-4.png" />
-                                    <h2>出入境</h2>
+                                    <h2>出入境备案</h2>
                                 </p>
                                 <p>
                                     <img src="../images/about/certification-5.png" />
-                                    <h2>对外贸易</h2>
+                                    <h2>对外贸易备案</h2>
                                 </p>
                                 <p>
                                     <img src="../images/about/certification-6.png" />
-                                    <h2>海关报关</h2>
+                                    <h2>海关报关登记</h2>
                                 </p>
                             </div>
                         </div>

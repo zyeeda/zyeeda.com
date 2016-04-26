@@ -59,15 +59,7 @@ $formBorderColor: #e1e1e1;
         }
     }
     .daili-wrap {
-        //max-width: 662px;
         margin : 0 auto;
-    }
-}
-
-.certifications-wrap ,.daili-wrap {
-    text-align: center;
-    p{
-        margin-bottom: 40px;
     }
 }
 
@@ -75,7 +67,10 @@ $formBorderColor: #e1e1e1;
 #about .daili-wrap ,#about .certifications-wrap {
     text-align: center;
     p{
-
+        margin-bottom: 40px;
+    }
+    h2{
+        font-weight:400;
     }
     img {
         box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);

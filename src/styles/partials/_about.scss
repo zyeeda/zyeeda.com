@@ -63,10 +63,9 @@ $formBorderColor: #e1e1e1;
     }
 }
 
-
-#about .daili-wrap ,#about .certifications-wrap {
+#about .daili-wrap , #about .certifications-wrap {
     text-align: center;
-    p{
+    div{
         margin-bottom: 40px;
     }
     h2{
@@ -76,13 +75,11 @@ $formBorderColor: #e1e1e1;
         box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);
         border-radius: 2px;
         margin-bottom: 20px;
-        &:nth-child(5) {
-            margin-right: 0;
-        }
     }
 }
 
 @media screen and (min-width:$pureLg) {
+
     #about .daili {
         text-align: center;
         .daili-wrap{
@@ -96,14 +93,16 @@ $formBorderColor: #e1e1e1;
     #about .certifications-wrap {
         text-align: center;
         img{
+            //margin-right: 40px;
             min-width : 0;
             border-radius: 100px;
             box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.1);
         }
     }
+
     #about  {
         .certifications-wrap ,.daili-wrap {
-            p {
+            div {
                 margin-right: 54px;
                 text-align: center;
                 display: inline-block;

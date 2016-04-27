@@ -12,12 +12,13 @@ function hoverEffect(element) {
         let className = String($(element).attr('class')).split(" ")[1];
         $('.popmap').hide();
         let e = $(`.popmap.${className}`);
-        e.fadeIn(800);
+        e.fadeIn(600);
         $(element).mouseleave(() => {
-            e.fadeOut(1000);
+            e.fadeOut(400);
         });
     })(element);
 }
+
 function setCenter() {
     let eMap = $('.map-wrap');
     let eMapWidth = eMap.width();
@@ -32,7 +33,7 @@ function setCenter() {
         // bind event
         $('#header .container').delayedHover({
             delayedAction : hoverEffect,
-            hoverTime : 1000
+            hoverTime : 800
         });
     }
 }

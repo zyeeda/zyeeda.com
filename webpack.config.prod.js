@@ -1,8 +1,10 @@
+/**
+ * Created by vimniky on 4/26/16.
+ */
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-// var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var path = require('path');
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -38,19 +40,10 @@ module.exports = {
             }
         }),
         new HtmlWebpackPlugin({template : "./src/index.tmpl.html" , inject :true}),
-        new webpack.HotModuleReplacementPlugin(),
-        new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
+        new webpack.optimize.UglifyJsPlugin(),
         new CopyWebpackPlugin([
             { from: 'src/images' , to:'images' }
         ])
-    ],
-    devtool: 'source-map',
-    devServer: {
-        contentBase: "./src",
-        colors: true,
-        historyApiFallback: true,
-        port : 8080,
-        inline: true,
-        hot: true
-    }
+    ]
 };
+

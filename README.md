@@ -5,8 +5,7 @@
 - start
 
     ``` bash
-    $ # start on localhost
-    $ npm start local
+    $ npm start
     ```
 
 - build 

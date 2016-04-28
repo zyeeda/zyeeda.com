@@ -1,6 +1,6 @@
-import React , {Component} from 'react'
-import Utils from "./Utils"
-import $ from 'jquery'
+import React, {Component} from "react";
+import Utils from "./Utils";
+import $ from "jquery";
 
 const jobList = [
     {
@@ -22,7 +22,6 @@ const jobList = [
         text:"***岗位职责||1、担任客服工作，通过在线工具解答客户提出的问题，正确引导客人购买商品，促成订单||2、妥善处理交易中出现的售后问题，包括售后退换货、快递查询等，耐心沟通，为客户提出合理的解决||3、碰到客户抱怨及投诉或中差评时，积极联系买家，进行有效沟通，解决问题的同时保住交易||4、需要通过电话与客人沟通，解答客户咨询，物流跟进，售后等问题 || 5、熟悉商品的各属性以及交易流程、售后条款等||***任职资历||1、中专或以上学历，熟悉化妆品者优先||2、要有1年以上客服经验，对客户服务有自己一定见解|| 3、熟悉运用办公室软件，每分钟打字50个以上|| 4、每天工作8小时，需要轮班，会有夜班"
     }
 ];
-
 class Job extends Component{
     render() {
         let lines = this.props.job.text.split('||').map((string) => {
@@ -63,7 +62,6 @@ class Jobs extends Component{
         );
     }
 }
-
 function setCenter() {
     // horizontal center
     let e = $('.banner .map-wrap');

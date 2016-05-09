@@ -47,8 +47,15 @@
         text-align :left;
     }
     .copy-right {
-        margin: 16px 0 ;
-        text-align :center;
+      margin: 16px 0 ;
+      line-height: 20px;
+      text-align :center;
+      a{
+        color: #cdcdcd;
+        &:hover {
+          color: #1C9B9B;
+        }
+      }
     }
 }
 

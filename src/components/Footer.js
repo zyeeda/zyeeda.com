@@ -37,7 +37,7 @@ export default React.createClass({
                 </div>
                <p className="copy-right">
                   Copyright © 2007 - 2016 深圳市中昱达信息技术有限责任公司 - Designed by Zyeeda Co. Ltd. <br/>
-                 <a href='http://www.miibeian.gov.cn/'>
+                 <a href='http://www.miibeian.gov.cn/' target="_blank">
                    粤ICP备15099651
                  </a>
                </p>

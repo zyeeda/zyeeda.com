@@ -1,6 +1,6 @@
 .home ul li {
     &:nth-child(even) {
-        background : $lightGrayColro;
+        background : $lightGrayColor;
     }
     position : relative;
     .loc {
@@ -29,6 +29,7 @@
     .home img.gif-bg{
         position :absolute;
         width : 100%;
+        max-width : $maxContentWidth;
         bottom : $bottom;
     }
 }

@@ -7,12 +7,13 @@ $xlFontSize : 16px;
 $bFontSize : 18px;
 $h2Size : 18px;
 
+$maxContentWidth:1440px;
 
 $h1Color :#c31632;
 $h1Size :#c31632;
-$lightGrayColro:#f6f6f6;
+$lightGrayColor:#f6f6f6;
 $navBarBorderColor:#d3d3d3;
-$navBarColor:$lightGrayColro;
+$navBarColor: $lightGrayColor;
 $bgColor: #111C29;
 $fontColor: #000;
 // pure grid system's breakpoint
@@ -25,5 +26,6 @@ $pureMd :48em;
 $pureLg :64em;
 //1280px
 $pureXl:80em;
-
 $pureXxl:100em;
+
+$footerBp:1100px;

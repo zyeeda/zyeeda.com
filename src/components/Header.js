@@ -6,17 +6,24 @@
 import React,{Component} from 'react';
 import $ from 'jquery';
 
+var isHvering = false;
 function hoverEffect(element) {
     // maintain element's reference
     (function(element){
         let className = String($(element).attr('class')).split(" ")[1];
-        $('.popmap').hide();
+        // $('.popmap').hide();
         let e = $(`.popmap.${className}`);
-        e.fadeIn(600);
+        e.hide();
+        e.fadeIn(500);
         $(element).mouseleave(() => {
             e.fadeOut(400);
         });
     })(element);
+}
+function cancleHover(element) {
+    let className = String($(element).attr('class')).split(" ")[1];
+    let e = $(`.popmap.${className}`);
+    e.hide();
 }
 
 function setCenter() {
@@ -33,7 +40,8 @@ function setCenter() {
         // bind event
         $('#header .container').delayedHover({
             delayedAction : hoverEffect,
-            hoverTime : 800
+            hoverTime : 400,
+            cancelledAction : cancleHover
         });
     }
 }

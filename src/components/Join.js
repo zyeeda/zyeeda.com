@@ -38,10 +38,12 @@ class Job extends Component{
                 </div>
                 <div className="pure-u-1 pure-u-md-1-2">
                     <div className="text-wrap">
-                        <a href="mailto:hr@zyeeda.com">
-                            <img className="icon-email" src="../images/join/icon-email.png" alt="给我们发邮件"/>
-                        </a>
-                        <h1>{this.props.job.title}</h1>
+                        <h1>
+                            {this.props.job.title}
+                            <a href="mailto:hr@zyeeda.com">
+                                <img className="icon-email" src="../images/join/icon-email.png" alt="给我们发邮件"/>
+                            </a>
+                        </h1>
                         {lines}
                     </div>
                 </div>
@@ -112,16 +114,3 @@ export default React.createClass({
     );
   }
 })
-
-// {
-//     title : "高级开发工程师",
-//     imgUrl: "../images/join/engineer.png",
-//     className : "engineer",
-//     text: "计算机、软件、网络、通信或应用数学等相关专业||具有 2 年以上软件开发及设计经验|| 熟练掌握计算机程序设计的基础理论||熟练掌握数据结构、算法、操作系统、数据库、网络等计算机基础知识|| 熟悉常见的软件架构和设计模式||熟练使用 Java 和 JavaScript 语言等进行程序设计|| 熟悉各种常见的开发框架，并熟悉其具体原理||具备一定的中英文技术文档阅读能力"
-// },
-// {
-//     title : "界面设计师",
-//     imgUrl: "../images/join/designer.png",
-//     className : "designer",
-//     text:"热爱并执着于网页设计、软件界面设计和交互式设计等||富于创新、思维活跃||能独立担当设计工作，保持乐观精神|| 善于团队合作，有良好的设计表现力和沟通能力||能够使用 HTML 5 和 CSS 3 等进行页面设计||能够熟练使用各种常见的设计工具||1 年以上界面设计和网页设计的相关工作经验"
-// },

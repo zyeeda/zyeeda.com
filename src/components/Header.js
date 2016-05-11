@@ -11,7 +11,6 @@ function hoverEffect(element) {
     // maintain element's reference
     (function(element){
         let className = String($(element).attr('class')).split(" ")[1];
-        // $('.popmap').hide();
         let e = $(`.popmap.${className}`);
         e.hide();
         e.fadeIn(500);
@@ -19,11 +18,6 @@ function hoverEffect(element) {
             e.fadeOut(400);
         });
     })(element);
-}
-function cancleHover(element) {
-    let className = String($(element).attr('class')).split(" ")[1];
-    let e = $(`.popmap.${className}`);
-    e.hide();
 }
 
 function setCenter() {
@@ -40,8 +34,7 @@ function setCenter() {
         // bind event
         $('#header .container').delayedHover({
             delayedAction : hoverEffect,
-            hoverTime : 400,
-            cancelledAction : cancleHover
+            hoverTime : 400
         });
     }
 }

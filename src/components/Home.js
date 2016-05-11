@@ -6,19 +6,29 @@
 import React from 'react'
 import Header from "./Header";
 import Utils from "./Utils"
+import $ from 'jquery'
 
+function setCenter() {
+    // horizontal center
+    let e = $('.home .gif-bg');
+    let center = ($(window).width() - e.width()) / 2;
+    e.css({'left':center});
+}
 const Home = React.createClass({
     componentDidMount() {
         const root = document.getElementById('root');
         Utils.transitionOpacity(root);
         Utils.setDocTitle('中昱达');
+        setCenter();
     },
     render() {
         return (
             <div className="home">
                 <ul>
                     <li className="tw pure-g">
-                        <img className="gif-bg" src="../images/home/bg-1.gif" />
+                        <div className="gif-wraper">
+                            <img className="gif-bg" src="../images/home/bg-1.gif" />
+                        </div>
                         <div className="loc pure-u-1 pure-u-lg-1-2">
                             <img  src="../images/home/loc-tw.png"/>
                         </div>

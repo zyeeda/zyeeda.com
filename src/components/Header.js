@@ -6,7 +6,6 @@
 import React,{Component} from 'react';
 import $ from 'jquery';
 
-var isHvering = false;
 function hoverEffect(element) {
     // maintain element's reference
     (function(element){

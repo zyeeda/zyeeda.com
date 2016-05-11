@@ -20,19 +20,21 @@ export default React.createClass({
     render() {
         return(
             <div className="nav-bar" id="nav-bar">
-                <NavLink to="/" activeStyle={ACTIVE} onlyActiveOnIndex={true}>
+                <div>
+                  <NavLink to="/" activeStyle={ACTIVE} onlyActiveOnIndex={true}>
                     <img className="logo" src="../images/logos/logo.svg" alt="logo" />
                     {/*
                      <img className="logo" src={getUrl()==="/" ? "../images/logo/logo-white.svg" : "../images/logo/logo.svg"} alt="logo" />
-                    */}
-                </NavLink>
-                <ul role="nav" className="nav-link" >
+                     */}
+                  </NavLink>
+                  <ul role="nav" className="nav-link" >
                     <li><NavLink activeStyle={ACTIVE}  to="/" onlyActiveOnIndex={true}>首页</NavLink></li>
                     <spin className="spaceMaker">|</spin>
                     <li ><NavLink activeStyle={ACTIVE} to="/joinus">加入我们</NavLink></li>
                     <span className="spaceMaker">|</span>
                     <li ><NavLink activeStyle={ACTIVE}  to="/aboutus">关于我们</NavLink></li>
-                </ul>
+                  </ul>
+                </div>
             </div>
         );
     }

@@ -8,16 +8,14 @@
         }
     }
 }
-
 .join{
     .banner{
-        padding: 180px 0 ;
-        background : $lightGrayColro;
+        padding: 80px 0 40px 0 ;
+        background : $lightGrayColor;
         position : relative;
         text-align:center;
     }
     @include mapWrap(700px);
-
    .map-wrap {
        @include hotPot();
        .container {
@@ -38,7 +36,7 @@
         position:relative;
     }
     ul li:nth-child(even){
-        background : $lightGrayColro;
+        background : $lightGrayColor;
     }
     h1{
         color : $h1Color;
@@ -70,7 +68,7 @@
 
 @media  screen and (min-width:$pureMd) {
     #join ul li{
-        padding : 180px 0;
+        padding : 100px 0;
         text-align: right;
         div>img{
             margin-right: 30px;
